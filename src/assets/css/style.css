@@ -14089,11 +14089,11 @@ header.interior svg path {
   }
 }
 
-.logo, button {
+header .logo, header button {
   opacity: 0;
 }
 
-.scrolled .logo, .scrolled button {
+.scrolled header .logo, .scrolled header button {
   opacity: 1;
 }
 .scrolled header {
@@ -15329,11 +15329,11 @@ svg {
 }
 
 .c-gray {
-  color: var(--c-gray);
+  color: #DCDCDC;
 }
 
 .bg-color {
-  background-color: var(--bg-light);
+  background-color: var(--bg-primary);
   color: var(--c-bg-light);
 }
 
@@ -15358,7 +15358,7 @@ a:hover {
 }
 
 .bg-dark {
-  background-color: var(--bg-dark);
+  background-color: #232323;
   color: var(--c-bg-dark);
 }
 

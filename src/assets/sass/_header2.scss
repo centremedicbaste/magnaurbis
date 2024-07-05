@@ -37,16 +37,21 @@ header.interior {
     max-width: 45px;
   }
 }
+header{
+  .logo,button{
+    opacity: 0;
+  }
 
-.logo,button{
-  opacity: 0;
 }
+
 .scrolled {
 
-.logo,button{
-  opacity: 1;
-}
-
+  header{
+    .logo,button{
+      opacity: 1;
+    }
+  
+  }
 
   header {
     background-color: #f3f2f0b5;
