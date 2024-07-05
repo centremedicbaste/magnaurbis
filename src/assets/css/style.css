@@ -15869,6 +15869,9 @@ ul.list-clear li {
   background-color: #f3f2f0;
 }
 
+.main-article {
+  background-color: #fff;
+}
 .main-article a:hover {
   opacity: 1;
 }
