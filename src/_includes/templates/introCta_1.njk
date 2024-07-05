@@ -1,9 +1,9 @@
 <section class=" herohome inview  o-hidden   bg-hero  height-full  " data-scroll-section>
   <div class="video-bg">
     {% if global.home_image %}
-      {% if global.home_image.endsWith('.mp4') %}
+      {% if global.home_video %}
       <video poster="" autoplay="" muted="" loop="">
-        <source src="{{ global.home_image }}" type="video/mp4" />
+        <source src="{{ global.home_video }}" type="video/mp4" />
       </video>
       {% else %}
       <img class="parallax-image" src="{{ global.home_image }}" alt="">

@@ -182,6 +182,23 @@ ul.list-clear li {
 .container-2 {
   width: 100%;
 }
+
+.video-bg2{
+
+  video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+
+}
+
+
 .video-bg {
   position: fixed;
   height: 100vh;

@@ -1,9 +1,9 @@
 <section class=" herohome inview  o-hidden   bg-hero bg-overlay height-full align-center " data-scroll-section>  
-  <div class="video-bg">
+  <div class="video-bg2">
     {% if global.home_image %}
-    {% if global.home_image.endsWith('.mp4') %}
-    <video  data-scroll data-scroll-speed="-3"  poster="" autoplay="" muted="" loop="">
-      <source src="{{ global.home_image }}" type="video/mp4" />
+    {% if global.home_video %}
+    <video   data-scroll data-scroll-speed="-3"  poster="" autoplay="" muted="" loop="">
+      <source src="{{ global.home_video }}" type="video/mp4" />
     </video>
       {% else %}
       <img class="parallax-image" data-scroll data-scroll-speed="-3"  src="/assets/static/images/casa2.webp" alt="">

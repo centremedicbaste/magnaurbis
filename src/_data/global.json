@@ -39,6 +39,7 @@
   "provincia": "Barcelona",
   "actividad": " the boilerplate",
   "home_image": "/assets/static/images/casa2.webp",
+  "home_video": "https://res.cloudinary.com/manuel-ruiz/video/upload/f_auto:video,q_auto/hbyomlw7zptweg0kgxmr",
   "c_gray": "#727272",
   "c_primary": "#000000",
   "c_secondary": "#000000",
