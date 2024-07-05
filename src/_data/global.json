@@ -48,7 +48,7 @@
   "c_bg_light": "#2b2a28",
   "c_bg_dark": "#f7f6f5",
   "bg_primary": "linear-gradient(120deg, #E14EF7 0%, #8E44F6 30%, #3D40F5 100%)",
-  "btn_radius": "50px",
+  "btn_radius": "8px",
   "padding-global": "16px",
   "seo_title": "seo_title",
   "seo_description": "seo_description",

@@ -1074,3 +1074,18 @@ html.lenis, html.lenis body {
 .ar-1-1{
   aspect-ratio: 1/1;
 }
+
+
+.box-frost {
+  background: rgba(255, 255, 255, 0.1);
+  /* Ligera transparencia */
+  backdrop-filter: blur(10px);
+  /* Efecto de desenfoque */
+  -webkit-backdrop-filter: blur(10px);
+  /* Para Safari */
+  color: #fff;
+  border-radius: 8px;
+
+  transition: all 0.2s ease-in-out;
+
+}

@@ -11945,27 +11945,6 @@ html.has-scroll-dragging {
   bottom: 0;
 }
 
-body {
-  margin: 0;
-  text-align: center;
-  font: 900 120% system-ui, sans-serif;
-}
-
-.section {
-  height: 100vh;
-  display: grid;
-  place-items: center;
-}
-
-p {
-  font-size: 120px;
-  margin: 0;
-}
-
-h1 {
-  margin: 0;
-}
-
 .parallax-image {
   margin-bottom: -30px;
   margin-top: -30px;
@@ -16484,4 +16463,16 @@ html.lenis, html.lenis body {
 
 .ar-1-1 {
   aspect-ratio: 1/1;
+}
+
+.box-frost {
+  background: rgba(255, 255, 255, 0.1);
+  /* Ligera transparencia */
+  backdrop-filter: blur(10px);
+  /* Efecto de desenfoque */
+  -webkit-backdrop-filter: blur(10px);
+  /* Para Safari */
+  color: #fff;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
 }
