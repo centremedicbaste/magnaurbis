@@ -7,7 +7,7 @@ const scroll = new LocomotiveScroll({
 scroll.on('scroll', (args) => {
   const currentScrollY = args.scroll.y;
 
-  if (currentScrollY >= 50) {
+  if (currentScrollY >= 250) {
     document.body.classList.add("scrolled");
   } else {
     document.body.classList.remove("scrolled");

@@ -37,7 +37,17 @@ header.interior {
     max-width: 45px;
   }
 }
+
+.logo,button{
+  opacity: 0;
+}
 .scrolled {
+
+.logo,button{
+  opacity: 1;
+}
+
+
   header {
     background-color: #f3f2f0b5;
 
@@ -52,7 +62,7 @@ header.interior {
       color: $c-black;
     }
     svg path {
-      fill: $c-black;
+
     }
     .height-md {
       min-height: 150px;
