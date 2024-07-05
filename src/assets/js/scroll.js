@@ -1,6 +1,9 @@
 const scroll = new LocomotiveScroll({
   el: document.querySelector('[data-scroll-container]'),
   smooth: true,
+  mobile: {
+    smooth: true
+},
 });
 
 // Escuchar el evento de desplazamiento
