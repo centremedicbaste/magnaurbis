@@ -1,0 +1,74 @@
+.btn-primary {
+  color: $c-white;
+  background-color: #a447f6;
+  border: 1px solid #a447f6;
+}
+b {
+  @include font-bold;
+}
+strong {
+  color: $c-secondary;
+}
+b {
+  color: $c-secondary;
+}
+.bold {
+  background-color: #a447f6;;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn.btn--icon {
+  width: 300px;
+  height: 80px;
+  background-color: $c-white;
+  border-color: $c-white;
+  &:hover {
+    opacity: 1;
+    background-color: $c-white;
+    border-color: $c-white;
+    .btn__circle {
+      -webkit-clip-path: inset(0 round 4.25rem);
+      clip-path: inset(0 round 4.25rem);
+    }
+  }
+  .btn--icon-text {
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    line-height: 1;
+  }
+
+}
+.has-light {
+  .btn-primary {
+    color: $c-white;
+    border: 1px solid $c-accent;
+    background-color:$c-accent;
+  }
+  a {
+    color: white;
+  }
+  b {
+    color: white;
+  }
+  .menu-toogle-bars {
+    span {
+      background-color: $c-white;
+    }
+  }
+  .scrolled & {
+    .menu-toogle-bars {
+      span {
+        background-color: #000;
+      }
+    }
+  }
+  .menu-open & {
+    .menu-toogle-bars {
+      span {
+        background-color: #000;
+      }
+    }
+  }
+}
