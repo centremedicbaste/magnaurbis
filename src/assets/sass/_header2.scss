@@ -38,7 +38,7 @@ header.interior {
   }
 }
 header{
-  .logo,button{
+  .logo-simple,button{
     opacity: 0;
   }
 
@@ -47,7 +47,7 @@ header{
 .scrolled {
 
   header{
-    .logo,button{
+    .logo-simple,button{
       opacity: 1;
     }
   

@@ -14161,11 +14161,11 @@ header.interior svg path {
   }
 }
 
-header .logo, header button {
+header .logo-simple, header button {
   opacity: 0;
 }
 
-.scrolled header .logo, .scrolled header button {
+.scrolled header .logo-simple, .scrolled header button {
   opacity: 1;
 }
 .scrolled header {
