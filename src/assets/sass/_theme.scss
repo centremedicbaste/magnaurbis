@@ -76,3 +76,35 @@ b {
 svg{
   fill: transparent!important;
 }
+
+.btn.btn--big{
+  font-size: 12px;
+  @media (min-width: $break-md) {
+    font-size: 14px;
+  }
+}
+
+.logo-centrado{
+
+}
+
+.logo-simple{
+width: 138px;
+margin-top: 8px;
+svg{
+  width: 100%;
+  height: 100%;
+}
+  @media (min-width: $break-md) {
+    width: 242px;
+  }
+}
+
+.watermark{
+  position: absolute;
+  width: 50%;
+  @media (min-width: $break-md) {
+width: 50%;
+  }
+
+}

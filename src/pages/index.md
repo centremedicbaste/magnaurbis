@@ -5,8 +5,8 @@ metaTitle: Administradores de fincas en Barcelona - Magna Urbis
 metaDescription: Magna Urbis, expertos en administración de fincas y gestión de patrimonios en Barcelona con más de 100 años de experiencia.
 metaKeywords: administración de fincas, gestión de patrimonios, Barcelona, inmobiliaria, alquiler de viviendas
 metaRobots: index, follow
-hero_title: Administradores de fincas en Barcelona
-hero_description: Bienvenidos a Magna Urbis, empresa familiar de servicios inmobiliarios especializada en administración de Fincas y gestión de Patrimonios.
+hero_title: ADMINISTRADORES DE FINCAS EN BARCELONA
+hero_description: BIENVENIDOS A MAGNA URBIS
 hero_description2: Sumamos más de 100 años de experiencia, ofreciendo servicios integrales desde 1908.
 hero_btn: CONTACTA CON NOSOTROS
 introbenefits_title: Nuestros Beneficios
@@ -26,8 +26,8 @@ introbenefits_4description: Más de 100 años de experiencia nos respaldan en la
 
 hookfrase: Cuatro generaciones dedicadas a la administración de fincas.
 
-servicios: Nuestros Servicios
-servicios_description: Ofrecemos una amplia gama de servicios para la gestión y administración de tus bienes inmuebles en Barcelona.
+servicios: Ofrecemos servicios integrales
+servicios_description: Como empresa de servicios inmobiliarios centrada en la administración de Comunidades de Propietarios y en la gestión de patrimonios inmobiliarios en régimen de alquiler orientamos nuestros esfuerzos a la conservación y optimización de los activos inmobiliarios de nuestros clientes. 
 
 servicio1_title: Administración de fincas
 servicio1_content: Administramos edificios residenciales, de oficinas e industriales en Barcelona.
@@ -48,16 +48,17 @@ servicio6_title: Stock de inmuebles
 servicio6_content: Amplio stock de viviendas, locales y despachos tanto para el alquiler como para la venta.
 
 whytitle1_title: ¿Quiénes somos?
-whytitle1_subtitle: Nuestro legado
-whytitle1_description: Magna Urbis es una empresa familiar con más de 100 años de experiencia en la administración de fincas y gestión de patrimonios.^^A lo largo de cuatro generaciones, hemos aprendido y evolucionado para ofrecer siempre el mejor servicio a nuestros clientes.
+whytitle1_subtitle: QUIENES SOMOS
+whytitle1_description: Como empresa de servicios inmobiliarios centrada en la administración de Comunidades de Propietarios y en la gestión de patrimonios inmobiliarios en régimen de alquiler orientamos nuestros esfuerzos a la conservación y optimización de los activos inmobiliarios.
+whytitle1_description2: Como empresa de servicios inmobiliarios centrada en la administración de Comunidades de Propietarios y en la gestión de patrimonios inmobiliarios en régimen de alquiler orientamos nuestros esfuerzos a la conservación y optimización de los activos inmobiliarios de nuestros clientes. 
 
-box_img_title: Conócenos más a fondo
-box_img_description: Descubre nuestra historia y cómo podemos ayudarte.
-box_img_description2: Comprometidos con la excelencia desde 1908.
+box_img_title: Hoy en día no basta con simplemente administrar. Hay que hacerlo con rigor, transparencia, cercanía y profesionalidad.
+box_img_description: La administración de fincas es importante y debe confiarse a una empresa preparada y solvente, por ello adaptamos nuestros servicios a las necesidades de tu Comunidad de Propietarios
+box_img_description2: 
 
-introbenefits2_subtitle: Beneficios adicionales
-introbenefits2_content: Ofrecemos un servicio personalizado adaptado a las necesidades de cada cliente, asegurando la optimización de sus activos inmobiliarios.
-introbenefits2_subcontent: Contamos con un equipo profesional y dedicado, siempre dispuesto a ofrecer soluciones eficientes.
+introbenefits2_subtitle: Ofrecemos servicios integrales
+introbenefits2_content: Como empresa de servicios inmobiliarios centrada en la administración de Comunidades de Propietarios y en la gestión de patrimonios inmobiliarios en régimen de alquiler orientamos nuestros esfuerzos a la conservación y optimización de los activos inmobiliarios de nuestros clientes. 
+introbenefits2_subcontent: Estamos orgullosos de poder ofrecer, desde la seguridad que nuestra historia inspira y nuestro presente garantiza, un excelente servicio que asegura nuestra mayor recompensa - la confianza y satisfacción de nuestros clientes.
 
 whytitle2_title: ¿Por qué elegirnos?
 whytitle2_subtitle: Compromiso y experiencia

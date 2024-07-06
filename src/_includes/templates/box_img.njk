@@ -1,27 +1,19 @@
-<section class=" herohome inview  o-hidden   bg-hero  height-full  " data-scroll-section>
-  <div class="video-bg">
-    {% if global.home_image %}
-      {% if global.home_image.endsWith('.mp4') %}
-      <video poster="" autoplay="" muted="" loop="">
-        <source src="{{ global.home_image }}" type="video/mp4" />
-      </video>
-      {% else %}
-      <img class="parallax-image" data-scroll data-scroll-speed="-3"  src="/assets/static/images/casa2.webp" alt="">
-
-      {% endif %}
-    {% endif %}
+<section class=" herohome inview  o-hidden   bg-hero  height-full bg-dark  " data-scroll-section>
+  <div class="">
+    <img class="parallax-image" data-scroll data-scroll-speed="-3"  src="/assets/static/images/casa2.webp" alt="">
   </div>
+
   <div class=" container-global mx-auto    ">
-    <div class="row section-x  align-middle  height-full content-end  ">
+    <div class="row section-x  align-middle  height-full align-multi-bottom   ">
       <div class="col-xs-9 col-md-5 col-lg-5   ">
 
       </div>
 
 <div class="col-xs-12 col-md-1 col-lg-1 "></div>
 
-      <div class="col-xs-6 col-md-6 col-lg-6 front-text ">
+      <div class="col-xs-12 col-md-6 col-lg-6 front-text content-end ">
 
-        <div class="box-frost text-left p-24 ">
+        <div class="box-frost text-left p-24 mb-32 ">
 
 
 
@@ -43,13 +35,13 @@
             </div>
       
 
-      <div class="animate-box2 mb-32 mt-64" data-delay="3">
+      {# <div class="animate-box2 mb-32 mt-64" data-delay="3">
         <a href="#contacta" >
           <button type="button" class="btn-primary btn--big btn ">
             {{hero_btn}}
           </button>
         </a>
-      </div>
+      </div> #}
 
 
       {# <div class="content-middle mb-16 animate-box" data-delay="2">
@@ -63,23 +55,7 @@
 
 
       </div>
-      {% if not noheroimage %}
-      <div class="col-xs-12 col-sm-6 ">
-        {% if imagemini %}
-        <div class="rat-16-9">
-          <div class="rat-content">
-            <img class="video-cover" width="100%" height="auto" src="{{ imagemini }}" alt="{{ imageAlt }}" />
-          </div>
-        </div>
-        {% elseif image %}
-        <div class="rat-16-9">
-          <div class="rat-content">
-            <img class="video-cover" width="100%" height="auto" src=" {{ image }}" alt="{{ imageAlt }}" />
-          </div>
-        </div>
-        {% endif %}
-      </div>
-      {% endif %}
+
     </div>
   </div>
 </section>
