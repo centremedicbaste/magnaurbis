@@ -2,7 +2,7 @@
   <div class="video-bg">
     {% if global.home_image %}
       {% if global.home_video %}
-      <video poster="" autoplay="" muted="" loop="">
+      <video poster="" autoplay muted loop playsinline>
         <source src="{{ global.home_video }}" type="video/mp4" />
       </video>
       {% else %}
