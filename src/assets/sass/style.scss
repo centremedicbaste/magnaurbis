@@ -139,42 +139,14 @@ a {
   }
 }
 /**********************ELENVENTY*************************/
-.input,
-.textarea,
-.select select {
-  padding-left: 0;
-  background-color: transparent;
-  border-color: $c-white;
-  border-width: 0 0 1px 0;
-  color: $c-primary;
-  max-width: 100%;
-  width: 100%;
-  font-size: 16px;
-  line-height: 1;
-  &:focus {
-    border-width: 0 0 2px 0;
-  }
-}
+
 img {
   max-width: initial;
 }
 .fill {
   object-fit: cover;
 }
-.form-input-label-2>input,
-.form-input-label-2>label,
-.form-input-label-2>textarea,
-.error-zone>input,
-.error-zone>label {
-  font-family: "font-regular";
-  padding-left: 0;
-  font-weight: normal;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-.form-input-label-2 input {
-  background-color: transparent;
-}
+
 ul.list-clear li {
   list-style: none;
   margin: 16px 0;
@@ -186,6 +158,7 @@ ul.list-clear li {
 .video-bg2{
 
   video{
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -674,9 +647,7 @@ a:hover {
   font-size: 12px;
   letter-spacing: 0;
 }
-.btn--full {
-  border-radius: 50px;
-}
+
 .article-loop {
   border-top: 2px solid black
 }
@@ -963,11 +934,7 @@ a:hover {
   align-items: center;
   border-radius: 50%;
 }
-.input,
-.textarea,
-.select select {
-  border-bottom: 1px solid $c-primary;
-}
+
 .fluid-3-b {
   letter-spacing: -3px;
   @media (min-width: $break-sm) {
@@ -976,8 +943,7 @@ a:hover {
 }
 .wmax-450 {
   max-width: 450px;
-  margin-left: auto;
-  margin-right: auto;
+
 }
 .word-wrap {
   span {
@@ -1122,4 +1088,15 @@ html.lenis, html.lenis body {
 
 .sub-image{
   margin-top: -150px;
+}
+
+.box_img{
+    display: flex;
+    align-content: space-between;
+
+  @media (min-width: $break-sm) {
+    column-count: 2;
+  }
+
+
 }

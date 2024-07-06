@@ -1,26 +1,20 @@
-
-<div class="front-section" data-scroll-section>   
+<div class="front-section" data-scroll-section>
     <section class="container-5">
-
-<div class="row">
-
-    <div class="col-xs-12 text-center ptr-120 pbr-120">
-        <div class="text-18-r mb-24 bold">¿Tienes alguna duda?</div>
-<div class="fluid-4-r">CONTACTA CON NOSOTROS</div>
-    </div>
-</div>
-<form name="contactformulario" method="POST" action="/confirmacion.html" data-netlify="true"  netlify-honeypot="bot-field" >
-
-        <div class="row   md:reverse">
-       
-
-            <div class="col-xs-12 col-md-6 pt-16">
-    
+        <div class="row">
+            <div class="col-xs-12 text-center ptr-120 pbr-120">
+                <div class="text-18-r mb-24 bold">¿Tienes alguna duda?</div>
+                <div class="fluid-4-r">CONTACTA CON NOSOTROS</div>
+            </div>
+        </div>
+        <form name="contactformulario" method="POST" action="/confirmacion.html" data-netlify="true"
+            netlify-honeypot="bot-field">
+            <div class="row   md:reverse">
+                <div class="col-xs-12 col-md-6 ">
                     <p class="hidden">
                         <label>
-                         <input name="bot-field" />
+                            <input name="bot-field" />
                         </label>
-                      </p>
+                    </p>
                     <div class="row">
                         <div class="col-xs-12 mb-16 ">
                             <div class="form-input-label-2">
@@ -41,41 +35,43 @@
                                 <label for='email'>teléfono</label>
                             </div>
                         </div>
-
                         <div class="col-xs-12 mb-16 ">
                             <div class="form-input-label-2">
                                 <input id="empresa" type="text" placeholder="empresa" class="input" name="empresa">
                                 <label for='empresa'>Empresa</label>
                             </div>
                         </div>
-                
-                        <div class="col-xs-10 mb-24">
-                            <label>
+         
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 mb-32 ">
+               
+                        <div class="form-input-label-2">
+                            <textarea id="textarea" placeholder="Tu mensaje" class="textarea" name="mensaje"></textarea>
+                        </div>
+               
+                </div>
+
+
+                <div class="col-xs-12 col-md-6">
+
+
+           
+                        <div class="mb-32">
+                            <label >
                                 <input type="checkbox" name="politicas" required>
-                                He leído y acepto los Términos y condiciones y entiendo la información acerca del uso de mis datos personales explicada en la Política de Privacidad.
+                                He leído y acepto los Términos y condiciones y entiendo la información acerca del uso de
+                                mis datos personales explicada en la Política de Privacidad.
                             </label>
                         </div>
-                        <div class="col-xs-12 mb-16 ">
-                            <button aria-label="enviar email" class="btn btn-primary btn--full" type="submit">         {{global.banner_button}}</button>
-                        </div>
-                    </div>
-              
-            </div>
 
 
-        <div class="col-xs-12 col-md-6 mb-32 ">
-
-            <div class="col-xs-12 mb-16 ">
-                <div class="form-input-label-2">
-                    <textarea id="textarea" placeholder="Tu mensaje" class="textarea" name="mensaje"></textarea>
+      
+                        <button aria-label="enviar email" class="btn btn-primary btn--full" type="submit">
+                            {{global.banner_button}}</button>
+           
                 </div>
             </div>
-
-        </div>
-
-        </div>
-    </form>
-
-
+        </form>
     </section>
 </div>

@@ -108,3 +108,31 @@ width: 50%;
   }
 
 }
+.form-input-label-2{
+
+  .input, .textarea, .select select {
+    border: 1px solid #DCDCDC;
+    border-color: #DCDCDC;
+    border-width: 1px;
+    padding-inline: 16px;
+  }
+
+
+
+  
+
+}
+
+
+.form-input-label-2 > input,
+.form-input-label-2 > label,
+.form-input-label-2 > textarea,
+.error-zone > input,
+.error-zone > label {
+
+  padding-left: 16px;
+  font-weight: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
