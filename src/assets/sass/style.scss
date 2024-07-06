@@ -631,6 +631,21 @@ a:hover {
     padding-left: 4rem;
   }
 }
+
+
+
+.container-global-2 {
+  padding-right: 16px;
+  padding-left: 16px;
+  max-width: 250px;
+  @media (min-width: $break-sm) {
+    max-width: 1650px;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
+
 .btn--big {
   padding: 15px 40px;
   border-radius: 50px;

@@ -32,18 +32,14 @@ $c-bg-dark: var(--c-bg-dark);
 
 
 $minheaders:/* name:mobile,768,992,1280,line-height,font */ 
-  ( h1: ( 32px, 40px, 1.2, "medium", ), 
-  h2: ( 24px, 32px, 1.2, "light", ), 
-  h3: ( 18px, 24px, 1.2, "medium", ), 
-  h4: ( 16px, 18px, 1.2, "bold", ), 
-  h5: ( 16px, 16px, 1.2, "bold", ), 
-  h6: ( 12px, 14px, 1.2, "medium", ), 
-  h7: ( 10px, 12px, 1.2, "medium", ), 
-  h8: ( 8px, 10px, 1.2, "medium", ), 
-  h9: ( 12px, 18px, 1.2, "medium", ), 
+  ( h1: ( 72px, 72px, 1.1, "regular", ), 
+  h2: ( 24px, 42px, 1.1, "regular", ), 
+  h3: ( 32px, 48px, 1.1, "regular", ), 
+  h4: ( 24px, 28px, 1.1, "regular", ), 
+  h5: ( 14px, 18px, 1.1, "regular", ), 
 
-  p1: ( 14px, 14px, 1.4, "regular", ),
-  p1-b: ( 14px, 14px, 1.4, "bold", ),
+
+  p1: ( 14px, 16px, 1.4, "regular", ),
   p2: ( 14px, 18px, 1.4, "regular", ),
   p3: ( 12px, 14px, 1.4, "regular", ),
   p4: ( 14px, 18px, 1.4, "medium", ), );

@@ -71,7 +71,7 @@
   </div>
   <div class="is-flex">
     <div class="pr-16"> <img width="40px" src="https://lh3.googleusercontent.com/a/{{img}}" alt=""></div>
-    <div class="bold">
+    <div class="c-accent">
       {{ empresa }} <br>
       <span class="p3"> {{ fecha }} </span>
     </div>
@@ -178,7 +178,7 @@
   </div>
   <div class="is-flex">
     <div class="pr-16"> <img width="40px" src="https://lh3.googleusercontent.com/a/{{img}}" alt=""></div>
-    <div class="bold">
+    <div class="c-accent">
       {{ empresa }} <br>
       <span class="p1"> {{ fecha }} </span>
     </div>
@@ -205,7 +205,7 @@
 <div class="word-wrap">
   {% for palabra in palabras %}
   {% if palabra.startsWith('**') %}
-  <span class="word bold {{type}} "  {% if animationDelay %} style="animation-delay: {{ animationDelay }}ms "   {% endif %} >{{ palabra | replace('**', '') }}
+  <span class="word c-accent {{type}} "  {% if animationDelay %} style="animation-delay: {{ animationDelay }}ms "   {% endif %} >{{ palabra | replace('**', '') }}
   </span>
   {% elseif palabra == '--' %}
   {{ palabra | replace('--', '<br>') | safe }}
