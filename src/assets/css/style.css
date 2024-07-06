@@ -1351,6 +1351,15 @@ input[type=number] {
   height: 100%;
 }
 
+.height-sm {
+  min-height: 200px;
+}
+@media (min-width: 768px) {
+  .height-sm {
+    min-height: 350px;
+  }
+}
+
 .height-lg {
   min-height: 90vh;
 }
@@ -16562,6 +16571,10 @@ html.lenis, html.lenis body {
   aspect-ratio: 1/1;
 }
 
+.ar-4-3 {
+  aspect-ratio: 4/3;
+}
+
 .box-frost {
   background: rgba(255, 255, 255, 0.1);
   /* Ligera transparencia */
@@ -16572,4 +16585,8 @@ html.lenis, html.lenis body {
   color: #fff;
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
+}
+
+.sub-image {
+  margin-top: -150px;
 }
