@@ -1095,7 +1095,8 @@ html.lenis, html.lenis body {
     align-content: space-between;
 
   @media (min-width: $break-sm) {
-    column-count: 2;
+
+    align-content: center;
   }
 
 

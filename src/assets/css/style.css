@@ -16587,6 +16587,6 @@ html.lenis, html.lenis body {
 }
 @media (min-width: 768px) {
   .box_img {
-    column-count: 2;
+    align-content: center;
   }
 }
