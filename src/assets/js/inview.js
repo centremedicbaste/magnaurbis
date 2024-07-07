@@ -113,18 +113,29 @@ document.addEventListener("DOMContentLoaded", function () {
     const text = element.textContent;
     element.textContent = '';
     const words = text.split(/(\s+)/);
+    
     words.forEach(word => {
       if (word.trim().length > 0) {
-        const wordSpan = document.createElement('span');
-        wordSpan.classList.add('term'); // Changed class from 'word' to 'term'
-        wordSpan.textContent = word;
-        wordSpan.style.opacity = 0;  // Inicializa la opacidad
-        wordSpan.style.transform = 'translateY(20px)';  // Inicializa la posición
-        element.appendChild(wordSpan);
+        const fragments = word.split('^');
+        
+        fragments.forEach((fragment, index) => {
+          if (fragment.trim().length > 0) {
+            const wordSpan = document.createElement('span');
+            wordSpan.classList.add('term'); // Mantiene la clase 'term'
+            wordSpan.textContent = fragment;
+            wordSpan.style.opacity = 0;  // Inicializa la opacidad
+            wordSpan.style.transform = 'translateY(20px)';  // Inicializa la posición
+            element.appendChild(wordSpan);
+          }
+          if (index < fragments.length - 1) {
+            element.appendChild(document.createElement('br'));
+          }
+        });
       } else {
         element.appendChild(document.createTextNode(word));
       }
     });
+  
     animateWordsObserver.observe(element);
   });
 
