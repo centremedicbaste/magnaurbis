@@ -118,17 +118,7 @@
     width: 100%;
     margin: 0;
   }
-  img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    opacity: 1;
-    transition: opacity 0.24s ease-out;
-    will-change: opacity;
-  }
+
 }
 
 .swiper-container-img {

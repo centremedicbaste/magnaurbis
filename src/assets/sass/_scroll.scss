@@ -94,10 +94,19 @@ html.has-scroll-dragging {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+
     object-fit: cover;
     object-position: center;
     z-index: 2;
+    @media (min-width: $break-md) {
+
+      margin-bottom: -30px;
+      margin-top: -30px;
+    }
 
 
+}
+
+.ar-3-35{
+  aspect-ratio: 3/3.5;
 }

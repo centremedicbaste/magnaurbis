@@ -109,13 +109,23 @@
     {
       "service_name": "Administración de fincas",
        "service_content": "Administramos edificios residenciales, de oficinas e industriales en Barcelona.",
-       "service_img": "service_img"
+       "service_img": "servicio_1"
   
       },
     {
       "service_name": "Patrimonios inmobiliarios",
        "service_content": "Gestionamos tus activos inmobiliarios adaptando nuestros servicios a tus necesidades...",
-       "service_img": "service_img"
+       "service_img": "servicio_2"
+    },
+    {
+      "service_name": "Gestión comercial",
+       "service_content": "Alquilamos o vendemos tus propiedades, y te ayudamos a encontrar las que mejor se ajusten a tu perfil patrimonial.",
+       "service_img": "servicio_3"
+    },
+    {
+      "service_name": "Lorem ipsum dolor sit amet",
+       "service_content": "Gestionamos tus activos inmobiliarios adaptando nuestros servicios a tus necesidades...",
+       "service_img": "servicio_4"
     }
   ],
 

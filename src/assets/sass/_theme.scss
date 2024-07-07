@@ -162,7 +162,7 @@ width: 50%;
   bottom: 0px;
   position: absolute;
 
-  min-height: 130px;
+  min-height: 160px;
   width: calc(100% - 32px);
   margin: 16px;
   
@@ -185,7 +185,24 @@ width: 50%;
   }
 }
 .border-b{
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #A1A1A1;
 
 }
 
+
+
+.c-direction-block_item {
+  font-size: 10vw;
+  font-weight: 600;
+  line-height: 1;
+
+  text-transform: uppercase;
+  white-space: nowrap;
+
+span {
+    background-color: #fff;
+    display: block;
+    padding: 0 20px;
+    white-space: nowrap;
+}
+}
