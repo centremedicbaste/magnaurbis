@@ -7,7 +7,7 @@
   "tag_manager": "GTM-.....R",
   "home": "Inicio",
   "about": "Nosotros",
-  "services": "Servicios",
+  "service": "Servicios",
   "blog": "blog",
   "contact": "Contacta",
   "search_console": "",
@@ -103,6 +103,22 @@
   "contact_bg_image": "contact_bg_image",
   "faq_title": "faq_title",
   "faq_description": "faq_description",
+
+
+  "services": [
+    {
+      "service_name": "Administración de fincas",
+       "service_content": "Administramos edificios residenciales, de oficinas e industriales en Barcelona.",
+       "service_img": "service_img"
+  
+      },
+    {
+      "service_name": "Patrimonios inmobiliarios",
+       "service_content": "Gestionamos tus activos inmobiliarios adaptando nuestros servicios a tus necesidades...",
+       "service_img": "service_img"
+    }
+  ],
+
   "faq": [
     {
       "faq_question": "faq_question",

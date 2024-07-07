@@ -16,14 +16,22 @@
         <!-- Additional required wrapper -->
         <ul class="swiper-wrapper my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
           <!-- Slides -->
-          {% for galeria in global.galeria.split(',') %}
+
+
+          {% for item in global.services %}
+
           <li class="swiper-slide border-20" itemprop="associatedMedia" itemscope
             itemtype="http://schema.org/ImageObject">
             <a class="slide-link" title="click to zoom-in" href="{{ global.imageDir }}galeria/zoom/{{ galeria }}.jpg"
               itemprop="contentUrl" data-size="1200x1200">
+
+              <div class="swiper-slide-info">
+      <div class="h4 mb-16">{{item.service_name}}</div>
+      <div class="p2">{{item.service_content}}</div>
+              </div>
               <div class="rat-3-4 ">
                 <div class="rat-content">
-                  <img src="{{ global.imageDir }}galeria/{{ galeria }}.jpg" itemprop="thumbnail" alt="{{ galeria }}" />
+                  <img src="{{ global.imageDir }}servicios/{{item.service_img}}.jpg" itemprop="thumbnail" alt="{{ galeria }}" />
                 </div>
               </div>
             </a>
