@@ -1101,10 +1101,16 @@ html.lenis, html.lenis body {
 
 }
 
-.sub-image{
-  margin-top: -150px;
-}
+.sub-image {
+  margin-top: -50px;
 
+  @media (min-width: $break-sm) {
+
+margin-top: -100px;
+  }
+
+
+}
 .box_img{
     display: flex;
     align-content: space-between;

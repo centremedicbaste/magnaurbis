@@ -1352,7 +1352,7 @@ input[type=number] {
 }
 
 .height-sm {
-  min-height: 200px;
+  min-height: 350px;
 }
 @media (min-width: 768px) {
   .height-sm {
@@ -11921,7 +11921,7 @@ svg {
 .c-direction-block_item span {
   background-color: #fff;
   display: block;
-  padding: 0 20px;
+  padding: 0;
   white-space: nowrap;
 }
 
@@ -14245,7 +14245,7 @@ svg {
 .c-direction-block_item span {
   background-color: #fff;
   display: block;
-  padding: 0 20px;
+  padding: 0;
   white-space: nowrap;
 }
 
@@ -16661,7 +16661,12 @@ html.lenis, html.lenis body {
 }
 
 .sub-image {
-  margin-top: -150px;
+  margin-top: -50px;
+}
+@media (min-width: 768px) {
+  .sub-image {
+    margin-top: -100px;
+  }
 }
 
 .box_img {
