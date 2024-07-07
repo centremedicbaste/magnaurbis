@@ -14627,7 +14627,7 @@ a.logo div {
 
 .swiper-container-img {
   position: relative;
-  padding-left: 0;
+  padding-left: 16px;
   padding-top: 1.5em;
   padding-bottom: 4em;
   /* Swiper custom pagination */
@@ -16677,4 +16677,9 @@ html.lenis, html.lenis body {
   .box_img {
     align-content: center;
   }
+}
+
+.reset-margin {
+  margin-right: -16px;
+  margin-left: -16px;
 }
