@@ -206,3 +206,11 @@ span {
     white-space: nowrap;
 }
 }
+.form-input-label-2>input, 
+.form-input-label-2>label, 
+.form-input-label-2>textarea, 
+.error-zone>input,
+.error-zone>label {
+
+  text-transform: initial !important;
+}
