@@ -2318,7 +2318,7 @@ mark {
     font-family: "font-regular", Helvetica, "Arial ", "Lucida Grande", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.4;
+    line-height: 1.6;
   }
   .p2 {
     font-family: "font-regular", Helvetica, "Arial ", "Lucida Grande", sans-serif;
@@ -2362,14 +2362,14 @@ mark {
   }
   .p1 {
     font-size: 16px;
-    line-height: 1.4;
+    line-height: 1.6;
   }
   .p2 {
     font-size: 18px;
     line-height: 1.4;
   }
   .p3 {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.4;
   }
   .p4 {
@@ -15623,10 +15623,6 @@ ul.list-clear li {
   margin: 16px 0;
 }
 
-.container-2 {
-  width: 100%;
-}
-
 .video-bg2 video {
   pointer-events: none;
   position: absolute;
@@ -15794,16 +15790,6 @@ ul.list-clear li {
   margin-bottom: 8px;
 }
 
-.container-3 {
-  padding-right: 24px;
-  padding-left: 24px;
-  margin-right: auto;
-  margin-left: auto;
-  position: relative;
-  width: 100%;
-  max-width: 900px;
-}
-
 @media (min-width: 768px) {
   .vertical-wrap-3 {
     position: absolute;
@@ -15914,10 +15900,6 @@ ul.list-clear li {
   transform-origin: center right;
 }
 
-.container-fullpage {
-  overflow: hidden;
-}
-
 .flipH {
   direction: rtl;
   unicode-bidi: bidi-override;
@@ -15957,34 +15939,6 @@ ul.list-clear li {
   }
 }
 
-.container-0 {
-  padding-right: 16px;
-  padding-left: 16px;
-  margin: 0 auto;
-  position: relative;
-  width: 100%;
-  max-width: 992px;
-}
-
-@media (min-width: 768px) {
-  .container-0 {
-    width: 90%;
-    max-width: 768px;
-  }
-}
-@media (min-width: 992px) {
-  .container-0 {
-    width: 80%;
-    max-width: 992px;
-  }
-}
-@media (min-width: 1280px) {
-  .container-0 {
-    margin: 0;
-    width: 80%;
-    max-width: 1280px;
-  }
-}
 ul.list-clear li {
   list-style: none;
   margin: 8px 0;
@@ -16142,31 +16096,6 @@ a {
 
 a:hover {
   opacity: 0.8;
-}
-
-.container-global {
-  padding-right: 16px;
-  padding-left: 16px;
-  max-width: 1650px;
-}
-@media (min-width: 992px) {
-  .container-global {
-    padding-right: 4rem;
-    padding-left: 4rem;
-  }
-}
-
-.container-global-2 {
-  padding-right: 16px;
-  padding-left: 16px;
-  max-width: 250px;
-}
-@media (min-width: 768px) {
-  .container-global-2 {
-    max-width: 1650px;
-    padding-right: 4rem;
-    padding-left: 4rem;
-  }
 }
 
 .btn--big {
@@ -16535,6 +16464,10 @@ a:hover {
   max-width: 450px;
 }
 
+.wmax-300 {
+  max-width: 300px;
+}
+
 .word-wrap span {
   display: inline;
 }
@@ -16562,6 +16495,102 @@ a:hover {
 @media (min-width: 768px) {
   .column-container {
     column-count: 2;
+  }
+}
+
+.container-2 {
+  width: 100%;
+}
+
+.container-3 {
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+}
+
+.container-fullpage {
+  overflow: hidden;
+}
+
+.container-0 {
+  padding-right: 16px;
+  padding-left: 16px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 992px;
+}
+
+@media (min-width: 768px) {
+  .container-0 {
+    width: 90%;
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  .container-0 {
+    width: 80%;
+    max-width: 992px;
+  }
+}
+@media (min-width: 1280px) {
+  .container-0 {
+    margin: 0;
+    width: 80%;
+    max-width: 1280px;
+  }
+}
+.container-global {
+  padding-right: 16px;
+  padding-left: 16px;
+  max-width: 1650px;
+}
+@media (min-width: 992px) {
+  .container-global {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
+.container-global-2 {
+  padding-right: 16px;
+  padding-left: 16px;
+  max-width: 250px;
+}
+@media (min-width: 768px) {
+  .container-global-2 {
+    max-width: 1650px;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
+.container-global-3 {
+  padding-right: 16px;
+  padding-left: 16px;
+  max-width: 1440px;
+}
+@media (min-width: 992px) {
+  .container-global-3 {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
+.container-global-4 {
+  padding-right: 16px;
+  padding-left: 16px;
+  max-width: 250px;
+}
+@media (min-width: 992px) {
+  .container-global-4 {
+    max-width: 1440px;
+    padding-right: 4rem;
+    padding-left: 4rem;
   }
 }
 
