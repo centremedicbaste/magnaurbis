@@ -117,7 +117,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // Define la ruta a la carpeta de templates
-  const templatesDir = path.resolve(__dirname, 'node_modules', 'boilerplate-modules', 'src', '_includes', 'templates');
+  const templatesDir = path.resolve(__dirname, 'src', '_includes', 'templates');
   const templates = fs.readdirSync(templatesDir).filter(file => file.endsWith('.njk'));
 
   eleventyConfig.addGlobalData('pluginTemplates', templates.map(file => path.join(templatesDir, file)));
@@ -187,6 +187,22 @@ module.exports = function (eleventyConfig) {
       decoding: "async",
     },
   });
+
+  // Add filenames to .njk files
+  eleventyConfig.on('beforeBuild', () => {
+    const templatesDir = path.resolve(__dirname, 'src', '_includes', 'templates');
+    const templates = fs.readdirSync(templatesDir).filter(file => file.endsWith('.njk'));
+    
+    templates.forEach(file => {
+      const filePath = path.join(templatesDir, file);
+      const content = fs.readFileSync(filePath, 'utf-8');
+      if (!content.startsWith(`<!-- ${file} -->`)) {
+        const newContent = `<!-- ${file} -->\n` + content;
+        fs.writeFileSync(filePath, newContent, 'utf-8');
+      }
+    });
+  });
+
   return {
     dir: {
       data: "_data",
