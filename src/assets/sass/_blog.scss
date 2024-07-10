@@ -81,7 +81,7 @@
   }
 
   p {
-    @include fluid-text($min_width, $break-lg, 18px, 21px, 1.4);
+    @include fluid-text($min_width, $break-lg, 14px, 16px, 1.4);
   }
 
 
