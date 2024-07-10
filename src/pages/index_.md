@@ -1,6 +1,6 @@
 ---
 layout: pages/_index.njk
-permalink: /
+permalink: 
 metaTitle: Administradores de fincas en Barcelona - Magna Urbis
 metaDescription: Magna Urbis, expertos en administración de fincas y gestión de patrimonios en Barcelona con más de 100 años de experiencia.
 metaKeywords: administración de fincas, gestión de patrimonios, Barcelona, inmobiliaria, alquiler de viviendas
