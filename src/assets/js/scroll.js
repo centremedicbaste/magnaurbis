@@ -17,5 +17,10 @@ scroll.on('scroll', (args) => {
   }
 });
 
+document.querySelector('#contacta').addEventListener('click', (event) => {
+  event.preventDefault();
+  scroll.scrollTo('#contacta_4');
+});
+
 // Actualizar Locomotive Scroll después de cargar contenido dinámico si es necesario
 scroll.update();
