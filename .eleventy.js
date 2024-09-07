@@ -41,7 +41,6 @@ module.exports = function (eleventyConfig) {
   // Netlify/Decap CMS + config files bundled with webpack
   eleventyConfig.addPassthroughCopy("dist");
   eleventyConfig.addPairedShortcode("myShortcode", function (content) {
-    // Method A: ✅ ideal para encapsular {% myShortcode %}  dfdfdf  {% endmyShortcode %}
     return `<div class="is-flex full-container-blog content-center">${content}</div>`;
   });
   eleventyConfig.addFilter("nextInCollection", (collection, currentSlug) => {
@@ -51,16 +50,13 @@ module.exports = function (eleventyConfig) {
     });
     return pages.length ? pages[0] : false;
   });
-  eleventyConfig.addFilter(
-    "nextInCollectionnext",
-    (collection, currentSlug) => {
-      const currentIndex = getIndex(collection, currentSlug);
-      const pages = collection.filter((page, index) => {
-        return index == currentIndex + 2 ? page : false;
-      });
-      return pages.length ? pages[0] : false;
-    }
-  );
+  eleventyConfig.addFilter("nextInCollectionnext", (collection, currentSlug) => {
+    const currentIndex = getIndex(collection, currentSlug);
+    const pages = collection.filter((page, index) => {
+      return index == currentIndex + 2 ? page : false;
+    });
+    return pages.length ? pages[0] : false;
+  });
   eleventyConfig.addFilter("prevInCollection", (collection, currentSlug) => {
     const currentIndex = getIndex(collection, currentSlug);
     const pages = collection.filter((page, index) => {
@@ -68,44 +64,34 @@ module.exports = function (eleventyConfig) {
     });
     return pages.length ? pages[0] : false;
   });
-
-  eleventyConfig.addFilter(
-    "prevInCollectionnext",
-    (collection, currentSlug) => {
-      const currentIndex = getIndex(collection, currentSlug);
-      const pages = collection.filter((page, index) => {
-        return index == currentIndex - 2 ? page : false;
-      });
-      return pages.length ? pages[0] : false;
-    }
-  );
-
+  eleventyConfig.addFilter("prevInCollectionnext", (collection, currentSlug) => {
+    const currentIndex = getIndex(collection, currentSlug);
+    const pages = collection.filter((page, index) => {
+      return index == currentIndex - 2 ? page : false;
+    });
+    return pages.length ? pages[0] : false;
+  });
   eleventyConfig.addShortcode("image", function (src, alt, title, cla) {
-    const dimensions = sizeOf(`./src/assets/static/images/${src}`); // Ajusta el path según tu estructura de directorios
+    const dimensions = sizeOf(`./src/assets/static/images/${src}`);
     return `<img class="${cla}" src="/assets/static/images/${src}" alt="${alt}" title="${title}" width="${dimensions.width}" height="${dimensions.height}">`;
   });
-
   eleventyConfig.addShortcode("br", function () {
-    // Method A: ✅ ideal para tags de espacios {% br %}
     return `<br>`;
   });
   eleventyConfig.addShortcode("br2", function () {
-    // Method A: ✅ ideal para tags de espacios {% br2 %}
     return `<br><br>`;
   });
   eleventyConfig.addShortcode("br3", function () {
-    // Method A: ✅ ideal para tags de espacios {% br3 %}
     return `<br><br><br>`;
   });
-
+  eleventyConfig.addFilter("wrapWithDiv", function(markdownString) {
+    return markdownString.replace(/--(.*?)--/g, '<div class="bold">$1</div>');
+  });
   eleventyConfig.addNunjucksFilter("mdbr", function(value) {
     const nunjucksSafe = require("nunjucks").runtime.markSafe;
-  
-    // Verificar si la variable está vacía o nula, y retornar una cadena vacía segura en ese caso
     if (!value) {
       return nunjucksSafe('');
     }
-  
     return nunjucksSafe(value
       .replace(/-(.*?)-/g, '<span class="bold">$1</span>')
       .replace(/\*\*\*/g, '<br>')
@@ -155,7 +141,6 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addFilter("prevInCollection3", (collection, currentSlug) => {
     const currentIndex = getIndex(collection, currentSlug);
-    // Busca dos posiciones adelante para encontrar el siguiente del siguiente
     const pages = collection.filter((page, index) => {
       return index === currentIndex - 3 ? page : false;
     });
@@ -167,21 +152,17 @@ module.exports = function (eleventyConfig) {
     }
     return value;
   });
+
   // WebC
   eleventyConfig.addPlugin(eleventyWebcPlugin, {
     components: [
-      // …
-      // Add as a global WebC component
       "npm:@11ty/eleventy-img/*.webc",
     ],
   });
   eleventyConfig.addPlugin(eleventyImagePlugin, {
-    // Set global default options
     formats: ["webp"],
     urlPath: "/assets/static/",
     outputDir: "public/assets/static/",
-    // Notably `outputDir` is resolved automatically
-    // to the project output directory  npm install eleventy-plugin-seo --save falta este
     defaultAttributes: {
       loading: "lazy",
       decoding: "async",

@@ -154,5 +154,27 @@ fluid_1   va desde 12px hasta 200px p.ej
 
 
 
-
-
+ # Filtro Nunjucks: mdbr
+ 
+ Este filtro personalizado de Nunjucks procesa texto con formato markdown simplificado.
+ 
+ ## Funcionalidad:
+ 
+ 1. Convierte texto entre guiones (-) en texto en negrita usando <span>.
+ 2. Reemplaza *** y ** por saltos de línea <br>.
+ 3. Convierte secuencias de ^ en múltiples saltos de línea.
+ 
+ ## Uso:
+ 
+ ```nunjucks
+ {{ "Texto -en negrita- con ***saltos de línea** y ^^^múltiples saltos" | mdbr }}
+ ```
+ 
+ ## Resultado:
+ 
+ ```html
+ Texto <span class="bold">en negrita</span> con <br><br><br>múltiples saltos
+ ```
+ 
+ @param {string} value - El texto a procesar
+ @returns {string} El texto procesado con HTML

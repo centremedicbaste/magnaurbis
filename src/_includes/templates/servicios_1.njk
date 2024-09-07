@@ -3,8 +3,8 @@
   <div class="container-global mx-auto">
     <div class="row ">
       <div class="col-xs-12 col-sm-12 text-center">
-        <h4 class="h5 mb-24 c-accent">Para que no te preocupes de nada </h4>
-        <h3 class="h2 mb-24">SERVICIOS PARA PROPIETARIOS </h3>
+        <h4 class="h5 mb-24 c-accent">    {{servicios}} </h4>
+        <h3 class="h2 mb-24">          {{servicios_description}}</h3>
       </div>
     </div>
   </div>
@@ -19,22 +19,22 @@
           <!-- Slides -->
 
 
-          {% for item in global.services %}
+          {% for item in global_index.services %}
 
           <li class="swiper-slide border-20" itemprop="associatedMedia" itemscope
             itemtype="http://schema.org/ImageObject">
-            <a class="slide-link" title="click to zoom-in" href="{{ global.imageDir }}galeria/zoom/{{ galeria }}.jpg"
+            <a class="slide-link" title="click to zoom-in" href="{{ global_index.imageDir }}galeria/zoom/{{ galeria }}.jpg"
               itemprop="contentUrl" data-size="1200x1200">
 
               <div class="swiper-slide-info">
-      <div class="h4 mb-16">{{item.service_name}}</div>
+      <div class="h4 mb-16">{{item.service_name}}   </div>
       <div class="p2">{{item.service_content}}</div>
               </div>
               <div class="ar-3-35 ">
        
 
                   
-                  <img class="parallax-box " data-scroll data-scroll-speed="-.8" src="{{ global.imageDir }}servicios/{{item.service_img}}.jpg" itemprop="thumbnail" alt="{{ galeria }}" />
+                  <img class="parallax-box " data-scroll data-scroll-speed="-.8" src="{{ global_index.imageDir }}servicios/{{item.service_img}}.jpg" itemprop="thumbnail" alt="{{ galeria }}" />
             
               </div>
             </a>

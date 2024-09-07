@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{global.lang}}">
+<html lang="{{ global.lang }}">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,103 +9,73 @@
     <meta name="robots" content="{{ metaRobots }}" />
     <meta name="description" content="{{ metaDescription or eleventyComputed.metaDescription or metadata.description }}" />
     <meta name="keywords" content="{{ metaKeywords or eleventyComputed.metaKeywords or metaKeywords.description }}" />
+    
+    <!-- Favicon y manifest -->
     <link rel="manifest" href="/site.webmanifest">
-
     <link rel="icon" type="image/webp" href="{{ global.url }}/assets/static/about.jpg" />
 
+    <!-- Estilos CSS -->
     <style>
       :root {
-        --c-accent: {{global.c_accent}};
-        --c-primary: {{global.c_primary}};
-        --c-secondary: {{global.c_secondary}};
-        --bg-dark: {{global.bg_dark}};
-        --c-bg-dark: {{global.c_bg_dark}};
-        --bg-light: {{global.bg_light}};
-        --bg-white: {{global.bg_white}};
-        --c-bg-light: {{global.c_bg_light}};
-        --btn-radius: {{global.btn_radius}};
-        --padding-global: {{global.padding_global}};
-        --btn-radius: {{global.btn_radius}};
+        --c-accent: {{ global.c_accent }};
+        --c-primary: {{ global.c_primary }};
+        --c-secondary: {{ global.c_secondary }};
+        --bg-dark: {{ global.bg_dark }};
+        --c-bg-dark: {{ global.c_bg_dark }};
+        --bg-light: {{ global.bg_light }};
+        --bg-white: {{ global.bg_white }};
+        --c-bg-light: {{ global.c_bg_light }};
+        --btn-radius: {{ global.btn_radius }};
+        --padding-global: {{ global.padding_global }};
       }
     </style>
-
-
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="canonical" href="{{ global.url }}{{ page.url | url }}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.css">
 
+    <!-- SEO y Open Graph -->
+    <link rel="canonical" href="{{ global.url }}{{ page.url | url }}" />
     <meta property="og:site_name" content="{{ global.empresa }}" />
-    <meta
-      property="og:image"
-      content="{{ global.url }}/assets/static/images/2.webp"
-    />
+    <meta property="og:image" content="{{ global.url }}/assets/static/images/2.webp" />
     <meta property="og:title" content="{{ title }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ global.url }}" />
-    <meta
-      property="og:description"
-      content="{{ metaKeywords or eleventyComputed.metaKeywords or metaKeywords.description }}"
-    />
+    <meta property="og:description" content="{{ metaDescription or eleventyComputed.metaDescription or metadata.description }}" />
 
-    {% if global.googlemaps_api %}
+    <!-- Google Tag Manager -->
+    {% if global.tag_manager %}
     <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "{{global.tag_manager}}");
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','{{ global.tag_manager }}');
     </script>
     {% endif %}
-
-
-
-
-    <!-- End Google Tag Manager -->
   </head>
 
-
-
   <body class="contain {{ colorHeader }} {% if page.url == '/' %}home{% endif %}">
-
-
-    {% set breadcrumbs = [] %}
-    {% if global.googlemaps_api %}
-      <!-- Google Tag Manager (noscript) -->
-      <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id={{ global.tag_manager }}" height="0" width="0" style="display: none; visibility: hidden"></iframe>
-      </noscript>
+    <!-- Google Tag Manager (noscript) -->
+    {% if global.tag_manager %}
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ global.tag_manager }}"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {% endif %}
-      <!-- End Google Tag Manager (noscript) -->
-
-
 
     {% include 'components/header.njk' %}
     <div data-scroll-container>   
       {{ content | safe }}
+      {% include 'templates/footer_2.njk' %}
+    </div>
 
-    {% include 'templates/footer_2.njk' %}
-
-  </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js"></script>
-    <script src=" https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script type="module" src="/assets/js/index.js"></script>
     <script type="module" src="/assets/js/scroll.js"></script>
     <script type="module" src="/assets/js/inview.js"></script>
-
-    <link async rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" rel="stylesheet" />
-
   </body>
 </html>
