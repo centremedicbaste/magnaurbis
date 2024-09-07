@@ -7,7 +7,7 @@
         <div class="fluid-4-b c-dark-grey">
           
           
-          {% call insert.splitenpalabras(global.benefit_description ) %} {% endcall %}
+          {% call insert.splitenpalabras(global.benefit_description or 'global.benefit_description') %} {% endcall %}
 
           
  
