@@ -74,10 +74,11 @@
   "introbenefits_2description": "Con cuatro generaciones de experiencia en la gestión de fincas, evolucionamos constantemente para brindarte el servicio más completo.",
   "introbenefits_3title": "Fiabilidad",
   "introbenefits_3description": "Siempre a tu disposición, ofreciendo respuestas proactivas a las demandas de nuestros clientes.",
+
   "whytitle1_title": "¿Quiénes somos?",
   "whytitle1_subtitle": "NUESTRA HISTORIA",
   "whytitle1_description": "Somos una empresa inmobiliaria dedicada a la administración de comunidades de propietarios y a la gestión de patrimonios en régimen de alquiler, enfocada en la conservación y optimización de los activos de nuestros clientes.",
-  "whytitle1_description2": "Esta descripción se ampliará un poco más para que se vea adecuadamente en la página web.",
+"whytitle1_description2": "Nuestra misión es proporcionar un servicio integral y personalizado, orientado a maximizar el valor de los bienes inmobiliarios de nuestros clientes. A lo largo de nuestra trayectoria, hemos desarrollado un enfoque proactivo en la gestión de patrimonios y administración de fincas, garantizando la protección, el mantenimiento y el crecimiento de los activos bajo nuestra supervisión. Nuestro compromiso con la transparencia, la cercanía y la excelencia en cada uno de nuestros servicios nos ha permitido consolidar una relación de confianza con nuestros clientes, ofreciendo soluciones efectivas y a medida para cada situación.",  
   "box_img_title": "Hoy en día no es suficiente con simplemente gestionar. Se requiere rigor, transparencia, cercanía y profesionalismo.",
   "box_img_description": "La administración de fincas es una tarea crucial que debe estar en manos de una empresa con experiencia y solvencia, por eso adaptamos nuestros servicios a las necesidades específicas de cada Comunidad de Propietarios.",
   "contacta_4_title": "¿Tienes alguna pregunta?",
@@ -85,6 +86,8 @@
   "contacta_5_title": "Visítanos",
   "contacta_5_subtitle": "NUESTRA UBICACIÓN",
   "contacta_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.898683892382!2d2.1614165763079742!3d41.39800659533604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a294dae03357%3A0xae747d3d1080c597!2sCasa%20Les%20Punxes%20x%20Cloudworks!5e0!3m2!1ses!2ses!4v1725699856594!5m2!1ses!2ses",
+  
+  
   "direction": "Avda. Diagonal, 416, 1-1, 08037, Barcelona (Casa de les Punxes)",
   "telefono": "+34 93 619 12 16",
   "email": "info@magnaurbis.com",

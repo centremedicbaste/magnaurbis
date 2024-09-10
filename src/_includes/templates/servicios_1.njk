@@ -3,83 +3,60 @@
   <div class="container-global mx-auto">
     <div class="row ">
       <div class="col-xs-12 col-sm-12 text-center">
-        <h4 class="h5 mb-24 c-accent">    {{global_index.service_subtitle}} </h4>
-        <h3 class="h2 mb-24">          {{global_index.service_title}}</h3>
+        <h4 class="h5 mb-24 c-accent"> {{global_index.service_subtitle}} </h4>
+        <h3 class="h2 mb-24"> {{global_index.service_title}}</h3>
       </div>
     </div>
-
-
-
-
-<div class="row">
-  <div class="col-xs-4">
-    <li class="swiper-slide border-20" itemprop="associatedMedia" itemscope
-    itemtype="http://schema.org/ImageObject">
-    <a class="slide-link" title="click to zoom-in" href="{{ global_index.imageDir }}galeria/zoom/{{ galeria }}.jpg"
-      itemprop="contentUrl" data-size="1200x1200">
-
-      <div class="swiper-slide-info">
-<div class="h4 mb-16">{{global_index.services[0].service_name}}   </div>
-<div class="p2">{{global_index.services[0].service_content}}</div>
+    <div class="row">
+      <div class="col-xs-4">
+        <li class="swiper-slide border-20" itemprop="associatedMedia" itemscope
+          itemtype="http://schema.org/ImageObject">
+          <div class="slide-link">
+            <div class="swiper-slide-info">
+              <div class="h4 mb-16">{{global_index.services[0].service_name}} </div>
+              <div class="p2">{{global_index.services[0].service_content}}</div>
+            </div>
+            <div class="ar-3-35 ">
+              <img class="parallax-box " data-scroll data-scroll-speed="-.8"
+                src="{{ global_index.imageDir }}servicios/{{global_index.services[0].service_img}}.jpg"
+                itemprop="thumbnail" alt="{{ galeria }}" />
+            </div>
+          </div>
+        </li>
       </div>
-      <div class="ar-3-35 ">
-
-
-          
-          <img class="parallax-box " data-scroll data-scroll-speed="-.8" src="{{ global_index.imageDir }}servicios/{{global_index.services[0].service_img}}.jpg" itemprop="thumbnail" alt="{{ galeria }}" />
-    
+      <div class="col-xs-4">
+        <li class="swiper-slide border-20" itemprop="associatedMedia" itemscope
+          itemtype="http://schema.org/ImageObject">
+          <div class="slide-link">
+            <div class="swiper-slide-info">
+              <div class="h4 mb-16">{{global_index.services[1].service_name}} </div>
+              <div class="p2">{{global_index.services[1].service_content}}</div>
+            </div>
+            <div class="ar-3-35 ">
+              <img class="parallax-box " data-scroll data-scroll-speed="-.8"
+                src="{{ global_index.imageDir }}servicios/{{global_index.services[1].service_img}}.jpg"
+                itemprop="thumbnail" alt="{{ galeria }}" />
+            </div>
+          </div>
+        </li>
       </div>
-    </a>
-  </li>
+      <div class="col-xs-4">
+        <li class="swiper-slide border-20" itemprop="associatedMedia" itemscope
+          itemtype="http://schema.org/ImageObject">
+          <div class="slide-link">
+            <div class="swiper-slide-info">
+              <div class="h4 mb-16">{{global_index.services[2].service_name}} </div>
+              <div class="p2">{{global_index.services[2].service_content}}</div>
+            </div>
+            <div class="ar-3-35 ">
+              <img class="parallax-box " data-scroll data-scroll-speed="-.8"
+                src="{{ global_index.imageDir }}servicios/{{global_index.services[2].service_img}}.jpg"
+                itemprop="thumbnail" alt="{{ galeria }}" />
+            </div>
+          </div>
+        </li>
+      </div>
+    </div>
   </div>
-
-  <div class="col-xs-4">
-    <li class="swiper-slide border-20" itemprop="associatedMedia" itemscope
-    itemtype="http://schema.org/ImageObject">
-    <a class="slide-link" title="click to zoom-in" href="{{ global_index.imageDir }}galeria/zoom/{{ galeria }}.jpg"
-      itemprop="contentUrl" data-size="1200x1200">
-
-      <div class="swiper-slide-info">
-<div class="h4 mb-16">{{global_index.services[0].service_name}}   </div>
-<div class="p2">{{global_index.services[0].service_content}}</div>
-      </div>
-      <div class="ar-3-35 ">
-
-
-          
-          <img class="parallax-box " data-scroll data-scroll-speed="-.8" src="{{ global_index.imageDir }}servicios/{{global_index.services[1].service_img}}.jpg" itemprop="thumbnail" alt="{{ galeria }}" />
-    
-      </div>
-    </a>
-  </li>
-  </div>
-
-  <div class="col-xs-4">
-    <li class="swiper-slide border-20" itemprop="associatedMedia" itemscope
-    itemtype="http://schema.org/ImageObject">
-    <a class="slide-link" title="click to zoom-in" href="{{ global_index.imageDir }}galeria/zoom/{{ galeria }}.jpg"
-      itemprop="contentUrl" data-size="1200x1200">
-
-      <div class="swiper-slide-info">
-<div class="h4 mb-16">{{global_index.services[0].service_name}}   </div>
-<div class="p2">{{global_index.services[0].service_content}}</div>
-      </div>
-      <div class="ar-3-35 ">
-
-
-          
-          <img class="parallax-box " data-scroll data-scroll-speed="-.8" src="{{ global_index.imageDir }}servicios/{{global_index.services[2].service_img}}.jpg" itemprop="thumbnail" alt="{{ galeria }}" />
-    
-      </div>
-    </a>
-  </li>
-  </div>
-</div>
-
-
-  </div>
-
-
-
 
 </section>
