@@ -65,6 +65,13 @@
       "service_content": "Nos encargamos de alquilar o vender tus propiedades, y te ayudamos a encontrar aquellas que se ajusten a tus requisitos patrimoniales.",
       "service_img": "servicio_3"
     }
+
+    ,
+    {
+      "service_name": "Gestión comercial22",
+      "service_content": "Nos encargamos de alquilar o vender tus propiedades, y te ayudamos a encontrar aquellas que se ajusten a tus requisitos patrimoniales.",
+      "service_img": "servicio_4"
+    }
   ],
   "introbenefits_title": "Nuestros valores fundamentales",
   "introbenefits_subtitle": "empresa especializada en servicios inmobiliarios",

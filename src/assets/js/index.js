@@ -131,26 +131,26 @@ var mySwiper = new Swiper(".swiper-container-img", {
   },
   breakpoints: {
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2.5,
       spaceBetween: 15,
       centeredSlides: false,
       pagination: false,
     },
     980: {
-      slidesPerView: 4,
+      slidesPerView: 2.5,
       spaceBetween: 30,
       centeredSlides: false,
       pagination: false,
     },
     1200: {
-      slidesPerView: 3,
+      slidesPerView: 3.2,
       spaceBetween: 30,
       centeredSlides: false,
       pagination: false,
       loop: false,
     },
     1600: {
-      slidesPerView: 3,
+      slidesPerView: 3.5,
       spaceBetween: 30,
       centeredSlides: false,
       pagination: false,
