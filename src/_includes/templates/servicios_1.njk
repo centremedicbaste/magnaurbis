@@ -21,7 +21,7 @@
 
           <li class="swiper-slide border-20" itemprop="associatedMedia" itemscope
             itemtype="http://schema.org/ImageObject">
-            <a class="slide-link" title="click to zoom-in" href="{{ global_index.imageDir }}galeria/zoom/{{ galeria }}.jpg"
+            <div class="slide-link" title="click to zoom-in" href="#"
               itemprop="contentUrl" data-size="1200x1200">
 
               <div class="swiper-slide-info">
@@ -32,7 +32,7 @@
                 <img class="parallax-box " data-scroll data-scroll-speed="-.8" src="{{ global_index.imageDir }}servicios/{{item.service_img}}.jpg" itemprop="thumbnail" alt="{{ galeria }}" />
             
               </div>
-            </a>
+            </div>
           </li>
           {% endfor %}
         </ul>
