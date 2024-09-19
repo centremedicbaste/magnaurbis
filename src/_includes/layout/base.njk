@@ -19,8 +19,11 @@
     <meta property="og:title" content="{{ metaTitle }}" />
     <meta property="og:description" content="{{ metaDescription or eleventyComputed.metaDescription or metadata.description }}" />
     <meta property="og:url" content="{{ global_index.url }}{{ page.url | url }}" />
-    <meta property="og:image" content="{{ global_index.url }}/assets/static/favicons/favicon-96x96.png" />
-  
+
+    <meta property="og:image" content="{{ global_index.url }}/assets/static/images/2.webp" />
+
+
+
     <meta name="twitter:card" content="{{ metaTitle }}" />
     <meta name="twitter:title" content="{{ metaTitle }}" />
     <meta name="twitter:description" content="{{ metaDescription or eleventyComputed.metaDescription or metadata.description }}" />
@@ -50,12 +53,7 @@
 
     <!-- SEO y Open Graph -->
     <link rel="canonical" href="{{ global_index.url }}{{ page.url | url }}" />
-    <meta property="og:site_name" content="{{ global_index.empresa }}" />
-    <meta property="og:image" content="{{ global_index.url }}/assets/static/images/2.webp" />
-    <meta property="og:title" content="{{ title }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ global_index.url }}" />
-    <meta property="og:description" content="{{ metaDescription or eleventyComputed.metaDescription or metadata.description }}" />
+  
 
     <!-- Google Tag Manager -->
     {% if global_index.tag_manager %}
@@ -67,6 +65,43 @@
       })(window,document,'script','dataLayer','{{ global_index.tag_manager }}');
     </script>
     {% endif %}
+
+
+
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent", 
+        "name": "Magna Urbis",
+        "url": "https://magnaurbis.com",
+        "logo": "https://magnaurbis.com/assets/static/favicons/favicon-96x96.png",
+        "description": "Magna Urbis, expertos en administración de fincas y gestión de patrimonios en Barcelona con más de 100 años de experiencia.",
+        "image": "https://magnaurbis.com/assets/static/images/2.webp",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avda. Diagonal, 416, 1-1",
+          "addressLocality": "Barcelona",
+          "postalCode": "08037",
+          "addressCountry": "ES"
+        },
+        "telephone": "+34 93 619 12 16",
+        "email": "info@magnaurbis.com",
+        "openingHours": "Mo-Fr 09:00-18:00",
+        "areaServed": {
+          "@type": "Place",
+          "name": "Barcelona"
+        },
+        "sameAs": [
+          "https://www.facebook.com/magnaurbis",
+          "https://www.linkedin.com/company/magnaurbis"
+        ]
+      }
+      </script>
+
+
+
+
   </head>
 
   <body class="contain {{ colorHeader }} {% if page.url == '/' %}home{% endif %}">
