@@ -12,7 +12,22 @@
     
     <!-- Favicon y manifest -->
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="icon" type="image/webp" href="{{ global.url }}/assets/static/about.jpg" />
+ 
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Check - {{ metaKeywords or eleventyComputed.metaKeywords or metaKeywords.description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ metaTitle }}" />
+    <meta property="og:description" content="{{ metaDescription or eleventyComputed.metaDescription or metadata.description }}" />
+    <meta property="og:url" content="https://{{ global.url }}{{ page.url | url }}" />
+    <meta property="og:image" content="https://{{ global.url }}/assets/static/favicons/favicon_96x96.png" />
+  
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ metaTitle }}" />
+    <meta name="twitter:description" content="{{ metaDescription or eleventyComputed.metaDescription or metadata.description }}" />
+    <meta name="twitter:image" content="https://{{ global.url }}/assets/static/favicons/favicon_96x96.png" />
+
+
+    <link rel="icon" type="image/png" href="/assets/static/favicons/favicon_32x32.png" />
 
     <!-- Estilos CSS -->
     <style>
