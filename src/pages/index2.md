@@ -1,6 +1,6 @@
 ---
 layout: pages/_index2.njk
-permalink: /index2
+
 metaTitle: metaTitle
 metaDescription: metaDescription
 metaKeywords: metaKeywords
