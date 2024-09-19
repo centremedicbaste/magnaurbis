@@ -18,13 +18,13 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ metaTitle }}" />
     <meta property="og:description" content="{{ metaDescription or eleventyComputed.metaDescription or metadata.description }}" />
-    <meta property="og:url" content="https://{{ global.url }}{{ page.url | url }}" />
-    <meta property="og:image" content="https://{{ global.url }}/assets/static/favicons/favicon_96x96.png" />
+    <meta property="og:url" content="{{ global.url }}{{ page.url | url }}" />
+    <meta property="og:image" content="{{ global.url }}/assets/static/favicons/favicon_96x96.png" />
   
     <meta name="twitter:card" content="{{ metaTitle }}" />
     <meta name="twitter:title" content="{{ metaTitle }}" />
     <meta name="twitter:description" content="{{ metaDescription or eleventyComputed.metaDescription or metadata.description }}" />
-    <meta name="twitter:image" content="https://{{ global.url }}/assets/static/favicons/favicon_96x96.png" />
+    <meta name="twitter:image" content="{{ global.url }}/assets/static/favicons/favicon_96x96.png" />
 
 
     <link rel="icon" type="image/png" href="/assets/static/favicons/favicon_32x32.png" />
