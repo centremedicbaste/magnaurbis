@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-site-verification" content="{{ global.search_console }}" />
-    <title>{{ metaTitle }}</title>
+    <title>{{ metaTitle }} </title>
     <meta name="robots" content="{{ metaRobots }}" />
     <meta name="description" content="{{ metaDescription or eleventyComputed.metaDescription or metadata.description }}" />
     <meta name="keywords" content="{{ metaKeywords or eleventyComputed.metaKeywords or metaKeywords.description }}" />
@@ -21,7 +21,7 @@
     <meta property="og:url" content="https://{{ global.url }}{{ page.url | url }}" />
     <meta property="og:image" content="https://{{ global.url }}/assets/static/favicons/favicon_96x96.png" />
   
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="{{ metaTitle }}" />
     <meta name="twitter:title" content="{{ metaTitle }}" />
     <meta name="twitter:description" content="{{ metaDescription or eleventyComputed.metaDescription or metadata.description }}" />
     <meta name="twitter:image" content="https://{{ global.url }}/assets/static/favicons/favicon_96x96.png" />
