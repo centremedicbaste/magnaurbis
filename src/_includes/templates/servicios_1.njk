@@ -14,28 +14,31 @@
       <!-- Slider main container -->
       <div class="swiper-container-img">
         <!-- Additional required wrapper -->
+
         <ul class="swiper-wrapper my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
           <!-- Slides -->
-
           {% for item in global_index.services %}
-
-          <li class="swiper-slide border-20" itemprop="associatedMedia" itemscope
-            itemtype="http://schema.org/ImageObject">
-            <div class="slide-link" title="click to zoom-in" href="#"
-              itemprop="contentUrl" data-size="1200x1200">
-
-              <div class="swiper-slide-info">
-      <div class="h4 mb-16">{{item.service_name}}   </div>
-      <div class="p2">{{item.service_content}}</div>
-              </div>
-              <div class="ar-3-35 ">
-                <img class="parallax-box " data-scroll data-scroll-speed="-.8" src="{{ global_index.imageDir }}servicios/{{item.service_img}}.jpg" itemprop="thumbnail" alt="{{ galeria }}" />
-            
-              </div>
-            </div>
-          </li>
+            <li class="swiper-slide border-20" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a class="slide-link" title="click to zoom-in" href="#" itemprop="contentUrl" data-size="1200x1200" aria-label="Haz clic para ampliar el servicio {{item.service_name}}">
+        
+                <div class="swiper-slide-info">
+                  <div class="h4 mb-16">{{item.service_name}}</div>
+                  <div class="p2">{{item.service_content}}</div>
+                </div>
+        
+                <div class="ar-3-35">
+                  <img class="parallax-box" data-scroll data-scroll-speed="-.8"
+                       src="{{ global_index.imageDir }}servicios/{{item.service_img}}.jpg"
+                       itemprop="thumbnail"
+                       alt="Imagen del servicio {{item.service_name}}" />
+                </div>
+              </a>
+            </li>
           {% endfor %}
         </ul>
+        
+
+
 
       </div>
 
