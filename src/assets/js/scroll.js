@@ -17,7 +17,7 @@ scroll.on('scroll', (args) => {
   }
 });
 
-document.querySelector('#contacta').addEventListener('click', (event) => {
+document.querySelector('.link_a_contacta').addEventListener('click', (event) => {
   event.preventDefault();
   scroll.scrollTo('#contacta_4');
 });
