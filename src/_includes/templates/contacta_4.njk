@@ -107,22 +107,20 @@
 
 
 <script>
-    function validateForm() {
-        var EmailSecurizado = document.forms["contactformulario"]["EmailSecurizado"].value;
-        if (EmailSecurizado) {
-  
-            return false;
-        }
-    
-        var termsCheckbox = document.getElementById('termsCheckbox');
-        if (!termsCheckbox.checked) {
-            var errorMessage = document.getElementById('errorMessage');
-            errorMessage.style.display = 'block';
-            return false;
-        }
-    
-        return true;
+function validateForm() {
+    var EmailSecurizado = document.forms["contactformulario"]["EmailSecurizado"].value;
+    if (EmailSecurizado) {
+        return false;
     }
+    
+    var politicasCheckbox = document.querySelector('input[name="politicas"]');
+    if (!politicasCheckbox.checked) {
+        alert("Por favor, acepta los términos y condiciones.");
+        return false;
+    }
+    
+    return true;
+}
     
     document.getElementById('contactForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevenir el envío normal del formulario
