@@ -7,8 +7,21 @@
                 <div class="fluid-4-r">{{global_index.contacta_4_subtitle}}</div>
             </div>
         </div>
-        <form name="contactformulario" method="POST" action="/confirmacion.html" data-netlify="true"
-            netlify-honeypot="bot-field">
+
+
+            <form name="contactformulario" method="POST" data-netlify="true"   netlify-honeypot="bot-field"  id="contactForm" netlify onsubmit="return validateForm()">
+                <div style="display:none;">
+                    <input type="text" name="EmailSecurizado" value="">
+                </div>
+
+                <p class="hidden">
+                    <label>
+                     <input name="bot-field" />
+                    </label>
+                  </p>
+
+
+
             <div class="row   md:reverse">
                 <div class="col-xs-12 col-md-6 ">
                     <p class="hidden">
@@ -76,3 +89,50 @@
         </form>
     </section>
 </div>
+
+
+
+<script>
+    function validateForm() {
+        var EmailSecurizado = document.forms["contactformulario"]["EmailSecurizado"].value;
+        if (EmailSecurizado) {
+  
+            return false;
+        }
+    
+        var termsCheckbox = document.getElementById('termsCheckbox');
+        if (!termsCheckbox.checked) {
+            var errorMessage = document.getElementById('errorMessage');
+            errorMessage.style.display = 'block';
+            return false;
+        }
+    
+        return true;
+    }
+    
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevenir el envío normal del formulario
+        if (validateForm()) {
+            enviarFormulario();
+        }
+    });
+    
+    function enviarFormulario() {
+        var form = document.getElementById('contactForm');
+        var data = new FormData(form);
+    
+        fetch('/', {
+            method: 'POST',
+            body: data
+        }).then(response => {
+            if (response.ok) {
+                document.getElementById('modalMensajeEnviado').style.display = 'flex'; // Mostrar el modal
+                form.reset(); // Opcional: resetear el formulario
+            } else {
+                alert('Hubo un error al enviar el mensaje.');
+            }
+        }).catch(error => {
+            alert('Error al enviar el mensaje: ' + error.message);
+        });
+    }
+    </script>
