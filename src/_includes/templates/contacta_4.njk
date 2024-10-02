@@ -91,6 +91,20 @@
 </div>
 
 
+<!-- Modal para confirmación de envío -->
+<div id="modalMensajeEnviado" style="display:none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #97DBDD; z-index: 1000; align-items: center;">
+    <button onclick="document.getElementById('modalMensajeEnviado').style.display='none'" class="btn btn-tertiary btn-modal" id="close-menu-modal">
+        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.71973 30.6136L16.3333 16M16.3333 16L30.9468 1.38647M16.3333 16L30.9468 30.6136M16.3333 16L1.71973 1.38648" stroke="#334552" stroke-width="2.61111" stroke-linecap="round"></path>
+        </svg>
+    </button>
+    <div class="text-center" style="padding: 20px; max-width: 800px; margin: 100px auto; text-align: center; display: flex; flex-direction: column; align-items: center;">
+        <div class="fluid-4-r mb-24">¡Gracias por contactar con nosotros!</div>
+        <div class="h2 mb-24">En breves un comercial se pondrá en contacto contigo.</div>
+        <button class="btn btn-primary btn--medium" onclick="document.getElementById('modalMensajeEnviado').style.display='none'">De acuerdo</button>
+    </div>
+</div>
+
 
 <script>
     function validateForm() {
