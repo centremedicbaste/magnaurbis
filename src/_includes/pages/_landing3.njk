@@ -7,13 +7,13 @@ colorHeader: has-light-menu
 
 
 
-{% import global_index.base_modules+"_macros/_insert.njk" as insert %}
+{% import "macros/_insert.njk" as insert %}
 
 <div class="main-article has-light-menu">
   {% include 'templates/introCta_1.njk' %}
   {{global.url}} <br>
   {{global_index.base_modules}}
-  <div class="container-fluid bg-color">
+  <div class="container-fluid bg-color"data-scroll-section>
     boilerplate
   </div>
 </div>

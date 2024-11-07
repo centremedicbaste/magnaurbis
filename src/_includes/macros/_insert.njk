@@ -93,6 +93,10 @@
   </div>
 </div>
 {% endmacro %}
+
+
+
+
 {% macro splitenpalabras2(frase = '', frase2 = '') %}
 {% set palabras = frase.split(" ") %}
 {% set palabras2 = frase.split(" ") %}
@@ -200,21 +204,28 @@
   </div>
 </div>
 {% endmacro %}
+
+
 {% macro splitenpalabras(frase = '', type = '', animationTime='', animationDelay='' ) %}
-{% set palabras = frase.split(" ") %}
-<div class="word-wrap">
-  {% for palabra in palabras %}
-  {% if palabra.startsWith('**') %}
-  <span class="word c-accent {{type}} "  {% if animationDelay %} style="animation-delay: {{ animationDelay }}ms "   {% endif %} >{{ palabra | replace('**', '') }}
-  </span>
-  {% elseif palabra == '--' %}
-  {{ palabra | replace('--', '<br>') | safe }}
-  {% else %}
-  <span class="word {{type}}"   {% if animationDelay %} style="animation-delay: {{ animationDelay }}ms "   {% endif %} >{{ palabra }}</span>
-  {% endif %}
-  {% set animationDelay = animationDelay + animationTime %}
-  {% endfor%}
-</div>
+{% if frase %}
+  {% set palabras = frase.split(" ") %}
+  <div class="word-wrap">
+    {% for palabra in palabras %}
+      {% if palabra.startsWith('**') %}
+        <span class="word c-accent {{type}}" {% if animationDelay %} style="animation-delay: {{ animationDelay }}ms" {% endif %}>
+          {{ palabra | replace('**', '') }}
+        </span>
+      {% elseif palabra == '--' %}
+        {{ palabra | replace('--', '<br>') | safe }}
+      {% else %}
+        <span class="word {{type}}" {% if animationDelay %} style="animation-delay: {{ animationDelay }}ms" {% endif %}>
+          {{ palabra }}
+        </span>
+      {% endif %}
+      {% set animationDelay = animationDelay + animationTime %}
+    {% endfor %}
+  </div>
+{% endif %}
 {% endmacro %}
 
 

@@ -35,12 +35,12 @@ $minheaders:/* name:mobile,768,992,1280,line-height,font */
   ( h1: ( 32px, 72px, 1.1, "regular", ), 
   h2: ( 24px, 42px, 1.1, "regular", ), 
   h3: ( 32px, 48px, 1.1, "regular", ), 
-  h4: ( 24px, 28px, 1.1, "regular", ), 
+  h4: ( 16px, 20px, 1.1, "regular", ), 
   h5: ( 14px, 18px, 1.1, "regular", ), 
 
 
   p1: ( 14px, 16px, 1.6, "regular", ),
-  p2: ( 14px, 18px, 1.4, "regular", ),
+  p2: ( 18px, 22px, 1.4, "medium", ),
   p3: ( 12px, 12px, 1.4, "regular", ),
   p4: ( 14px, 18px, 1.4, "medium", ), );
 
@@ -58,17 +58,20 @@ $headersFluids: (
   
   1: (60px, 160px, 0.8)
 ) ;
-$font-family-a-l: "font-light", Helvetica, "Arial ", "Lucida Grande", sans-serif;
+$font-family-a-l: "golden", Helvetica, "Arial ", "Lucida Grande", sans-serif;
 $font-family-a-r: "font-regular", Helvetica, "Arial ", "Lucida Grande",
   sans-serif;
-$font-family-a-m: "font-regular", Helvetica, "Arial ", "Lucida Grande",
+$font-family-a-m: "electra", Helvetica, "Arial ", "Lucida Grande",
   sans-serif;
 $font-family-a-b: "font-bold", Helvetica, "Arial ", "Lucida Grande", sans-serif;
+
+
 $font-family-b-r: "font-regular", Helvetica, Arial, sans-serif;
 $font-family-b-m: "font-regular", Helvetica, "Arial", sans-serif;
 $font-family-b-b: "font-regular", Helvetica, "arial black", sans-serif;
-$font-family-c-r: "ms-serif", serif;
-$font-family-c-m: "ms-serif", serif;
+$font-family-c-r: "hunter", serif;
+$font-family-c-m: "electra", serif;
+
 $font-family-c-b: "ms-serif", serif;
 $font-weight-light: inherit;
 $font-weight-regular: inherit;
@@ -92,7 +95,7 @@ $headersFixers: (
 /** font-family: 'Playfair Display', serif; **/
 $font-weight-light: 200;
 $font-weight-regular: 400;
-$font-weight-medium: 600;
+$font-weight-medium: 400;
 $font-weight-bold: 900;
 $font-family-secondary: "Playfair Display", serif;
 $font-weight-secondary-light: 200;
@@ -129,6 +132,11 @@ $padding-bottom: (
 
 
 $heights: (
+  height-xs: (
+    250px,
+    250px,
+  ),
+
   height-sm: (
     350px,
     350px,

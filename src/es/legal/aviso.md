@@ -5,6 +5,9 @@ metaTitle:  Legal | Aviso Legal
 layout: legal/_legales
 title: Aviso legal
 permalink: /legal/aviso-legal/
+
+
+
 author: man
 realizada:  ✅
 date: 2024-02-02

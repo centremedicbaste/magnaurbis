@@ -2,16 +2,23 @@
 .swiper {
   height: 400px;
   max-width: 100%;
+
   img {
     width: 100%;
     height: auto;
   }
 
 }
- 
+ .swiper-wrapper{
+
+ }
 
 .swiper-slide {
-  background-image: linear-gradient(to bottom, $c-secondary, black);
+
+
+
+  background-color: $c-primary;
+
   position: relative;
   overflow: hidden;
   transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
