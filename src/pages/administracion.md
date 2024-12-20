@@ -7,6 +7,8 @@ metaKeywords: administración de fincas, gestión de patrimonios, Barcelona, inm
 metaRobots: index, follow
 tags: ["pages"]
 seccion: administracion de fincas
+priority: 1
+
 
 hero_description: SERVICIOS
 hero_title: ADMINISTRACIÓN ^ DE FINCAS 

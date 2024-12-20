@@ -30,14 +30,16 @@
                 </svg>
             </button>
             <ul class="menu-desktop list-clear list-inline ttu">
-                {% for page in collections.pages %}
-                
-                    {% if page.data.seccion  != 'index' %}
-                    <li>
-                        <a href="{{ page.url }}">
-                            <span>{{ page.data.seccion }}</span>
-                        </a>
-                    </li>
+                {% set sorted_pages = collections.pages | sort(attribute='data.priority') %}
+
+
+                {% for page in sorted_pages %}
+                    {% if page.data.seccion != 'index' %}
+                        <li>
+                            <a href="{{ page.url }}">
+                                <span>{{ page.data.seccion }}</span>
+                            </a>
+                        </li>
                     {% endif %}
                 {% endfor %}
                 <li>

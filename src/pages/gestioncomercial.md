@@ -7,6 +7,7 @@ metaKeywords: administración de fincas, gestión de patrimonios, Barcelona, inm
 metaRobots: index, follow
 tags: ["pages"]
 seccion: gestion comercial
+priority: 3
 
 hero_description: SERVICIOS
 hero_title: GESTIÓN ^ COMERCIAL

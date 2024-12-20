@@ -7,6 +7,7 @@ metaKeywords: administración de fincas, gestión de patrimonios, Barcelona, inm
 metaRobots: index, follow
 tags: ["pages"]
 seccion: patrimonios inmobiliarios
+priority: 2
 
 hero_description: SERVICIOS
 hero_title: PATRIMONIOS ^ INMOBILIARIOS
@@ -38,11 +39,14 @@ introbenefits_5description: Ofrecemos estudios de rentabilidad para fincas, anal
 introbenefits_6title: GESTIÓN COMERCIAL
 introbenefits_6description: Proporcionamos gestión comercial integral para fincas, optimizando alquileres y ventas. Aumenta la ocupación y maximiza tus ingresos con estrategias efectivas.
 
+introbenefits_7title: ASESORAMIENTO JURÍDICO
+introbenefits_7description: Ofrecemos asesoramiento jurídico en administración de fincas, garantizando el cumplimiento legal, resolución de conflictos y protección de tus derechos e intereses.
+
 
 
 box_img_title: Maximiza el valor de tus activos con nuestro servicio de gestión de patrimonio.
 box_img_description: Gestionamos la planificación financiera, el monitoreo del mercado y la administración de inversiones, asegurando que cada decisión genere rentabilidad.
-box_img_img: /assets/static/images/servicios_1.jpg
+box_img_img: /assets/static/images/servicio_1.jpg
 
 
 

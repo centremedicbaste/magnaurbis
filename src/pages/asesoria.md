@@ -7,6 +7,7 @@ metaKeywords: administración de fincas, gestión de patrimonios, Barcelona, inm
 metaRobots: index, follow
 tags: ["pages"]
 seccion: asesoria juridica
+priority: 4
 
 hero_description: SERVICIOS
 hero_title: ASESORIA ^ JURÍDICA
