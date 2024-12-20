@@ -6,7 +6,7 @@ metaDescription: Magna Urbis, expertos en administración de fincas y gestión d
 metaKeywords: administración de fincas, gestión de patrimonios, Barcelona, inmobiliaria, alquiler de viviendas
 metaRobots: index, follow
 tags: ["pages"]
-seccion: asesoria juridica
+seccion: Asesoria jurídica
 priority: 4
 
 hero_description: SERVICIOS
@@ -26,20 +26,20 @@ box_img_title: Además, nuestro servicio incluye la representación ante organis
 box_img_description: Nuestro objetivo es ofrecerte tranquilidad, permitiéndote centrarte en la gestión y rentabilidad de tus activos. ^ ^ Con un enfoque personalizado, trabajamos para que cada aspecto legal de tus fincas esté en orden y en conformidad con la ley.
 box_img_img: /assets/static/images/servicio_3.jpg
 
-introbenefits_1title: Profesionalidad
+introbenefits_1title: PROFESIONALIDAD
 introbenefits_1description: El sector inmobiliario es cada día más complejo y técnico. Cuenta con un profesional especialista en administración de fincas o gestión de patrimonios inmobiliarios.
 
-introbenefits_2title: Vocación
+introbenefits_2title: VOCACIÓN
 introbenefits_2description: Cuatro generaciones de administradores de fincas, aprendiendo y avanzando cada día para darte el mejor servicio.
-introbenefits_3title: Confianza
+introbenefits_3title: CONFIANZA
 introbenefits_3description: Siempre disponibles y proactivos para dar respuesta a las necesidades de nuestros clientes.
-introbenefits_4title: Experiencia
+introbenefits_4title: EXPERIENCIA
 introbenefits_4description: Más de 100 años de experiencia nos respaldan en la administración y gestión de fincas.
-introbenefits_5title: Innovación
+introbenefits_5title: INNOVACIÓN
 introbenefits_5description: Implementamos las últimas tecnologías y metodologías para optimizar la gestión de tu propiedad.
-introbenefits_6title: Transparencia
+introbenefits_6title: TRANSPARENCIA
 introbenefits_6description: Mantenemos una comunicación clara y abierta, proporcionando informes detallados y actualizaciones periódicas sobre la administración de tu finca.
-introbenefits_7title: Sostenibilidad
+introbenefits_7title: SOSTENIBILIDAD
 introbenefits_7description: Nos comprometemos con prácticas sostenibles y responsables, buscando siempre el equilibrio entre rentabilidad y respeto al medio ambiente.
 
 

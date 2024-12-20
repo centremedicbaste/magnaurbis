@@ -157,8 +157,9 @@
 <body class="contain {{ colorHeader }} {% if page.url == '/' %}home{% endif %}">
   <!-- Google Tag Manager (noscript) -->
   {% if global_index.tag_manager %}
-  <noscript><iframe title="googletagmanager" src="https://www.googletagmanager.com/ns.html?id={{ global_index.tag_manager }}" height="0"
-      width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe title="googletagmanager"
+      src="https://www.googletagmanager.com/ns.html?id={{ global_index.tag_manager }}" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   {% endif %}
   {% include 'components/header.njk' %}
   <div data-scroll-container>

@@ -6,7 +6,7 @@ metaDescription: Magna Urbis, expertos en administración de fincas y gestión d
 metaKeywords: administración de fincas, gestión de patrimonios, Barcelona, inmobiliaria, alquiler de viviendas
 metaRobots: index, follow
 tags: ["pages"]
-seccion: administracion de fincas
+seccion: Administración de fincas
 priority: 1
 
 

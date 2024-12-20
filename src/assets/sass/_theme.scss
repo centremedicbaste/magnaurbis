@@ -2,11 +2,13 @@
   color: $c-white;
   background-color: #179CAA;
   border: 1px solid #179CAA;
+  border-radius: 8px;
 }
 .btn-secondary {
   color: #179CAA;
   background-color: #ffffff;
   border: 1px solid #179CAA;
+  border-radius: 8px;
 }
 .c-accent {
   color: #179CAA;
@@ -117,6 +119,7 @@ svg {
     border-color: #DCDCDC;
     border-width: 1px;
     padding-inline: 16px;
+    border-radius: 8px;
   }
 }
 .form-input-label-2>input,
