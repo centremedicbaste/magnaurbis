@@ -212,6 +212,7 @@ ul.list-clear li {
 }
 .textarea {
   min-height: 100px;
+  height: 100%!important;
 }
 .front-section {
   z-index: 10;
@@ -1203,8 +1204,14 @@ ul>li.special-class{
 }
 .menu-logo{
   width: 40%;
-  padding-left: 30px;
-  padding-top: 30px;
+
   position: absolute;
+  @media (min-width: $break-sm) {
+    padding-left: 30px;
+    padding-top: 30px;
+
+    align-content: center;
+  }
+
 }
 

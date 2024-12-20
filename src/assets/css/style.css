@@ -11826,6 +11826,9 @@ b {
 .scrolled .has-light .menu-toogle-bars span {
   background-color: #000;
 }
+.scrolled .has-light #menu-toggle rect {
+  fill: black;
+}
 .menu-open .has-light .menu-toogle-bars span {
   background-color: #000;
 }
@@ -11844,9 +11847,10 @@ svg {
 }
 
 .logo-simple {
+  margin-left: 20px;
   position: relative;
-  width: 138px;
-  height: 24px;
+  width: 232px;
+  height: 42px;
 }
 .logo-simple svg {
   width: 100%;
@@ -14171,6 +14175,9 @@ b {
 .scrolled .has-light .menu-toogle-bars span {
   background-color: #000;
 }
+.scrolled .has-light #menu-toggle rect {
+  fill: black;
+}
 .menu-open .has-light .menu-toogle-bars span {
   background-color: #000;
 }
@@ -14189,9 +14196,10 @@ svg {
 }
 
 .logo-simple {
+  margin-left: 20px;
   position: relative;
-  width: 138px;
-  height: 24px;
+  width: 232px;
+  height: 42px;
 }
 .logo-simple svg {
   width: 100%;
@@ -14339,11 +14347,16 @@ svg {
   display: flex;
   height: 90px;
   transition: all ease 0.3s;
-  align-content: center;
+  align-content: end;
   align-items: center;
-  padding-right: 4rem;
-  padding-left: 4rem;
+  padding-right: 20px;
   justify-content: flex-end;
+}
+@media (min-width: 992px) {
+  .menu-fixed-inner {
+    align-content: center;
+    align-items: center;
+  }
 }
 
 .menu-desktop {
@@ -14384,6 +14397,11 @@ svg {
 .has-dark-menu #menu-fixed a {
   color: var(--c-primary);
 }
+.scrolled #menu-toggle rect,
+.seccion-interior #menu-toggle rect,
+.has-dark-menu #menu-toggle rect {
+  fill: black;
+}
 .scrolled .logo-blanco,
 .seccion-interior .logo-blanco,
 .has-dark-menu .logo-blanco {
@@ -14407,7 +14425,8 @@ svg {
 }
 
 .menu-mobile-wrap {
-  width: 500px;
+  padding: 30px 20px;
+  width: 100%;
   background-color: #131313;
   color: #ffffff;
   height: 100vh;
@@ -14423,9 +14442,12 @@ svg {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   text-align: center;
   padding-top: 120px;
+}
+.menu-mobile-wrap ul li {
+  max-width: 150px;
 }
 
 .link_cierre {
@@ -15646,6 +15668,7 @@ ul.list-clear li {
 
 .textarea {
   min-height: 100px;
+  height: 100% !important;
 }
 
 .front-section {
@@ -16718,7 +16741,12 @@ ul > li.special-class {
 
 .menu-logo {
   width: 40%;
-  padding-left: 30px;
-  padding-top: 30px;
   position: absolute;
+}
+@media (min-width: 768px) {
+  .menu-logo {
+    padding-left: 30px;
+    padding-top: 30px;
+    align-content: center;
+  }
 }

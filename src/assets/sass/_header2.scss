@@ -46,11 +46,15 @@ rect{
   display: flex;
   height: 90px;
   transition: all ease 0.3s;
-  align-content: center;
+  align-content: end;
   align-items: center;
-  padding-right: 4rem;
-  padding-left: 4rem;
+  padding-right: 20px;
+
   justify-content: flex-end;
+  @media (min-width: $break-md) {
+    align-content: center;
+    align-items: center;
+  }
 }
 .menu-desktop {
   display: none;
@@ -91,6 +95,9 @@ rect{
     }
   }
 
+  #menu-toggle rect {
+    fill: black;
+}
 .logo-blanco{
 opacity:0;
 }
@@ -111,7 +118,8 @@ opacity:0;
   display: none;
 }
 .menu-mobile-wrap {
-  width: 500px;
+  padding: 30px 20px;
+  width: 100%;
   background-color: #131313;
   color: $c-white;
   height: 100vh;
@@ -127,9 +135,13 @@ opacity:0;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     text-align: center;
     padding-top: 120px;
+    li{
+      max-width: 150px;
+    }
+
   }
 }
 .link_cierre {

@@ -93,7 +93,7 @@
             <rect y="9.9" width="22" height="1" fill="#ffffff" />
         </svg>
     </button>
-    <ul class="list-clear pl-body pr-body ptr-64 ttu">
+    <ul class="list-clear ptr-64 ttu">
         {% for page in collections.pages %}
         {% if page.data.seccion  != 'index' %}
         <li>
@@ -103,9 +103,9 @@
         </li>
         {% endif %}
         {% endfor %}
-        <li>
-            <button class="link_a_contacta btn btn-primary btn--full">CONTACTA</button>
-        </li>
+   
+            <a class="w-100" href="/contacta/" id=""><button class=" btn btn-primary btn--full">CONTACTA</button></a>
+  
     </ul>
 </div>
 <div class="menu-mobile-overlay"></div>
