@@ -16,10 +16,10 @@ hero_btn: CONTACTA CON NOSOTROS
 home_image: /assets/static/images/servicio_2.jpg
 introbenefits_class: bg-dark-2
 
-introbenefits2_subtitle: Administración de fincas
-introbenefits2_content: Cualquier Comunidad de Propietarios puede enfrentar distintos tipos de conflictos, que abarcan tanto aspectos objetivos, como la adaptación a nuevas normativas, la administración económica de la propiedad o la gestión de incidencias y obras, como aspectos subjetivos, tales como la morosidad o los problemas de convivencia.
+introbenefits2_subtitle: Patrimonios Inmobiliarios
+introbenefits2_content: Existen diversos tipos de patrimonios inmobiliarios, que van desde el propietario que alquila un solo inmueble hasta individuos o grupos con una cartera amplia y variada de activos inmobiliarios. 
 introbenefits_title: Servicios
-introbenefits_subtitle: Nuestros servicios ^ como administrador de fincas
+introbenefits_subtitle: GESTIÓN DE PATRiMONIOS INMOBILIARIOS
 
 
 
@@ -37,6 +37,12 @@ introbenefits_5title: ESTUDIOS DE RENTABILIDAD
 introbenefits_5description: Ofrecemos estudios de rentabilidad para fincas, analizando ingresos, gastos y potencial de inversión. Optimiza la gestión de tus propiedades con datos claros.
 introbenefits_6title: GESTIÓN COMERCIAL
 introbenefits_6description: Proporcionamos gestión comercial integral para fincas, optimizando alquileres y ventas. Aumenta la ocupación y maximiza tus ingresos con estrategias efectivas.
+
+
+
+box_img_title: Maximiza el valor de tus activos con nuestro servicio de gestión de patrimonio.
+box_img_description: Gestionamos la planificación financiera, el monitoreo del mercado y la administración de inversiones, asegurando que cada decisión genere rentabilidad.
+box_img_img: /assets/static/images/servicios_1.jpg
 
 
 

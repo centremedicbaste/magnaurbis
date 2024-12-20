@@ -12,7 +12,7 @@ hero_description: SERVICIOS
 hero_title: ASESORIA ^ JURÍDICA
 hero_btn: CONTACTA CON NOSOTROS
 
-home_image: /assets/static/images/servicio_1.jpg
+home_image: /assets/static/images/servicio_4.jpg
 
 introbenefits_class: bg-dark-4
 

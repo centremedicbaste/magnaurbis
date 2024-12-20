@@ -31,14 +31,14 @@
             </button>
             <ul class="menu-desktop list-clear list-inline ttu">
                 {% for page in collections.pages %}
-                {% if page.data.seccion  != 'index' %}
-                <li
- >
-                    <a href="{{ page.url }}">
-                        <span>{{ page.data.seccion }}</span>
-                    </a>
-                </li>
-                {% endif %}
+                
+                    {% if page.data.seccion  != 'index' %}
+                    <li>
+                        <a href="{{ page.url }}">
+                            <span>{{ page.data.seccion }}</span>
+                        </a>
+                    </li>
+                    {% endif %}
                 {% endfor %}
                 <li>
                     <button class="link_a_contacta btn btn-primary">CONTACTA</button>
