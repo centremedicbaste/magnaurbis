@@ -3,7 +3,7 @@
 layout: layout/base.njk
 ---
 {% import global_index.base_modules+"_macros/_insert.njk" as insert %}
-{% include "templates/bloghero.njk" %}
+{% include "templates_md/bloghero.njk" %}
 {% set parent = global.blog %}
 <article class="main-article  ">
   {% set next = collections.blog | nextInCollection(page.fileSlug) %}

@@ -56,12 +56,14 @@ var swiper = new Swiper(".swiper-container", {
   },
 });
 
-$("#menu-toggle").click(function () {
-  $("body").toggleClass("menu-open");
-});
+
 
 $(document).ready(function () {
   initvideo();
+  $("#menu-toggle, .menu-mobile-overlay, .link_cierre").click(function () {
+    $("body").toggleClass("menu-open");
+    console.log("menu-open");
+  });
 });
 
 function initvideo() {

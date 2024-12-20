@@ -74,6 +74,7 @@ html {
   scroll-padding-top: 80px;
 }
 body {
+
   overflow-x: hidden;
   color: $c-primary;
   background-color: #fff;
@@ -87,10 +88,7 @@ a {
     cursor: pointer;
   }
 }
-.bg-dark {
-  background-color: $bg-dark;
-  color: $c-bg-dark;
-}
+
 .half-white-bg {
   position: relative;
   @media (min-width: $break-sm) {
@@ -944,15 +942,7 @@ a:hover {
 }
 
 
-.container-3 {
-  padding-right: 24px;
-  padding-left: 24px;
-  margin-right: auto;
-  margin-left: auto;
-  position: relative;
-  width: 100%;
-  max-width: 900px;
-}
+
 
 .container-fullpage {
   overflow: hidden;
@@ -1175,3 +1165,46 @@ margin-top: -100px;
   margin-right: -16px;
   margin-left: -16px;
 }
+
+
+.bg-dark {
+  background-color: $bg-dark;
+  color: $c-white;
+  .c-accent {
+    color: $c-white;
+  }
+}
+
+.bg-dark-2 {
+  background-color: #DCDCDC;
+  color: $c-primary;
+
+}
+
+
+.bg-dark-3 {
+  background-color: #179CAA;
+  color: $c-white;
+  .c-accent {
+    color: $c-white;
+  }
+}
+
+.bg-dark-4 {
+  background-color: #A1A1A1;
+  color: $c-white;
+  .c-accent {
+    color: $c-white;
+  }
+}
+
+ul>li.special-class{
+  display: flex;
+}
+.menu-logo{
+  width: 40%;
+  padding-left: 30px;
+  padding-top: 30px;
+  position: absolute;
+}
+

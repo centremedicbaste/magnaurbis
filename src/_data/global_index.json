@@ -14,6 +14,7 @@
   "padding-": "16px",
   "title": "Magna Urbis",
   "lang": "es-es",
+  
   "footer": "",
   "url": "https://magnaurbis.com",
   "legal_nombre_titular": "Magna Urbis BCN S.L.",
@@ -31,7 +32,7 @@
   "imageDir": "/assets/static/images/",
   "contact_img": "/assets/static/images/1.jpg",
   "home_image": "/assets/static/images/casa2.webp",
-  "home_video": "https://res.cloudinary.com/manuel-ruiz/video/upload/f_auto:video,q_auto/hbyomlw7zptweg0kgxmr",
+  "home_video": "https://res.cloudinary.com/manuel-ruiz/video/upload/v1731396624/xvyicosnmkxss2z2meyo.mp4",
   "seo_title": "título seo",
   "seo_description": "descripción seo",
   "tag_manager": "",
@@ -47,6 +48,9 @@
   "introbenefits2_content": "Somos una empresa inmobiliaria enfocada en la administración de comunidades de propietarios y la gestión de patrimonios en alquiler, siempre dirigiendo nuestros esfuerzos a mantener y mejorar los bienes de nuestros clientes.",
   "introbenefits2_subcontent": "Nos enorgullece ofrecer, con la confianza que nos otorga nuestra experiencia y el presente que nos respalda, un servicio excelente que nos ha permitido obtener la mayor de las recompensas: la satisfacción de nuestros clientes.",
   "introbenefits2_subcontent2": "Nuestra experiencia nos permite ofrecer un servicio de alta calidad, adaptado a las necesidades específicas de cada cliente, con el objetivo de garantizar su tranquilidad y la optimización de tus bienes inmuebles. Nos comprometemos a ser un aliado fiable en la gestión y mantenimiento de tus activos, generando confianza y satisfacción en cada paso.",
+  
+  
+  
   "service_subtitle": "Para que no te tengas que preocupar de nada",
   "service_title": "SOLUCIONES PARA PROPIETARIOS",
   "services": [
@@ -87,19 +91,5 @@
   "whytitle1_description": "Somos una empresa inmobiliaria dedicada a la administración de comunidades de propietarios y a la gestión de patrimonios en régimen de alquiler, enfocada en la conservación y optimización de los activos de nuestros clientes.",
   "whytitle1_description2": "Nuestra misión es proporcionar un servicio integral y personalizado, orientado a maximizar el valor de los bienes inmobiliarios de nuestros clientes. A lo largo de nuestra trayectoria, hemos desarrollado un enfoque proactivo en la gestión de patrimonios y administración de fincas, garantizando la protección, el mantenimiento y el crecimiento de los activos bajo nuestra supervisión. ^^ Nuestro compromiso con la transparencia, la cercanía y la excelencia en cada uno de nuestros servicios nos ha permitido consolidar la mejor relación de confianza con nuestros clientes.",  
   "box_img_title": "Hoy en día no es suficiente con simplemente gestionar. Se requiere rigor, transparencia, cercanía y profesionalismo.",
-  "box_img_description": "La administración de fincas es una tarea crucial que debe estar en manos de una empresa con experiencia y solvencia, por eso adaptamos nuestros servicios a las necesidades específicas de cada Comunidad de Propietarios.",
-  "contacta_4_title": "¿Tienes alguna pregunta?",
-  "contacta_4_subtitle": "PONTE EN CONTACTO CON NOSOTROS",
-  "contacta_5_title": "Visítanos",
-  "contacta_5_subtitle": "NUESTRA UBICACIÓN",
-  "contacta_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.898683892382!2d2.1614165763079742!3d41.39800659533604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a294dae03357%3A0xae747d3d1080c597!2sCasa%20Les%20Punxes%20x%20Cloudworks!5e0!3m2!1ses!2ses!4v1725699856594!5m2!1ses!2ses",
-  "banner_button": "ENVIAR",
-  
-  "direction": "Avda. Diagonal, 416, 1-1, 08037, Barcelona (Casa de les Punxes)",
-  "telefono": "+34 93 619 12 16",
-  "email": "info@magnaurbis.com",
-  "footer_1": "magnaurbis.com",
-  "footer_2": "Magna Urbis - Administración de fincas y gestión patrimonial en Barcelona desde 1908.",
-  "footer_3": "© magnaurbis.com, 2024. Todos los derechos reservados.",
-  "footer_4": "Administración de fincas en Barcelona"
+  "box_img_description": "La administración de fincas es una tarea crucial que debe estar en manos de una empresa con experiencia y solvencia, por eso adaptamos nuestros servicios a las necesidades específicas de cada Comunidad de Propietarios."
 }

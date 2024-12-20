@@ -1,6 +1,6 @@
 
 {
-	"layout": "templates/bloginner.njk",
+	"layout": "templates_md/bloginner.njk",
 	"author": "Toldos marfil",
 	"tags": ["blog"],
 	"tag": "post",

@@ -1,0 +1,82 @@
+<!-- servicios_slide.njk -->
+<!-- servicios_slide.njk -->
+<section class="bg-light  ptr-120 pbr-120 " data-scroll-section>
+    <div class="container-global mx-auto">
+        <div class="row ">
+            <div class="col-xs-12 col-sm-12 text-center">
+   
+                <h3 class="h2 mb-24"> {{servicios}}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="ov-hidden popular">
+        <!-- Slider main container -->
+        <div class="swiper-container-img">
+            <!-- Additional required wrapper -->
+            <ul class="swiper-wrapper my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                <!-- Slides -->
+
+                
+                <li class="swiper-slide border-20" itemprop="associatedMedia" itemscope
+                    itemtype="http://schema.org/ImageObject">
+                    <a class="slide-link" title="click to zoom-in" href="#" itemprop="contentUrl" data-size="1200x1200"
+                        aria-label="Haz clic para ampliar el servicio {{item.service_name}}">
+                        <div class="swiper-slide-info">
+                            <div class="h4 mb-16">{{servicio1_title}}</div>
+                            <div class="p2">{{servicio1_content }}</div>
+                        </div>
+                        <div class="ar-3-35">
+                            <img class="parallax-box" data-scroll data-scroll-speed="-.8"
+                                src="/assets/static/images/servicios/{{servicio1_img}}.jpg" itemprop="thumbnail"
+                                alt="Imagen del servicio {{servicio1_title}}" />
+                        </div>
+                    </a>
+                </li>
+                <li class="swiper-slide border-20" itemprop="associatedMedia" itemscope
+                    itemtype="http://schema.org/ImageObject">
+                    <a class="slide-link" title="click to zoom-in" href="#" itemprop="contentUrl" data-size="1200x1200"
+                        aria-label="Haz clic para ampliar el servicio {{item.service_name}}">
+                        <div class="swiper-slide-info">
+                            <div class="h4 mb-16">{{servicio2_title}}</div>
+                            <div class="p2">{{servicio2_content }}</div>
+                        </div>
+                        <div class="ar-3-35">
+                            <img class="parallax-box" data-scroll data-scroll-speed="-.8"
+                                src="/assets/static/images/servicios/{{servicio2_img}}.jpg" itemprop="thumbnail"
+                                alt="Imagen del servicio {{servicio2_title}}" />
+                        </div>
+                    </a>
+                </li>
+
+                <li class="swiper-slide border-20" itemprop="associatedMedia" itemscope
+                itemtype="http://schema.org/ImageObject">
+                <a class="slide-link" title="click to zoom-in" href="#" itemprop="contentUrl" data-size="1200x1200"
+                    aria-label="Haz clic para ampliar el servicio {{item.service_name}}">
+                    <div class="swiper-slide-info">
+                        <div class="h4 mb-16">{{servicio3_title}}</div>
+                        <div class="p2">{{servicio3_content }}</div>
+                    </div>
+                    <div class="ar-3-35">
+                        <img class="parallax-box" data-scroll data-scroll-speed="-.8"
+                            src="/assets/static/images/servicios/{{servicio3_img}}.jpg" itemprop="thumbnail"
+                            alt="Imagen del servicio {{servicio3_title}}" />
+                    </div>
+                </a>
+            </li>
+
+
+            </ul>
+        </div>
+        <div class="col-xs-6 col-sm-12"> </div>
+        {# <div class="col-xs-6 col-sm-12 text-right">
+            <div class="swiper-arrows-img">
+                <button class="swiper-prev" aria-label="Anterior slide">
+                    <div> ← </div>
+                </button>
+                <button class="swiper-next" aria-label="Siguiente slide">
+                    <div>→ </div>
+                </button>
+            </div>
+        </div> #}
+    </div>
+</section>

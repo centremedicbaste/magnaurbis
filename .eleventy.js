@@ -102,11 +102,7 @@ module.exports = function (eleventyConfig) {
     );
   });
 
-  // Define la ruta a la carpeta de templates
-  const templatesDir = path.resolve(__dirname, 'src', '_includes', 'templates');
-  const templates = fs.readdirSync(templatesDir).filter(file => file.endsWith('.njk'));
 
-  eleventyConfig.addGlobalData('pluginTemplates', templates.map(file => path.join(templatesDir, file)));
 
   eleventyConfig.addFilter("mbbr", function (markdownString) {
     return markdownString.replace(/-(.*?)-/g, '<span class="bold">$1</span>');
@@ -171,7 +167,7 @@ module.exports = function (eleventyConfig) {
 
   // Add filenames to .njk files
   eleventyConfig.on('beforeBuild', () => {
-    const templatesDir = path.resolve(__dirname, 'src', '_includes', 'templates');
+    const templatesDir = path.resolve(__dirname, 'src', '_includes', 'templates_md');
     const templates = fs.readdirSync(templatesDir).filter(file => file.endsWith('.njk'));
     
     templates.forEach(file => {

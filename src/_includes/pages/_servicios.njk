@@ -13,25 +13,30 @@ colorHeader: has-light-menu
 
 
 <div class="main-article">
-  {% include 'templates_md/introCta_home.njk' %}
+  {% include 'templates_md/introCta_2.njk' %}
 
   {% include "templates_md/introBenefits_2.njk" %}
 
-  {% include "templates_md/servicios_1.njk" %}
 
 
   {% include "templates_md/benefits_2.njk" %}
 
-  {% include "templates_md/content_5.njk" %}
-  {% include "templates_md/box_img.njk" %}
+  {% if whytitle1_subtitle %}
 
+  {% include "templates_md/content_foto.njk" %}
+  {% endif %}
+  {% if box_img_title %}
+    {% include "templates_md/box_img.njk" %}
+  {% endif %}
+
+  {% include "templates_md/servicios_slide.njk" %}
 
 
 
   {% include "templates_md/contacta_4.njk" %}
-  {% include "templates_md/contacta_5.njk" %}
 
 
+  {% include "templates_md/maxilogo.njk" %}
 
 </div>
 
