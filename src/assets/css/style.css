@@ -14311,7 +14311,6 @@ svg {
   transform: translateY(-100%);
   background: rgba(255, 255, 255, 0.52);
   backdrop-filter: blur(12.15px);
-  /* Note: backdrop-filter has minimal browser support */
   display: flex;
   align-items: center;
 }
@@ -14319,7 +14318,7 @@ svg {
 #menu-toggle {
   display: block;
 }
-@media (min-width: 992px) {
+@media (min-width: 1280px) {
   #menu-toggle {
     display: none;
   }
@@ -14352,7 +14351,7 @@ svg {
   padding-right: 20px;
   justify-content: flex-end;
 }
-@media (min-width: 992px) {
+@media (min-width: 1280px) {
   .menu-fixed-inner {
     align-content: center;
     align-items: center;
@@ -14362,7 +14361,7 @@ svg {
 .menu-desktop {
   display: none;
 }
-@media (min-width: 992px) {
+@media (min-width: 1280px) {
   .menu-desktop {
     display: flex;
     align-items: flex-start;
@@ -16740,13 +16739,12 @@ ul > li.special-class {
 }
 
 .menu-logo {
-  width: 40%;
+  width: 200px;
   position: absolute;
 }
 @media (min-width: 768px) {
   .menu-logo {
     padding-left: 30px;
-    padding-top: 30px;
     align-content: center;
   }
 }

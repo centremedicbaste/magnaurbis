@@ -12,13 +12,12 @@ $header-desktop: 200px;
   transform: translateY(-100%);
   background: rgba(255, 255, 255, 0.52);
   backdrop-filter: blur(12.15px);
-  /* Note: backdrop-filter has minimal browser support */
   display: flex;
   align-items: center;
 }
 #menu-toggle {
   display: block;
-  @media (min-width: $break-md) {
+  @media (min-width: $break-lg) {
     display: none;
   }
 
@@ -51,14 +50,14 @@ rect{
   padding-right: 20px;
 
   justify-content: flex-end;
-  @media (min-width: $break-md) {
+  @media (min-width: $break-lg) {
     align-content: center;
     align-items: center;
   }
 }
 .menu-desktop {
   display: none;
-  @media (min-width: $break-md) {
+  @media (min-width: $break-lg) {
     display: flex;
     align-items: flex-start;
     li {

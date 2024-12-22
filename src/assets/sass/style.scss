@@ -1203,12 +1203,12 @@ ul>li.special-class{
   display: flex;
 }
 .menu-logo{
-  width: 40%;
+  width: 200px;
 
   position: absolute;
   @media (min-width: $break-sm) {
     padding-left: 30px;
-    padding-top: 30px;
+
 
     align-content: center;
   }
