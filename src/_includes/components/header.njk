@@ -94,15 +94,21 @@
         </svg>
     </button>
     <ul class="list-clear ptr-64 ttu">
-        {% for page in collections.pages %}
-        {% if page.data.seccion  != 'index' %}
-        <li>
-            <a href="{{ page.url }}">
-                <span>{{ page.data.seccion }}</span>
-            </a>
-        </li>
+
+
+
+
+        {% for page in sorted_pages %}
+        {% if page.data.seccion != 'index' %}
+            <li>
+                <a href="{{ page.url }}">
+                    <span>{{ page.data.seccion }}</span>
+                </a>
+            </li>
         {% endif %}
-        {% endfor %}
+    {% endfor %}
+
+
    
             <a class="w-100" href="/contacta/" id=""><button class=" btn btn-primary btn--full">CONTACTA</button></a>
   

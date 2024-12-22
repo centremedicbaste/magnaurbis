@@ -1179,6 +1179,9 @@ margin-top: -100px;
 .bg-dark-2 {
   background-color: #DCDCDC;
   color: $c-primary;
+  .p2{
+    color: $c-accent;
+  }
 
 }
 
@@ -1194,9 +1197,7 @@ margin-top: -100px;
 .bg-dark-4 {
   background-color: #A1A1A1;
   color: $c-white;
-  .c-accent {
-    color: $c-white;
-  }
+
 }
 
 ul>li.special-class{

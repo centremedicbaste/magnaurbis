@@ -16717,6 +16717,9 @@ html.lenis, html.lenis body {
   background-color: #DCDCDC;
   color: var(--c-primary);
 }
+.bg-dark-2 .p2 {
+  color: var(--c-accent);
+}
 
 .bg-dark-3 {
   background-color: #179CAA;
@@ -16728,9 +16731,6 @@ html.lenis, html.lenis body {
 
 .bg-dark-4 {
   background-color: #A1A1A1;
-  color: #ffffff;
-}
-.bg-dark-4 .c-accent {
   color: #ffffff;
 }
 
