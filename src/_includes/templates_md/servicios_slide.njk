@@ -12,11 +12,11 @@
         <!-- Slider main container -->
         <div class="swiper-container-img">
             <!-- Additional required wrapper -->
-            <ul class="swiper-wrapper my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+            <ul class="swiper-wrapper" itemscope itemtype="http://schema.org/ImageGallery">
                 {% for servicio in global_index.services %}
                     {% if servicio.service_name != seccion %}
                         <li class="swiper-slide border-20" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a class="slide-link" href="{{permalink}}"  
+                            <a class="slide-link" href="/{{servicio.service_link}}/"  
                                 aria-label="Haz clic para ampliar el servicio {{ servicio.service_name }}">
                                 
                                 <div class="swiper-slide-info">

@@ -58,24 +58,28 @@
     {
       "service_name": "Administración de fincas",
       "service_content": "Administramos inmuebles residenciales y Comunidades de Propietarios en Barcelona.",
-      "service_img": "servicio_1"
+      "service_img": "servicio_1",
+      "service_link": "administracion-de-fincas"
     },
     {
       "service_name": "Patrimonios inmobiliarios",
       "service_content": "Adaptamos la gestión de tus bienes  a tus necesidades, asegurando la optimización entre seguridad  y rentabilidad que mejor se adapte a tu perfil.",
-      "service_img": "servicio_2"
+      "service_img": "servicio_2",
+            "service_link": "patrimonios-inmobiliarios"
     },
     {
       "service_name": "Gestión comercial",
       "service_content": "Nos encargamos de alquilar o vender tus propiedades, y te ayudamos a encontrar aquellas que se ajusten a tus requisitos patrimoniales.",
-      "service_img": "servicio_3"
+      "service_img": "servicio_3",
+          "service_link": "gestion-comercial"
     }
 
     ,
     {
       "service_name": "Asesoria jurídica",
       "service_content": "Te asesoramos respecto a contratos inmobiliarios, sucesiones y fiscalidad inmobiliaria.",
-      "service_img": "servicio_4"
+      "service_img": "servicio_4",
+      "service_link": "asesoria-juridica"
     }
   ],
   "introbenefits_title": "Nuestros valores fundamentales",
