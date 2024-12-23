@@ -161,7 +161,7 @@ svg {
     backdrop-filter: blur(8px);
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 16px;
-    z-index: 100;
+    z-index: 1000;
   }
 }
 .full-logo {

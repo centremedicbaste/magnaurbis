@@ -118,7 +118,6 @@ var mySwiper = new Swiper(".swiper-container-img", {
   spaceBetween: 15,
   slidesPerView: "1.5",
 
-  loop: true,
   // autoHeight: true,
   pagination: {
     el: ".actuals .swiper-pagination",
