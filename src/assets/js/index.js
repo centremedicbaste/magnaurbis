@@ -112,7 +112,7 @@ window.addEventListener("scroll", handleScroll);
 
 var mySwiper = new Swiper(".swiper-container-img", {
   // If loop true set photoswipe - counterEl: false
-  loop: true,
+  loop: false,
   /* slidesPerView || auto - if you want to set width by css like flickity.js layout - in this case width:80% by CSS */
 
   spaceBetween: 15,

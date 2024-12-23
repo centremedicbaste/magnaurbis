@@ -14617,11 +14617,6 @@ svg {
 }
 
 .slide-link {
-  position: relative;
-  text-decoration: none;
-  color: inherit;
-  height: 0;
-  padding-top: 125%;
   transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .slide-link .slide-title {
