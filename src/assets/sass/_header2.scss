@@ -128,6 +128,10 @@ opacity:0;
   z-index: 105;
   transform: translateX(100%);
   transition: all ease 0.3s;
+  a{
+    color: white;
+  }
+
 
   ul {
     height: 100%;
@@ -147,6 +151,10 @@ opacity:0;
   position: absolute;
   top: 27px;
   right: 20px;
+  svg{
+    transform: rotate(45deg);
+
+  }
 }
 .menu-open {
   .menu-mobile-wrap {

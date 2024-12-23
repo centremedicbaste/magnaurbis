@@ -145,14 +145,14 @@ var mySwiper = new Swiper(".swiper-container-img", {
       pagination: false,
     },
     1200: {
-      slidesPerView: 3.2,
+      slidesPerView: 3,
       spaceBetween: 30,
       centeredSlides: false,
       pagination: false,
       loop: false,
     },
     1600: {
-      slidesPerView: 3.5,
+      slidesPerView: 3,
       spaceBetween: 30,
       centeredSlides: false,
       pagination: false,

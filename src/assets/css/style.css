@@ -2317,7 +2317,7 @@ mark {
   .p1 {
     font-family: "font-regular", Helvetica, "Arial ", "Lucida Grande", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
   }
   .p2 {
@@ -14436,6 +14436,9 @@ svg {
   transform: translateX(100%);
   transition: all ease 0.3s;
 }
+.menu-mobile-wrap a {
+  color: white;
+}
 .menu-mobile-wrap ul {
   height: 100%;
   display: flex;
@@ -14453,6 +14456,9 @@ svg {
   position: absolute;
   top: 27px;
   right: 20px;
+}
+.link_cierre svg {
+  transform: rotate(45deg);
 }
 
 .menu-open .menu-mobile-wrap {
@@ -14644,6 +14650,7 @@ svg {
 @media (min-width: 992px) {
   .swiper-container-img {
     padding-left: calc((100vw - 1600px + 64px) / 2);
+    padding-right: calc((100vw - 1600px + 64px) / 2);
   }
 }
 .swiper-container-img .swiper-prev,
@@ -16560,7 +16567,7 @@ a:hover {
 .container-global-4 {
   padding-right: 16px;
   padding-left: 16px;
-  max-width: 250px;
+  max-width: 350px;
 }
 @media (min-width: 768px) {
   .container-global-4 {
