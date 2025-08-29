@@ -1,9 +1,9 @@
 ---
 layout: pages/_servicios.njk
 permalink: /patrimonios-inmobiliarios/
-metaTitle: Administradores de fincas en Barcelona - Magna Urbis
-metaDescription: Magna Urbis, expertos en administración de fincas y gestión de patrimonios en Barcelona con más de 100 años de experiencia.
-metaKeywords: administración de fincas, gestión de patrimonios, Barcelona, inmobiliaria, alquiler de viviendas
+metaTitle: Gestión Integral de Patrimonios Inmobiliarios en Barcelona | Magna Urbis
+metaDescription: Descubre cómo Magna Urbis optimiza la gestión de patrimonios inmobiliarios en Barcelona, ofreciendo soluciones personalizadas para maximizar la rentabilidad de tus activos.
+metaKeywords: gestión de patrimonios inmobiliarios, optimización de activos, Barcelona, Magna Urbis, rentabilidad inmobiliaria
 metaRobots: index, follow
 tags: ["pages"]
 seccion: Patrimonios inmobiliarios

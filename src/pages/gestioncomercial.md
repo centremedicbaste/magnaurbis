@@ -1,9 +1,9 @@
 ---
 layout: pages/_servicios.njk
 permalink: /gestion-comercial/
-metaTitle: Administradores de fincas en Barcelona - Magna Urbis
-metaDescription: Magna Urbis, expertos en administración de fincas y gestión de patrimonios en Barcelona con más de 100 años de experiencia.
-metaKeywords: administración de fincas, gestión de patrimonios, Barcelona, inmobiliaria, alquiler de viviendas
+metaTitle: Gestión Comercial en Barcelona - Expertos en Ventas y Alquileres de Propiedades | Magna Urbis
+metaDescription: Magna Urbis, especialistas en gestión comercial y administración de fincas en Barcelona, optimizando ventas y alquileres con más de 100 años de experiencia.
+metaKeywords: gestión comercial, administración de fincas, Barcelona, inmobiliaria, ventas, alquileres
 metaRobots: index, follow
 tags: ["pages"]
 seccion: Gestión comercial
