@@ -10,7 +10,7 @@ eleventyExcludeFromCollections: true
     </url>
     {% endfor %}
     {% for page in collections.all %}
-    {% if page.url != '/site.html' and page.url != '/site/' %}
+    {% if page.url != '/site.html' and page.url != '/site/' and not page.url.startsWith('/blog/') %}
     <url>
         <loc>{{global_index.url}}{{ page.url | url }}</loc>
         <lastmod>{{ page.date.toISOString() }}</lastmod>

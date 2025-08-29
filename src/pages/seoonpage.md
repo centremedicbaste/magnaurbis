@@ -1,5 +1,5 @@
 ---
-layout: pages/_sitemap_onpage.njk
+layout: ../templates/_siteseo_titles.njk
 permalink: /site.html
 
 
@@ -21,5 +21,5 @@ eleventyComputed:
   metaTitle: the boilerplate en español | Una recopilación de material para aprender the boilerplate
   metaDescription: Explora casos de estudio, aprende las mejores prácticas y mantente actualizado en este emocionante campo del diseño centrado en los the boilerplate.
   metaKeywords: the boilerplate.es
-  metaRobots: "index, follow"
+  metaRobots: "noindex, nofollow"
 ---
