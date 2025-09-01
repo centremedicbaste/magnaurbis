@@ -20,11 +20,11 @@ introbenefits_class: bg-dark-4
 introbenefits2_subtitle: Administración de fincas
 introbenefits2_content: Cualquier Comunidad de Propietarios puede enfrentar distintos tipos de conflictos, que abarcan tanto aspectos objetivos, como la adaptación a nuevas normativas, la administración económica de la propiedad o la gestión de incidencias y obras, como aspectos subjetivos, tales como la morosidad o los problemas de convivencia.
 introbenefits_title: Servicios
-introbenefits_subtitle: Nuestros servicios ^ como administrador de fincas
+introbenefits_subtitle: Asesoría jurídica
 
-box_img_title: Además, nuestro servicio incluye la representación ante organismos públicos y privados, así como la mediación en casos de disputas.
-box_img_description: Nuestro objetivo es ofrecerte tranquilidad, permitiéndote centrarte en la gestión y rentabilidad de tus activos. ^ ^ Con un enfoque personalizado, trabajamos para que cada aspecto legal de tus fincas esté en orden y en conformidad con la ley.
-box_img_img: /assets/static/images/servicio_3.jpg
+box_img_title: Nuestro objetivo es ofrecerte tranquilidad, permitiéndote centrarte en la gestión y rentabilidad de tus activos.
+box_img_description: Con un enfoque personalizado, trabajamos para que cada aspecto legal de tus fincas esté en orden y en conformidad con la ley.
+box_img_img: /assets/static/images/asesoria-1.jpg
 
 introbenefits_1title: PROFESIONALIDAD
 introbenefits_1description: El sector inmobiliario es cada día más complejo y técnico. Cuenta con un profesional especialista en administración de fincas o gestión de patrimonios inmobiliarios.

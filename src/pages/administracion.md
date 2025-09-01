@@ -43,13 +43,15 @@ introbenefits_5description: Ofrecemos asesoramiento legal y normativo especializ
 whytitle1_subtitle: La gestión de fincas es fundamental y debe estar en manos de una empresa capacitada y confiable; por eso, ajustamos nuestros servicios a las necesidades específicas de tu Comunidad de Propietarios.
 whytitle1_description: Cuéntanos tu problema y encontraremos la solución. 
 
+content_foto_img: /assets/static/images/admin-1.jpg
+content_foto_img_2: /assets/static/images/admin-2.jpg
 
 introbenefits_class: bg-dark
 
 
-box_img_title: ¿Qué es la gestión comercial?
-box_img_description: La gestión comercial es la parte de la administración de fincas que se encarga de la venta y alquiler de las propiedades.
-box_img_img: /assets/static/images/servicio_3.jpg
+box_img_title: 
+box_img_description: 
+box_img_img: 
 
 
 

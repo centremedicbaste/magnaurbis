@@ -46,12 +46,12 @@ introbenefits_7description: Ofrecemos asesoramiento jurídico en administración
 
 box_img_title: Maximiza el valor de tus activos con nuestro servicio de gestión de patrimonio.
 box_img_description: Gestionamos la planificación financiera, el monitoreo del mercado y la administración de inversiones, asegurando que cada decisión genere rentabilidad.
-box_img_img: /assets/static/images/servicio_1.jpg
+box_img_img: /assets/static/images/barcelonatop.jpg
 
 
 
-whytitle1_subtitle: La gestión de fincas es fundamental y debe estar en manos de una empresa capacitada y confiable; por eso, ajustamos nuestros servicios a las necesidades específicas de tu Comunidad de Propietarios.
-whytitle1_description: Cuéntanos tu problema y encontraremos la solución. 
+whytitle1_subtitle:
+whytitle1_description:
 
 
 
