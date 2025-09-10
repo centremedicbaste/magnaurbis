@@ -1,0 +1,23 @@
+{
+  "name": "Magna Urbis",
+  "description": "Expertos en administración de fincas y gestión de patrimonios en Barcelona con más de 100 años de experiencia.",
+  "url": "https://magnaurbis.com",
+  "email": "info@magnaurbis.com",
+  "phone": "+34 93 619 12 16",
+  "address": "Avda. Diagonal, 416, 1-1, 08037, Barcelona (Casa de les Punxes)",
+  "logo": "/assets/static/images/logo.png",
+  "favicon": "/assets/static/images/favicon.ico",
+  "social": {
+    "facebook": "",
+    "twitter": "",
+    "linkedin": "",
+    "instagram": "",
+    "youtube": ""
+  },
+  "seo": {
+    "googleAnalytics": "",
+    "googleTagManager": "",
+    "metaKeywords": "administración de fincas, gestión de patrimonios, Barcelona, inmobiliaria, alquiler de viviendas",
+    "metaDescription": "Magna Urbis, expertos en administración de fincas y gestión de patrimonios en Barcelona con más de 100 años de experiencia."
+  }
+}

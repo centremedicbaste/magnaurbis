@@ -1,6 +1,6 @@
 ---
 layout: ../templates/_siteseo_titles.njk
-permalink: /site.html
+permalink: 
 
 
 title:  La mejor web **landing optimizada en seo del mundo
