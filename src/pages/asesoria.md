@@ -46,18 +46,7 @@ introbenefits_7description: Nos comprometemos con prácticas sostenibles y respo
 
 servicios: CONSULTA EL RESTO DE NUESTROS SERVICIOS
 
-servicio1_title: Administración de fincas
-servicio1_content: Administramos edificios residenciales, de oficinas e industriales en Barcelona.
-servicio1_img: servicio_1
-servicio2_title: Gestión de patrimonios
-servicio2_content: Gestionamos tus activos inmobiliarios adaptando nuestros servicios a tus necesidades.
-servicio2_img: servicio_2
-servicio3_title: Gestión comercial
-servicio3_content: Alquilamos o vendemos tus propiedades, y te ayudamos a encontrar las que mejor se ajusten a tu perfil patrimonial.
-servicio3_img: servicio_3
-servicio4_title: Departamento de seguros
-servicio4_content: Proporcionamos el asesoramiento necesario para garantizar la excelencia en el servicio.
-servicio4_img: servicio_4
+
 
 contacta_4_title: ¿Empezamos?
 contacta_4_subtitle: CONTACTA CON NOSOTROS
