@@ -177,18 +177,6 @@ collections:
           - {label: "Content Foto Img", name: "content_foto_img", widget: "image"}
           - {label: "Content Foto Img 2", name: "content_foto_img_2", widget: "image"}
           - {label: "Servicios Title", name: "servicios", widget: "string"}
-          - {label: "Servicio 1 Title", name: "servicio1_title", widget: "string"}
-          - {label: "Servicio 1 Content", name: "servicio1_content", widget: "text"}
-          - {label: "Servicio 1 Img", name: "servicio1_img", widget: "string"}
-          - {label: "Servicio 2 Title", name: "servicio2_title", widget: "string"}
-          - {label: "Servicio 2 Content", name: "servicio2_content", widget: "text"}
-          - {label: "Servicio 2 Img", name: "servicio2_img", widget: "string"}
-          - {label: "Servicio 3 Title", name: "servicio3_title", widget: "string"}
-          - {label: "Servicio 3 Content", name: "servicio3_content", widget: "text"}
-          - {label: "Servicio 3 Img", name: "servicio3_img", widget: "string"}
-          - {label: "Servicio 4 Title", name: "servicio4_title", widget: "string"}
-          - {label: "Servicio 4 Content", name: "servicio4_content", widget: "text"}
-          - {label: "Servicio 4 Img", name: "servicio4_img", widget: "string"}
           - {label: "Contacta 4 Title", name: "contacta_4_title", widget: "string"}
           - {label: "Contacta 4 Subtitle", name: "contacta_4_subtitle", widget: "string"}
 
