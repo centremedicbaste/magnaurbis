@@ -28,7 +28,11 @@ const config = {
   previewStyles: [
     {
       label: 'Estilos principales',
-      url: '/assets/css/style.css'
+      url: 'https://magnaurbis.com/assets/css/style.css'
+    },
+    {
+      label: 'Estilos de preview',
+      url: 'https://magnaurbis.com/admin/preview-styles.css'
     }
   ],
   collections: [
