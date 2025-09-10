@@ -2,8 +2,12 @@
   publish = "public"
   command = "npm run build"
 
+[build.processing]
+  skip_processing = false
+
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
+  NETLIFY_USE_LEGACY_BUILD_IMAGE = "false"
 
 # Admin redirects handled by Eleventy
 
