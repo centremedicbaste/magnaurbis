@@ -10,11 +10,6 @@ seccion: contacta
 priority: 5
 
 
-hero_description: SERVICIOS
-hero_title: ADMINISTRACIÓN ^ DE FINCAS 
-hero_btn: CONTACTA CON NOSOTROS
-home_image: /assets/static/images/servicio_4.jpg
-
 
 contacta_title : ¿Tienes alguna pregunta? 
 contacta_subtitle : CONTACTA CON NOSOTROS 
