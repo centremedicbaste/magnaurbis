@@ -310,8 +310,8 @@ collections:
           - {label: "Servicio 6 Content", name: "servicio6_content", widget: "text"}
           - {label: "Box Img Img", name: "box_img_img", widget: "image"}
           - {label: "Hero Description 2", name: "hero_description2", widget: "string"}
-          - {label: "Intro Benefits Title 2", name: "introbenefits_title", widget: "string"}
-          - {label: "Intro Benefits Subtitle 3", name: "introbenefits_subtitle", widget: "string"}
+          - {label: "Intro Benefits Title 2", name: "introbenefits_title2", widget: "string"}
+          - {label: "Intro Benefits Subtitle 3", name: "introbenefits_subtitle2", widget: "string"}
           - {label: "Benefit 1 Title", name: "introbenefits_1title", widget: "string"}
           - {label: "Benefit 1 Description", name: "introbenefits_1description", widget: "text"}
           - {label: "Benefit 2 Title", name: "introbenefits_2title", widget: "string"}

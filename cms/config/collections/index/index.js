@@ -58,8 +58,8 @@ const indexCollection = {
                 { label: 'Hero Description 2', name: 'hero_description2', widget: 'string' },
                 
                 // Values section
-                { label: 'Intro Benefits Title 2', name: 'introbenefits_title', widget: 'string' },
-                { label: 'Intro Benefits Subtitle 3', name: 'introbenefits_subtitle', widget: 'string' },
+                { label: 'Intro Benefits Title 2', name: 'introbenefits_title2', widget: 'string' },
+                { label: 'Intro Benefits Subtitle 3', name: 'introbenefits_subtitle2', widget: 'string' },
                 
                 // Values items (3 values for index)
                 { label: 'Benefit 1 Title', name: 'introbenefits_1title', widget: 'string' },
