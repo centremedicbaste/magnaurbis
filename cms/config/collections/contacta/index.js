@@ -13,9 +13,7 @@ const contactaCollection = {
                 { label: 'Meta description', name: 'metaDescription', widget: 'text' },
                 { label: 'Meta keywords', name: 'metaKeywords', widget: 'string' },
                 { label: 'Meta robots', name: 'metaRobots', widget: 'string', default: 'index, follow' },
-                { label: 'Tags', name: 'tags', widget: 'list', default: ['pages'] },
                 { label: 'Sección', name: 'seccion', widget: 'string' },
-                { label: 'Prioridad', name: 'priority', widget: 'number' },
                 
                 // Hero section
                 { label: 'Hero Description', name: 'hero_description', widget: 'string' },

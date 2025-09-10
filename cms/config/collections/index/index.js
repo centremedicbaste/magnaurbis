@@ -13,7 +13,6 @@ const indexCollection = {
                 { label: 'Meta description', name: 'metaDescription', widget: 'text' },
                 { label: 'Meta keywords', name: 'metaKeywords', widget: 'string' },
                 { label: 'Meta robots', name: 'metaRobots', widget: 'string', default: 'index, follow' },
-                { label: 'Tags', name: 'tags', widget: 'list', default: ['pages'] },
                 { label: 'Sección', name: 'seccion', widget: 'string' },
                 
                 // Hero section
@@ -23,8 +22,6 @@ const indexCollection = {
                 { label: 'Home Image', name: 'home_image', widget: 'image' },
                 { label: 'Home Video', name: 'home_video', widget: 'string' },
                 
-                // CSS class
-                { label: 'Intro Benefits Class', name: 'introbenefits_class', widget: 'string', default: 'bg-dark' },
                 
                 // Intro benefits section
                 { label: 'Intro Benefits Subtitle', name: 'introbenefits2_subtitle', widget: 'string' },

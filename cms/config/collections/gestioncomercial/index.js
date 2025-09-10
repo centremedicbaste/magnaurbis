@@ -7,15 +7,13 @@ const gestioncomercialCollection = {
             name: 'gestioncomercial',
             file: 'src/pages/gestioncomercial.md',
             fields: [
-                { label: 'Layout', name: 'layout', widget: 'string', default: 'pages/_servicios.njk' },
+                
                 { label: 'Permalink', name: 'permalink', widget: 'string' },
                 { label: 'Meta title', name: 'metaTitle', widget: 'string' },
                 { label: 'Meta description', name: 'metaDescription', widget: 'text' },
                 { label: 'Meta keywords', name: 'metaKeywords', widget: 'string' },
                 { label: 'Meta robots', name: 'metaRobots', widget: 'string', default: 'index, follow' },
-                { label: 'Tags', name: 'tags', widget: 'list', default: ['pages'] },
                 { label: 'Sección', name: 'seccion', widget: 'string' },
-                { label: 'Prioridad', name: 'priority', widget: 'number' },
                 
                 // Hero section
                 { label: 'Hero Description', name: 'hero_description', widget: 'string' },
@@ -23,8 +21,6 @@ const gestioncomercialCollection = {
                 { label: 'Hero Button', name: 'hero_btn', widget: 'string' },
                 { label: 'Home Image', name: 'home_image', widget: 'image' },
                 
-                // CSS class
-                { label: 'Intro Benefits Class', name: 'introbenefits_class', widget: 'string', default: 'bg-dark-3' },
                 
                 // Box section
                 { label: 'Box Img Title', name: 'box_img_title', widget: 'string' },

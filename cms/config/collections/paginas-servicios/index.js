@@ -9,7 +9,7 @@ const paginasServiciosCollection = {
         value: 'pages/_servicios.njk'
     },
     fields: [
-        { label: 'Layout', name: 'layout', widget: 'string', default: 'pages/_servicios.njk' },
+        
         { label: 'Permalink', name: 'permalink', widget: 'string' },
         { label: 'Meta title', name: 'metaTitle', widget: 'string' },
         { label: 'Meta description', name: 'metaDescription', widget: 'string' },
