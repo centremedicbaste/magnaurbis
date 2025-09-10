@@ -37,7 +37,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/robots.txt");
 
   // Netlify CMS
-  eleventyConfig.addPassthroughCopy("./public/admin");
+  eleventyConfig.addPassthroughCopy("./admin");
   // Netlify/Decap CMS + config files bundled with webpack
   eleventyConfig.addPassthroughCopy("dist");
   eleventyConfig.addPairedShortcode("myShortcode", function (content) {

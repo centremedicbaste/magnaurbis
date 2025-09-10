@@ -1,0 +1,134 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: XXXX
+    api_key: XXXX
+
+locale: es
+
+collections:
+  - name: "site-config"
+    label: "Configuración del Sitio"
+    files:
+      - label: "Configuración General"
+        name: "general"
+        file: "src/_data/site.json"
+        fields:
+          - {label: "Nombre del Sitio", name: "name", widget: "string"}
+          - {label: "Descripción", name: "description", widget: "text"}
+          - {label: "URL", name: "url", widget: "string"}
+          - {label: "Email de Contacto", name: "email", widget: "string"}
+          - {label: "Teléfono", name: "phone", widget: "string"}
+          - {label: "Dirección", name: "address", widget: "text"}
+          - {label: "Logo", name: "logo", widget: "image"}
+          - {label: "Favicon", name: "favicon", widget: "image"}
+          - label: "Redes Sociales"
+            name: "social"
+            widget: "object"
+            fields:
+              - {label: "Facebook", name: "facebook", widget: "string"}
+              - {label: "Twitter", name: "twitter", widget: "string"}
+              - {label: "LinkedIn", name: "linkedin", widget: "string"}
+              - {label: "Instagram", name: "instagram", widget: "string"}
+              - {label: "YouTube", name: "youtube", widget: "string"}
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - {label: "Google Analytics", name: "googleAnalytics", widget: "string"}
+              - {label: "Google Tag Manager", name: "googleTagManager", widget: "string"}
+              - {label: "Meta Keywords", name: "metaKeywords", widget: "string"}
+              - {label: "Meta Description", name: "metaDescription", widget: "text"}
+
+  - name: "pages"
+    label: "Páginas"
+    folder: "src/pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "string", default: "pages/_default.njk"}
+      - {label: "Permalink", name: "permalink", widget: "string"}
+      - {label: "Meta title", name: "metaTitle", widget: "string"}
+      - {label: "Meta description", name: "metaDescription", widget: "string"}
+      - {label: "Meta keywords", name: "metaKeywords", widget: "string"}
+      - {label: "Meta robots", name: "metaRobots", widget: "string", default: "index, follow"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["pages"]}
+      - {label: "Sección", name: "seccion", widget: "string"}
+      - {label: "Prioridad", name: "priority", widget: "number"}
+      - {label: "Hero Description", name: "hero_description", widget: "string"}
+      - {label: "Hero Title", name: "hero_title", widget: "string"}
+      - {label: "Hero Button", name: "hero_btn", widget: "string"}
+      - {label: "Home Image", name: "home_image", widget: "image"}
+      - {label: "Contacta Title", name: "contacta_title", widget: "string"}
+      - {label: "Contacta Subtitle", name: "contacta_subtitle", widget: "string"}
+      - {label: "Contacta 5 Title", name: "contacta_5_title", widget: "string"}
+      - {label: "Contacta 5 Subtitle", name: "contacta_5_subtitle", widget: "string"}
+      - {label: "Contacta Map", name: "contacta_map", widget: "text"}
+      - {label: "Banner Button", name: "banner_button", widget: "string"}
+      - {label: "Dirección", name: "direction", widget: "string"}
+      - {label: "Teléfono", name: "telefono", widget: "string"}
+      - {label: "Email", name: "email", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+
+  - name: "servicios"
+    label: "Servicios"
+    folder: "src/servicios"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "string", default: "pages/_servicio.njk"}
+      - {label: "Permalink", name: "permalink", widget: "string"}
+      - {label: "Meta title", name: "metaTitle", widget: "string"}
+      - {label: "Meta description", name: "metaDescription", widget: "string"}
+      - {label: "Meta keywords", name: "metaKeywords", widget: "string"}
+      - {label: "Meta robots", name: "metaRobots", widget: "string", default: "index, follow"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["servicios"]}
+      - {label: "Sección", name: "seccion", widget: "string"}
+      - {label: "Prioridad", name: "priority", widget: "number"}
+      - {label: "Hero Description", name: "hero_description", widget: "string"}
+      - {label: "Hero Title", name: "hero_title", widget: "string"}
+      - {label: "Hero Button", name: "hero_btn", widget: "string"}
+      - {label: "Hero Image", name: "hero_image", widget: "image"}
+      - {label: "Título del Servicio", name: "service_title", widget: "string"}
+      - {label: "Subtítulo del Servicio", name: "service_subtitle", widget: "string"}
+      - {label: "Descripción Corta", name: "service_description", widget: "text"}
+      - {label: "Imagen Principal", name: "service_image", widget: "image"}
+      - {label: "Icono", name: "service_icon", widget: "image"}
+      - label: "Características"
+        name: "features"
+        widget: "list"
+        fields:
+          - {label: "Título", name: "title", widget: "string"}
+          - {label: "Descripción", name: "description", widget: "text"}
+          - {label: "Icono", name: "icon", widget: "image"}
+      - {label: "Precio", name: "price", widget: "string"}
+      - {label: "Moneda", name: "currency", widget: "string", default: "€"}
+      - {label: "Período", name: "period", widget: "string", default: "mes"}
+      - {label: "Contenido", name: "body", widget: "markdown"}
+
+  - name: "blog"
+    label: "Blog"
+    folder: "src/es/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Permalink", name: "permalink", widget: "string"}
+      - {label: "Meta title", name: "metaTitle", widget: "string"}
+      - {label: "Meta description", name: "metaDescription", widget: "string"}
+      - {label: "Meta keywords", name: "metaKeywords", widget: "string"}
+      - {label: "Meta robots", name: "metaRobots", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", required: false}
+      - {label: "Category", name: "category", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "list", default: ["post"], required: false}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Image alt", name: "imageAlt", widget: "string", required: false}
+      - {label: "Twitter", name: "social_twitter", widget: "string", required: false}
+      - {label: "LinkedIn", name: "social_linkedin", widget: "string", required: false}
+      - {label: "WhatsApp", name: "social_whatsapp", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
