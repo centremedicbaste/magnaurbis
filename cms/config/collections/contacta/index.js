@@ -15,12 +15,6 @@ const contactaCollection = {
                 { label: 'Meta robots', name: 'metaRobots', widget: 'string', default: 'index, follow' },
                 { label: 'Sección', name: 'seccion', widget: 'string' },
                 
-                // Hero section
-                { label: 'Hero Description', name: 'hero_description', widget: 'string' },
-                { label: 'Hero Title', name: 'hero_title', widget: 'string' },
-                { label: 'Hero Button', name: 'hero_btn', widget: 'string' },
-                { label: 'Home Image', name: 'home_image', widget: 'image' },
-                
                 // Contact section
                 { label: 'Contacta Title', name: 'contacta_title', widget: 'string' },
                 { label: 'Contacta Subtitle', name: 'contacta_subtitle', widget: 'string' },
