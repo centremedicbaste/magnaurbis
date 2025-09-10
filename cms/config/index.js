@@ -25,6 +25,12 @@ const config = {
       api_key: "XXXX"
     }
   },
+  previewStyles: [
+    {
+      label: 'Estilos principales',
+      url: '/assets/css/style.css'
+    }
+  ],
   collections: [
     // Include the collections imported from cms/config/collections
     administracionCollection,
