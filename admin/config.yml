@@ -18,7 +18,7 @@ collections:
         name: "administracion"
         file: "src/pages/administracion.md"
         fields:
-          - {label: "Layout", name: "layout", widget: "string", default: "pages/_servicios.njk"}
+         
           - {label: "Permalink", name: "permalink", widget: "string"}
           - {label: "Meta title", name: "metaTitle", widget: "string"}
           - {label: "Meta description", name: "metaDescription", widget: "text"}
@@ -73,7 +73,6 @@ collections:
         name: "contacta"
         file: "src/pages/contacta.md"
         fields:
-          - {label: "Layout", name: "layout", widget: "string", default: "pages/_contacta.njk"}
           - {label: "Permalink", name: "permalink", widget: "string"}
           - {label: "Meta title", name: "metaTitle", widget: "string"}
           - {label: "Meta description", name: "metaDescription", widget: "text"}
@@ -101,7 +100,7 @@ collections:
         name: "asesoria"
         file: "src/pages/asesoria.md"
         fields:
-          - {label: "Layout", name: "layout", widget: "string", default: "pages/_servicios.njk"}
+         
           - {label: "Permalink", name: "permalink", widget: "string"}
           - {label: "Meta title", name: "metaTitle", widget: "string"}
           - {label: "Meta description", name: "metaDescription", widget: "text"}
@@ -156,7 +155,7 @@ collections:
         name: "gestioncomercial"
         file: "src/pages/gestioncomercial.md"
         fields:
-          - {label: "Layout", name: "layout", widget: "string", default: "pages/_servicios.njk"}
+         
           - {label: "Permalink", name: "permalink", widget: "string"}
           - {label: "Meta title", name: "metaTitle", widget: "string"}
           - {label: "Meta description", name: "metaDescription", widget: "text"}
@@ -212,7 +211,6 @@ collections:
         name: "index"
         file: "src/pages/index.md"
         fields:
-          - {label: "Layout", name: "layout", widget: "string", default: "pages/_index.njk"}
           - {label: "Permalink", name: "permalink", widget: "string"}
           - {label: "Meta title", name: "metaTitle", widget: "string"}
           - {label: "Meta description", name: "metaDescription", widget: "text"}
@@ -302,7 +300,6 @@ collections:
         name: "patrimonios"
         file: "src/pages/patrimonios.md"
         fields:
-          - {label: "Layout", name: "layout", widget: "string", default: "pages/_servicios.njk"}
           - {label: "Permalink", name: "permalink", widget: "string"}
           - {label: "Meta title", name: "metaTitle", widget: "string"}
           - {label: "Meta description", name: "metaDescription", widget: "text"}
