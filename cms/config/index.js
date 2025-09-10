@@ -1,13 +1,14 @@
 // Import the configuration of each collection from cms/config/collections
 
-import blogPostsCollection from "./collections/blog-post";
-import pagesCollection from "./collections/pages";
-import serviciosCollection from "./collections/servicios";
 import siteConfigCollection from "./collections/site-config";
-import paginasServiciosCollection from "./collections/paginas-servicios";
-import paginasContactoCollection from "./collections/paginas-contacto";
-import paginasSeoCollection from "./collections/paginas-seo";
-import paginasGeneralesCollection from "./collections/paginas-generales";
+import administracionCollection from "./collections/administracion";
+import contactaCollection from "./collections/contacta";
+import asesoriaCollection from "./collections/asesoria";
+import gestioncomercialCollection from "./collections/gestioncomercial";
+import seoonpageCollection from "./collections/seoonpage";
+import indexCollection from "./collections/index";
+import patrimoniosCollection from "./collections/patrimonios";
+import blogPostsCollection from "./collections/blog-post";
 
 // Build the Netlify JS configuration object
 const config = {
@@ -30,12 +31,13 @@ const config = {
   collections: [
     // Include the collections imported from cms/config/collections
     siteConfigCollection,
-    paginasServiciosCollection,
-    paginasContactoCollection,
-    paginasSeoCollection,
-    paginasGeneralesCollection,
-    pagesCollection,
-    serviciosCollection,
+    administracionCollection,
+    contactaCollection,
+    asesoriaCollection,
+    gestioncomercialCollection,
+    seoonpageCollection,
+    indexCollection,
+    patrimoniosCollection,
     blogPostsCollection,
   ],
 };
