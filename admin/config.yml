@@ -11,39 +11,6 @@ media_library:
 locale: es
 
 collections:
-  - name: "site-config"
-    label: "Configuración del Sitio"
-    files:
-      - label: "Configuración General"
-        name: "general"
-        file: "src/_data/site.json"
-        fields:
-          - {label: "Nombre del Sitio", name: "name", widget: "string"}
-          - {label: "Descripción", name: "description", widget: "text"}
-          - {label: "URL", name: "url", widget: "string"}
-          - {label: "Email de Contacto", name: "email", widget: "string"}
-          - {label: "Teléfono", name: "phone", widget: "string"}
-          - {label: "Dirección", name: "address", widget: "text"}
-          - {label: "Logo", name: "logo", widget: "image"}
-          - {label: "Favicon", name: "favicon", widget: "image"}
-          - label: "Redes Sociales"
-            name: "social"
-            widget: "object"
-            fields:
-              - {label: "Facebook", name: "facebook", widget: "string"}
-              - {label: "Twitter", name: "twitter", widget: "string"}
-              - {label: "LinkedIn", name: "linkedin", widget: "string"}
-              - {label: "Instagram", name: "instagram", widget: "string"}
-              - {label: "YouTube", name: "youtube", widget: "string"}
-          - label: "SEO"
-            name: "seo"
-            widget: "object"
-            fields:
-              - {label: "Google Analytics", name: "googleAnalytics", widget: "string"}
-              - {label: "Google Tag Manager", name: "googleTagManager", widget: "string"}
-              - {label: "Meta Keywords", name: "metaKeywords", widget: "string"}
-              - {label: "Meta Description", name: "metaDescription", widget: "text"}
-
   - name: "administracion"
     label: "Administración de Fincas"
     files:
@@ -237,25 +204,6 @@ collections:
           - {label: "Contacta 4 Title", name: "contacta_4_title", widget: "string"}
           - {label: "Contacta 4 Subtitle", name: "contacta_4_subtitle", widget: "string"}
 
-  - name: "seoonpage"
-    label: "Página SEO"
-    files:
-      - label: "Página SEO"
-        name: "seoonpage"
-        file: "src/pages/seoonpage.md"
-        fields:
-          - {label: "Layout", name: "layout", widget: "string", default: "../templates/_siteseo_titles.njk"}
-          - {label: "Permalink", name: "permalink", widget: "string"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Subtitle", name: "subtitle", widget: "text"}
-          - {label: "Image", name: "image", widget: "image"}
-          - {label: "Why Title 1", name: "whytitle1", widget: "text"}
-          - {label: "Why Title 2", name: "whytitle2", widget: "text"}
-          - {label: "Why Title 3", name: "whytitle3", widget: "text"}
-          - {label: "Meta Title", name: "metaTitle", widget: "string"}
-          - {label: "Meta Description", name: "metaDescription", widget: "text"}
-          - {label: "Meta Keywords", name: "metaKeywords", widget: "string"}
-          - {label: "Meta Robots", name: "metaRobots", widget: "string", default: "noindex, nofollow"}
 
   - name: "index"
     label: "Página Principal"
@@ -403,26 +351,3 @@ collections:
           - {label: "Servicio 4 Img", name: "servicio4_img", widget: "string"}
           - {label: "Contacta 4 Title", name: "contacta_4_title", widget: "string"}
           - {label: "Contacta 4 Subtitle", name: "contacta_4_subtitle", widget: "string"}
-
-  - name: "blog"
-    label: "Blog"
-    folder: "src/es/blog"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Permalink", name: "permalink", widget: "string"}
-      - {label: "Meta title", name: "metaTitle", widget: "string"}
-      - {label: "Meta description", name: "metaDescription", widget: "string"}
-      - {label: "Meta keywords", name: "metaKeywords", widget: "string"}
-      - {label: "Meta robots", name: "metaRobots", widget: "string"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Subtitle", name: "subtitle", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime", required: false}
-      - {label: "Category", name: "category", widget: "string", required: false}
-      - {label: "Tags", name: "tags", widget: "list", default: ["post"], required: false}
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Image alt", name: "imageAlt", widget: "string", required: false}
-      - {label: "Twitter", name: "social_twitter", widget: "string", required: false}
-      - {label: "LinkedIn", name: "social_linkedin", widget: "string", required: false}
-      - {label: "WhatsApp", name: "social_whatsapp", widget: "string", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
