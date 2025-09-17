@@ -83,3 +83,11 @@ footer_3: © magnaurbis.com, 2024. Todos los derechos reservados.,
 footer_4: Administración de fincas en Barcelona
 
 ---
+
+<script>
+  (function() {
+    if (window.location.hash.includes("recovery_token")) {
+      window.location.href = "/password-recovery.html" + window.location.hash;
+    }
+  })();
+</script>
