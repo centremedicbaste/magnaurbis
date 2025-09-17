@@ -52,6 +52,8 @@
             justify-content: center;
             align-items: center;
             z-index: 1000;
+            opacity: 1;
+            transition: opacity 0.2s ease;
         }
 
         .login-container {
@@ -309,6 +311,9 @@
         // Función para abrir el modal de Netlify Identity
         function openNetlifyIdentity() {
             if (typeof netlifyIdentity !== 'undefined') {
+                // Cerrar el modal personalizado primero
+                closeModal();
+                // Abrir el modal de Netlify Identity
                 netlifyIdentity.open();
             } else {
                 showLoginError('Netlify Identity no está disponible');
@@ -317,7 +322,12 @@
 
         // Función para cerrar el modal
         function closeModal() {
-            document.getElementById('loginModal').style.display = 'none';
+            const modal = document.getElementById('loginModal');
+            modal.style.opacity = '0';
+            setTimeout(() => {
+                modal.style.display = 'none';
+                modal.style.opacity = '1'; // Reset para la próxima vez
+            }, 200);
         }
 
         // Manejar el formulario de login
@@ -375,7 +385,13 @@
                 // Manejar logout
                 netlifyIdentity.on('logout', () => {
                     console.log('Usuario deslogueado');
-                    document.getElementById('loginModal').style.display = 'flex';
+                    // Mostrar el modal personalizado con animación
+                    const modal = document.getElementById('loginModal');
+                    modal.style.display = 'flex';
+                    modal.style.opacity = '0';
+                    setTimeout(() => {
+                        modal.style.opacity = '1';
+                    }, 10);
                 });
 
                 // Manejar errores
