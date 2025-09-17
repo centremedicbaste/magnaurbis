@@ -127,5 +127,16 @@
   <script type="module" src="/assets/js/index.js"></script>
   <script type="module" src="/assets/js/scroll.js"></script>
   <script type="module" src="/assets/js/inview.js"></script>
+  
+  <!-- Redirect recovery tokens to password recovery page - only on homepage -->
+  {% if page.url == '/' %}
+  <script>
+    (function() {
+      if (window.location.hash.includes("recovery_token")) {
+        window.location.href = "/password-recovery.html" + window.location.hash;
+      }
+    })();
+  </script>
+  {% endif %}
 </body>
 </html>
