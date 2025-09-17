@@ -1,8 +1,15 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: "public/assets/static/images/uploads"
+media_folder: "assets/static/images/uploads"
 public_folder: "/assets/static/images/uploads"
+publish_mode: editorial_workflow
+commit_messages:
+  create: "Create {{collection}} \"{{slug}}\""
+  update: "Update {{collection}} \"{{slug}}\""
+  delete: "Delete {{collection}} \"{{slug}}\""
+  uploadMedia: "Upload \"{{path}}\""
+  deleteMedia: "Delete \"{{path}}\""
 locale: es
 previewStyles:
   - label: 'Estilos principales'
