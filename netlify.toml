@@ -5,6 +5,11 @@
 [build.environment]
   NODE_VERSION = "20"
   NETLIFY_USE_LEGACY_BUILD_IMAGE = "false"
+  # Auth0 Configuration - These will be set by the Auth0 by Okta extension
+  # AUTH0_ISSUER = "https://your-domain.auth0.com/"
+  # AUTH0_AUDIENCE = "your-api-identifier"
+  # AUTH0_DOMAIN = "your-domain.auth0.com"
+  # AUTH0_CLIENT_ID = "your-client-id"
 
 [build.processing]
   skip_processing = false
@@ -23,6 +28,13 @@
 [build.processing.images]
   compress = true
 
+# Netlify Identity Configuration
+[context.production.environment]
+  NETLIFY_IDENTITY_RECOVERY_URL = "https://magnaurbis.com/password-recovery"
+
+[context.deploy-preview.environment]
+  NETLIFY_IDENTITY_RECOVERY_URL = "https://magnaurbis.com/password-recovery"
+
 [[headers]]
   for = "/admin/*"
   [headers.values]
@@ -30,3 +42,4 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.auth0.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://*.auth0.com;"
