@@ -69,7 +69,7 @@ collections:
         name: "administracion"
         file: "src/pages/administracion.md"
         fields:
-        - {label: "Meta title [seo]", name: "metaTitle", widget: "string"}
+          - {label: "Meta title [seo]", name: "metaTitle", widget: "string"}
           - {label: "Meta description [seo]", name: "metaDescription", widget: "text"}
           - {label: "Meta keywords [seo]", name: "metaKeywords", widget: "string"}
           - {label: "Sección", name: "seccion", widget: "string"}
@@ -117,7 +117,7 @@ collections:
         name: "patrimonios"
         file: "src/pages/patrimonios.md"
         fields:
-        - {label: "Meta title [seo]", name: "metaTitle", widget: "string"}
+          - {label: "Meta title [seo]", name: "metaTitle", widget: "string"}
           - {label: "Meta description [seo]", name: "metaDescription", widget: "text"}
           - {label: "Meta keywords [seo]", name: "metaKeywords", widget: "string"}
           - {label: "Sección", name: "seccion", widget: "string"}
@@ -156,7 +156,7 @@ collections:
         name: "gestioncomercial"
         file: "src/pages/gestioncomercial.md"
         fields:
-        - {label: "Meta title [seo]", name: "metaTitle", widget: "string"}
+          - {label: "Meta title [seo]", name: "metaTitle", widget: "string"}
           - {label: "Meta description [seo]", name: "metaDescription", widget: "text"}
           - {label: "Meta keywords [seo]", name: "metaKeywords", widget: "string"}
           - {label: "Sección", name: "seccion", widget: "string"}
@@ -192,7 +192,7 @@ collections:
         name: "asesoria"
         file: "src/pages/asesoria.md"
         fields:
-        - {label: "Meta title [seo]", name: "metaTitle", widget: "string"}
+          - {label: "Meta title [seo]", name: "metaTitle", widget: "string"}
           - {label: "Meta description [seo]", name: "metaDescription", widget: "text"}
           - {label: "Meta keywords [seo]", name: "metaKeywords", widget: "string"}
           - {label: "Sección", name: "seccion", widget: "string"}
@@ -231,7 +231,7 @@ collections:
         name: "contacta"
         file: "src/pages/contacta.md"
         fields:
-        - {label: "Meta title [seo]", name: "metaTitle", widget: "string"}
+          - {label: "Meta title [seo]", name: "metaTitle", widget: "string"}
           - {label: "Meta description [seo]", name: "metaDescription", widget: "text"}
           - {label: "Meta keywords [seo]", name: "metaKeywords", widget: "string"}
           - {label: "Sección", name: "seccion", widget: "string"}
