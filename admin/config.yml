@@ -1,5 +1,5 @@
 backend:
-  name: auth0
+  name: git-gateway
   branch: main
 
 media_library:

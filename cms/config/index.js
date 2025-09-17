@@ -11,7 +11,7 @@ import patrimoniosCollection from "./collections/patrimonios";
 const config = {
   locale: 'es',
   backend: {
-    name: "auth0",
+    name: "git-gateway",
     branch: "main"
   },
   // It is not required to set `load_config_file` if the `config.yml` file is
