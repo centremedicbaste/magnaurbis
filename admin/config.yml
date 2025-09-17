@@ -1,11 +1,8 @@
 backend:
   name: git-gateway
   branch: main
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: XXXX
-    api_key: XXXX
+media_folder: "public/assets/static/images/uploads"
+public_folder: "/assets/static/images/uploads"
 locale: es
 previewStyles:
   - label: 'Estilos principales'
