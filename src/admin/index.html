@@ -62,6 +62,31 @@
             width: 100%;
             max-width: 400px;
             margin: 1rem;
+            position: relative;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: #999;
+            cursor: pointer;
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            line-height: 1;
+        }
+
+        .close-modal:hover {
+            background: #f5f5f5;
+            color: #333;
         }
 
         .login-header {
@@ -144,6 +169,7 @@
     <!-- Modal de Login -->
     <div id="loginModal" class="login-modal">
         <div class="login-container">
+            <button id="closeModal" class="close-modal" aria-label="Cerrar modal">×</button>
             <div class="login-header">
                 <h2>Acceso al CMS</h2>
                 <p>Magna Urbis - Panel de Administración</p>
@@ -289,10 +315,38 @@
             }
         }
 
+        // Función para cerrar el modal
+        function closeModal() {
+            document.getElementById('loginModal').style.display = 'none';
+        }
+
         // Manejar el formulario de login
         document.getElementById('loginForm').addEventListener('submit', function(e) {
             e.preventDefault();
             openNetlifyIdentity();
+        });
+
+        // Manejar el botón de cerrar modal
+        document.getElementById('closeModal').addEventListener('click', function(e) {
+            e.preventDefault();
+            closeModal();
+        });
+
+        // Cerrar modal al hacer clic fuera de él
+        document.getElementById('loginModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Cerrar modal con la tecla Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const modal = document.getElementById('loginModal');
+                if (modal.style.display !== 'none') {
+                    closeModal();
+                }
+            }
         });
 
         // Inicializar cuando se carga la página
