@@ -1,16 +1,16 @@
 ---
 layout: pages/_servicios.njk
 permalink: /gestion-comercial/
-metaTitle: Gestión Comercial en Barcelona - Expertos en Ventas y Alquileres de Propiedades | Magna Urbis
-metaDescription: Magna Urbis, especialistas en gestión comercial y administración de fincas en Barcelona, optimizando ventas y alquileres con más de 100 años de experiencia.
-metaKeywords: gestión comercial, administración de fincas, Barcelona, inmobiliaria, ventas, alquileres
+metaTitle: Gestión comercial inmobiliaria en Barcelona | Alquiler y venta | Magna Urbis
+metaDescription: Gestión comercial inmobiliaria en Barcelona | documentación, comercialización intensiva y cierre de alquileres y ventas. Más de 100 años de experiencia.
+metaKeywords: gestión comercial inmobiliaria barcelona, comercialización de inmuebles, alquiler y venta barcelona, gestión documental inmobiliaria, estudios de inversión inmobiliaria
 metaRobots: index, follow
 tags: ["pages"]
 seccion: Gestión comercial
 priority: 3
 
 hero_description: SERVICIOS
-hero_title: GESTIÓN ^ COMERCIAL
+hero_title: GESTIÓN ^ COMERCIAL ^ EN BARCELONA
 hero_btn: CONTACTA CON NOSOTROS
 
 home_image: /assets/static/images/servicio_3.jpg
@@ -24,8 +24,8 @@ box_img_title:
 box_img_content:
 box_img_img:
 
-introbenefits2_subtitle: Gestión comercial
-introbenefits2_content: Actualmente, existen numerosas aplicaciones para hacerlo por tu cuenta, así como agencias inmobiliarias dispuestas a vender tu propiedad a cualquier precio. Sin embargo, la gestión comercial es compleja y fundamental - un trabajo bien realizado desde el inicio asegura tranquilidad y confianza. 
+introbenefits2_subtitle: Gestión comercial inmobiliaria
+introbenefits2_content: Actualmente, existen numerosas aplicaciones para hacerlo por tu cuenta, así como agencias inmobiliarias dispuestas a vender tu propiedad a cualquier precio. Sin embargo, la gestión comercial inmobiliaria es compleja y fundamental,  un trabajo bien realizado desde el inicio asegura tranquilidad y confianza.
 
 introbenefits_title: Servicios
 introbenefits_subtitle: Nuestros servicios ^ como administrador de fincas
@@ -33,10 +33,10 @@ introbenefits_subtitle: Nuestros servicios ^ como administrador de fincas
 
 
 introbenefits_1title: GESTIÓN DOCUMENTAL
-introbenefits_1description: Ofrecemos gestión documental eficiente para la administración de fincas, organizando, archivando y digitalizando documentos. Aseguramos fácil acceso y cumplimiento legal.
+introbenefits_1description: Ofrecemos gestión documental eficiente para operaciones de alquiler y venta en Barcelona, organizando y digitalizando documentos para asegurar acceso fácil y cumplimiento legal.
 
 introbenefits_2title: COMERCIALIZACIÓN INTENSIVA
-introbenefits_2description: Implementamos una comercialización intensiva para tus propiedades, maximizando su visibilidad y alcance. Utilizamos estrategias efectivas para asegurar arrendamientos de forma rápida.
+introbenefits_2description: Implementamos comercialización intensiva para tus propiedades en Barcelona, maximizando visibilidad y alcance con estrategias efectivas para arrendamientos y ventas rápidas.
 
 introbenefits_3title: GESTIÓN DE INCIDENCIAS
 introbenefits_3description: Ofrecemos gestión integral de incidencias y obras- supervisión de reparaciones, control de calidad y coordinación de proyectos para asegurar resultados óptimos.

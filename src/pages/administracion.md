@@ -1,14 +1,9 @@
----
-metaTitle: Administración de Fincas en Barcelona - Soluciones Integrales y
-  Personalizadas | Magna Urbis
-metaDescription: Descubre cómo Magna Urbis transforma la administración de
-  fincas en Barcelona con soluciones personalizadas, optimizando la gestión y
-  rentabilidad de tus propiedades.
-metaKeywords: administración de fincas Barcelona, gestión patrimonial,
-  soluciones inmobiliarias, optimización de propiedades, Magna Urbis
+metaTitle: Administración de fincas en Barcelona | Administradores expertos | Magna Urbis
+metaDescription: Administradores de fincas en Barcelona con +100 años de experiencia. Gestión económica, administrativa, incidencias y obras para comunidades. Solicita asesoramiento.
+metaKeywords: administración de fincas barcelona, administradores de fincas barcelona, comunidades de propietarios, gestión patrimonial inmobiliaria, gestor de comunidades barcelona, gestión de incidencias y obras
 seccion: Administración de fincas
 hero_description: "SERVICIOS "
-hero_title: ADMINISTRACIÓN ^ DE FINCAS
+hero_title: ADMINISTRACIÓN ^ DE FINCAS ^ EN BARCELONA
 hero_btn: CONTACTA CON NOSOTROS
 home_image: /assets/static/images/servicio_1.jpg
 introbenefits2_subtitle: Administración de fincas
@@ -20,13 +15,9 @@ introbenefits2_content: Cualquier Comunidad de Propietarios puede enfrentar
 introbenefits_title: Servicios
 introbenefits_subtitle: Nuestros servicios ^ como administrador de fincas
 introbenefits_1title: GESTIÓN ECONÓMICA
-introbenefits_1description: Ofrecemos gestión inmobiliaria integral, optimizando
-  alquileres, administración de fincas y patrimonio. Aumenta el valor y
-  seguridad de tus propiedades con expertos.
+introbenefits_1description: Ofrecemos gestión inmobiliaria integral para Comunidades de Propietarios en Barcelona, optimizando alquileres, administración de fincas y patrimonio para aumentar el valor y la seguridad de tus propiedades.
 introbenefits_2title: GESTIÓN ADMINISTRATIVA
-introbenefits_2description: Brindamos gestión administrativa eficiente- manejo
-  de trámites, organización documental y optimización de procesos para empresas.
-  Mejora tu operatividad con nosotros.
+introbenefits_2description: Brindamos gestión administrativa eficiente para Comunidades de Propietarios en Barcelona: manejo de trámites, organización documental y optimización de procesos. Mejora la operatividad de tu comunidad.
 introbenefits_3title: GESTIÓN DE INCIDENCIAS Y OBRAS
 introbenefits_3description: Ofrecemos gestión integral de incidencias y obras-
   supervisión de reparaciones, control de calidad y coordinación de proyectos
@@ -47,7 +38,7 @@ content_foto_img: /assets/static/images/admin-1.jpg
 content_foto_img_2: /assets/static/images/admin-2.jpg
 servicios: CONSULTA EL RESTO DE NUESTROS SERVICIOS
 servicio1_title: Administración de fincas
-servicio1_content: Administramos edificios residenciales, de oficinas e industriales en Barcelona.
+servicio1_content: Administramos edificios residenciales, de oficinas e industriales en Barcelona, con enfoque en Comunidades de Propietarios y cumplimiento normativo.
 servicio2_img: servicio_2
 servicio3_img: servicio_3
 servicio4_img: servicio_4
@@ -71,6 +62,7 @@ box_img_img: null
 servicio2_title: Gestión de patrimonios
 servicio3_content: Alquilamos o vendemos tus propiedades, y te ayudamos a
   encontrar las que mejor se ajusten a tu perfil patrimonial.
+  
 tags:
   - pages
 ---

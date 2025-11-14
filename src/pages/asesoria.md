@@ -1,19 +1,16 @@
 ---
 permalink: /asesoria-juridica/
-metaTitle: Asesoría Jurídica en Barcelona - Magna Urbis
-metaDescription: Magna Urbis, expertos en asesoría jurídica para administración
-  de fincas y gestión de patrimonios en Barcelona con más de 100 años de
-  experiencia.
-metaKeywords: asesoría jurídica, administración de fincas, gestión de
-  patrimonios, Barcelona, inmobiliaria
+metaTitle: Asesoría jurídica inmobiliaria en Barcelona | Comunidades y patrimonios | Magna Urbis
+metaDescription: Asesoría jurídica inmobiliaria en Barcelona para comunidades de propietarios, contratos de alquiler y fiscalidad. Más de 100 años de experiencia a tu lado.
+metaKeywords: asesoría jurídica inmobiliaria barcelona, asesoría comunidades de propietarios, contratos de alquiler barcelona, fiscalidad inmobiliaria barcelona, gestión patrimonial legal
 metaRobots: index, follow
-seccion: AsesorIa jurídica
+seccion: Asesoría jurídica
 hero_description: SERVICIOS
-hero_title: ASESORÍA ^ JURÍDICA
+hero_title: ASESORÍA ^ JURÍDICA ^ EN BARCELONA
 hero_btn: CONTACTA CON NOSOTROS
 home_image: /assets/static/images/servicio_4.jpg
 introbenefits_class: bg-dark-4
-introbenefits2_subtitle: Administración de fincas
+introbenefits2_subtitle: Asesoría jurídica inmobiliaria
 introbenefits2_content: Cualquier Comunidad de Propietarios puede enfrentar
   distintos tipos de conflictos, que abarcan tanto aspectos objetivos, como la
   adaptación a nuevas normativas, la administración económica de la propiedad o
