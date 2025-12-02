@@ -1,3 +1,4 @@
+---
 metaTitle: Administración de fincas en Barcelona | Administradores expertos | Magna Urbis
 metaDescription: Administradores de fincas en Barcelona con +100 años de experiencia. Gestión económica, administrativa, incidencias y obras para comunidades. Solicita asesoramiento.
 metaKeywords: administración de fincas barcelona, administradores de fincas barcelona, comunidades de propietarios, gestión patrimonial inmobiliaria, gestor de comunidades barcelona, gestión de incidencias y obras
@@ -17,7 +18,7 @@ introbenefits_subtitle: Nuestros servicios ^ como administrador de fincas
 introbenefits_1title: GESTIÓN ECONÓMICA
 introbenefits_1description: Ofrecemos gestión inmobiliaria integral para Comunidades de Propietarios en Barcelona, optimizando alquileres, administración de fincas y patrimonio para aumentar el valor y la seguridad de tus propiedades.
 introbenefits_2title: GESTIÓN ADMINISTRATIVA
-introbenefits_2description: Brindamos gestión administrativa eficiente para Comunidades de Propietarios en Barcelona: manejo de trámites, organización documental y optimización de procesos. Mejora la operatividad de tu comunidad.
+introbenefits_2description: "Brindamos gestión administrativa eficiente para Comunidades de Propietarios en Barcelona: manejo de trámites, organización documental y optimización de procesos. Mejora la operatividad de tu comunidad."
 introbenefits_3title: GESTIÓN DE INCIDENCIAS Y OBRAS
 introbenefits_3description: Ofrecemos gestión integral de incidencias y obras-
   supervisión de reparaciones, control de calidad y coordinación de proyectos
