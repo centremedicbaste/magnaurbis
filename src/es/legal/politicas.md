@@ -15,7 +15,7 @@ description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendi
 ---
 
 {{global_index.email}}
- {{global_index.legal_nombre_titular_direccion}}
+{{global_index.legal_nombre_titular_direccion}}
 
 # Protección de Datos
 

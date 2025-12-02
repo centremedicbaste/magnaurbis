@@ -20,7 +20,7 @@ descripcion: descripcion
 
 #### Las lonas
 
-![Benefit]({{global.imageDir}}_blog/casa1.jpg)
+![Benefit]({{global_index.imageDir}}_blog/casa1.jpg)
 
 #### Prueba de rociado (Spray Test)
 

@@ -32,27 +32,27 @@
                         <div class="col-xs-12 mb-24">
                             <label>
                                 <input type="checkbox" name="politicas" required>
-                                Acepto las políticas de la web0
+                                Acepto las políticas de la web
                             </label>
                         </div>
                         <div class="col-xs-12 mb-16 ">
-                            <button aria-label="enviar email" class="btn btn-primary btn--full" type="submit">         {{global.banner_button}}</button>
+                            <button aria-label="enviar email" class="btn btn-primary btn--full" type="submit">{{banner_button or global_index.hero_btn}}</button>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="col-xs-12 col-md-6 mb-32 ">
                 <div class="fluid-5-b mb-24 ">
-         {{global.banner_title}}
+         {{banner_title or ''}}
                 </div>
                 <div class="fluid-9-r mb-24">
-                    {{global.banner_text}}
+                    {{banner_text or ''}}
                 </div>
                 <div class="fluid-7-r mb-24">
-                    {{global.banner_claim}}
+                    {{banner_claim or ''}}
                 </div>
-                <div class="mb-16 p-1"><a  href="mailto: {{global.email}}"> {{global.email}}</a></div>
-                <div class="mb-16">T.{{global.telefono}}</div>
+                <div class="mb-16 p-1"><a  href="mailto:{{global_index.email or site.email}}">{{global_index.email or site.email}}</a></div>
+                <div class="mb-16">T.{{telefono or global_index.phone or site.phone}}</div>
             </div>
         </div>
     </section>

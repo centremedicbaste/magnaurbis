@@ -21,10 +21,14 @@
   "legal_nombre_titular": "Magna Urbis BCN S.L.",
   "legal_nif_titular": "número de identificación fiscal",
   "legal_direccion_titular": "dirección del titular",
+  "legal_nombre_titular_direccion": "Avda. Diagonal, 416, 1-1, 08037, Barcelona",
   "empresa_legal_direccion": "Avda. Diagonal, 416, 1-1, 08037, Barcelona",
   "empresa_legal": "Magna Urbis BCN S.L.",
   "empresa_corto": "nombre comercial",
   "website": "www.magnaurbis.com",
+  "email": "info@magnaurbis.com",
+  "phone": "+34 93 619 12 16",
+  "telefono": "+34 93 619 12 16",
   "whatsapp": "",
   "direction_link": "enlace de ubicación",
   "empresa_copyright": " © 2023 Boilerplate",
@@ -72,9 +76,7 @@
       "service_content": "Nos encargamos de alquilar o vender tus propiedades, y te ayudamos a encontrar aquellas que se ajusten a tus requisitos patrimoniales.",
       "service_img": "servicio_3",
           "service_link": "gestion-comercial"
-    }
-
-    ,
+    },
     {
       "service_name": "Asesoria jurídica",
       "service_content": "Te asesoramos respecto a contratos inmobiliarios, sucesiones y fiscalidad inmobiliaria.",
