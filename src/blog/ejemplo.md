@@ -4,7 +4,7 @@ title: titulo
 metaTitle: metatitulo
 metaDescription:  calidad de vida.
 metaKeywords: key1,key2
-metaRobots: index, follow
+metaRobots: noindex, nofollow
 date: 2023-06-23
 fecha: 23 de marzo de 2023
 tags: ["post", "key"]
