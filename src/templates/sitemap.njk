@@ -4,18 +4,22 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% if collections.categories %}
     {% for category in collections.categories %}
     <url>
         <loc>{{global_index.url}}/{{ category | slug }}</loc>
     </url>
     {% endfor %}
+    {% endif %}
     {% for page in collections.all %}
-    {% if page.url != '/site.html' and page.url != '/site/' and not page.url.startsWith('/blog/') %}
+    {% if page.url and page.url != '/site.html' and page.url != '/site/' and not page.url.startsWith('/blog/') %}
     {% if page.data.metaRobots and 'noindex' not in page.data.metaRobots %}
     <url>
         <loc>{{global_index.url}}{{ page.url | url }}</loc>
-        {% if page.date %}
+        {% if page.date and page.date.toISOString %}
         <lastmod>{{ page.date.toISOString() }}</lastmod>
+        {% elif page.data.date and page.data.date.toISOString %}
+        <lastmod>{{ page.data.date.toISOString() }}</lastmod>
         {% endif %}
     </url>
     {% endif %}
