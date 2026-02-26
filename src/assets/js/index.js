@@ -1,6 +1,4 @@
 
-console.log("Hola, mundo!");
-
 document.body.onscroll = function () {
   if (
     document.body.scrollTop >= 50 ||
@@ -62,7 +60,6 @@ $(document).ready(function () {
   initvideo();
   $("#menu-toggle, .menu-mobile-overlay, .link_cierre").click(function () {
     $("body").toggleClass("menu-open");
-    console.log("menu-open");
   });
 });
 
