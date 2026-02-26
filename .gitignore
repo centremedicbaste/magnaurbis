@@ -4,3 +4,6 @@ build/
 dist/
 .cache/
 public/
+
+# Documento interno para cliente (no subir)
+resumen-cambios-cliente.html
