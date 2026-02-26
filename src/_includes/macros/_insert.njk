@@ -70,7 +70,7 @@
     <div class="google-seemore p3"> Leer más</div>
   </div>
   <div class="is-flex">
-    <div class="pr-16"> <img width="40px" src="https://lh3.googleusercontent.com/a/{{img}}" alt=""></div>
+    <div class="pr-16"> <img width="40" height="40" src="https://lh3.googleusercontent.com/a/{{img}}" alt="Avatar de {{ empresa }}" loading="lazy" /></div>
     <div class="c-accent">
       {{ empresa }} <br>
       <span class="p3"> {{ fecha }} </span>
@@ -82,7 +82,7 @@
 <div class="card-2">
   <div class="rat-1-1 mb-24">
     <div class="rat-content">
-      <img src="/assets/static/colaboradores/{{foto}}.webp" alt="">
+      <img src="/assets/static/colaboradores/{{foto}}.webp" alt="Fotografía de {{ nombre }}" width="400" height="400" loading="lazy" />
     </div>
   </div>
   <div class="fluid-9-b c-primary  p-16">
@@ -177,7 +177,7 @@
     <div class="google-seemore p1"> Leer más</div>
   </div>
   <div class="is-flex">
-    <div class="pr-16"> <img width="40px" src="https://lh3.googleusercontent.com/a/{{img}}" alt=""></div>
+    <div class="pr-16"> <img width="40" height="40" src="https://lh3.googleusercontent.com/a/{{img}}" alt="Avatar de {{ empresa }}" loading="lazy" /></div>
     <div class="c-accent">
       {{ empresa }} <br>
       <span class="p1"> {{ fecha }} </span>
@@ -189,7 +189,7 @@
 <div class="card-2">
   <div class="rat-1-1 mb-24">
     <div class="rat-content">
-      <img src="/assets/static/colaboradores/{{foto}}.webp" alt="">
+      <img src="/assets/static/colaboradores/{{foto}}.webp" alt="Fotografía de {{ nombre }}" width="400" height="400" loading="lazy" />
     </div>
   </div>
   <div class="fluid-9-b c-primary  p-16">
@@ -283,7 +283,7 @@
       {% endfor %}
     </div>
     <div class="timeline-img sm:visible">
-      <img src="/assets/static/timeline/{{imagen}}_1.webp" alt="">
+      <img src="/assets/static/timeline/{{imagen}}_1.webp" alt="Línea temporal: {{ nombre }}" width="400" height="300" loading="lazy" />
     </div>
   </div>
 </div>
@@ -299,7 +299,7 @@
 {% endmacro %}
 {% macro experiment(title = '',img = '', type = '', description = '', año = '') %}
 <div class="panel">
-  <div class="panel-img"> <img src=" /assets/static/proyectos/{{img}}" alt=""> </div>
+  <div class="panel-img"> <img src=" /assets/static/proyectos/{{img}}" alt="Proyecto {{ title }}" width="400" height="300" loading="lazy" /> </div>
   <div class="panel-text">
     <div class="p1"> 01-01</div>
     <div class="fluid-5-b mb-64"> {{title}}</div>
