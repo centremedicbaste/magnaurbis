@@ -20,6 +20,48 @@
 [build.processing.html]
   pretty_urls = true
 
+# Redirecciones canónicas: sin barra final → con barra final (evita duplicados y 503 en variantes)
+[[redirects]]
+  from = "/legal/cookies"
+  to = "/legal/cookies/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/legal/politica-de-privacidad"
+  to = "/legal/politica-de-privacidad/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/legal/aviso-legal"
+  to = "/legal/aviso-legal/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/gestion-comercial"
+  to = "/gestion-comercial/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/administracion-de-fincas"
+  to = "/administracion-de-fincas/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/contacta"
+  to = "/contacta/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/asesoria-juridica"
+  to = "/asesoria-juridica/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/patrimonios-inmobiliarios"
+  to = "/patrimonios-inmobiliarios/"
+  status = 301
+  force = true
+
 [build.processing.images]
   compress = true
 

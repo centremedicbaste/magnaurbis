@@ -13,7 +13,7 @@ hero_description: SERVICIOS
 hero_title: GESTIÓN ^ COMERCIAL ^ EN BARCELONA
 hero_btn: CONTACTA CON NOSOTROS
 
-home_image: /assets/static/images/servicio_3.jpg
+home_image: /assets/static/images/servicios/servicio_3.jpg
 
 introbenefits_class: bg-dark-3
 

@@ -77,3 +77,11 @@ Es un tema de redacción (índice Flesch). Recomendación: acortar frases y usar
 4. **Screaming Frog:** Volver a rastrear el sitio y comprobar que los avisos corregidos desaparezcan.
 
 Si quieres volver a bloquear las páginas legales en robots, añade de nuevo en `src/templates/robots.njk` la línea `Disallow: /legal/` y usa `noindex` en el front matter de esas páginas si no deben indexarse.
+
+---
+
+## Reporte url_todo.csv (URLs y códigos de respuesta)
+
+**Cambios aplicados:** Enlaces legales en footer con barra final; redirects 301 en netlify.toml (sin barra → con barra) para legal, contacta y páginas de servicios; imagen servicio_3 unificada a `servicios/servicio_3.jpg` en index.md y gestioncomercial.md.
+
+**503 Service Unavailable:** Son del servidor/hosting (límite Netlify o rastreo agresivo). Reducir velocidad en Screaming Frog y comprobar en navegador que las URLs responden 200.

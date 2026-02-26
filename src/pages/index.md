@@ -53,7 +53,7 @@ whytitle1_description: Como empresa de servicios inmobiliarios centrada en la ad
 whytitle1_description2: Como empresa de servicios inmobiliarios centrada en la administración de Comunidades de Propietarios y en la gestión de patrimonios inmobiliarios en régimen de alquiler orientamos nuestros esfuerzos a la conservación y optimización de los activos inmobiliarios de nuestros clientes. 
 
 
-box_img_img: /assets/static/images/servicio_3.jpg
+box_img_img: /assets/static/images/servicios/servicio_3.jpg
 box_img_title: Hoy en día no basta con simplemente administrar. Hay que hacerlo con rigor, transparencia, cercanía y profesionalidad.
 box_img_description: La administración de fincas es importante y debe confiarse a una empresa preparada y solvente, por ello adaptamos nuestros servicios a las necesidades de tu Comunidad de Propietarios
 box_img_description2: 
