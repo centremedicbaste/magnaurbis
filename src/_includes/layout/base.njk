@@ -20,12 +20,12 @@
   <meta property="og:description"
     content="{{ metaDescription or eleventyComputed.metaDescription or metadata.description }}" />
   <meta property="og:url" content="{{ global_index.url }}{{ page.url | url }}" />
-  <meta property="og:image" content="{{ global_index.url }}/assets/static/images/2.webp" />
+  <meta property="og:image" content="{{ global_index.url }}{{ global_index.home_image }}" />
   <meta name="twitter:card" content="{{ metaTitle }}" />
   <meta name="twitter:title" content="{{ metaTitle }}" />
   <meta name="twitter:description"
     content="{{ metaDescription or eleventyComputed.metaDescription or metadata.description }}" />
-  <meta name="twitter:image" content="{{ global_index.url }}/assets/static/favicons/favicon-96x96.png" />
+  <meta name="twitter:image" content="{{ global_index.url }}/assets/static/favicons/favicon-32x32.png" />
   <link rel="icon" type="image/png" href="{{ global_index.url }}/assets/static/favicons/favicon-32x32.png" />
   <!-- Estilos CSS -->
   <style>
@@ -67,7 +67,7 @@
         "@type": "RealEstateAgent",
         "name": "Magna Urbis",
         "url": "https://magnaurbis.com",
-        "logo": "https://magnaurbis.com/assets/static/favicons/favicon-96x96.png",
+        "logo": "https://magnaurbis.com/assets/static/favicons/favicon-32x32.png",
         "description": "Magna Urbis, expertos en administración de fincas y gestión de patrimonios en Barcelona.",
         "address": {
           "@type": "PostalAddress",
