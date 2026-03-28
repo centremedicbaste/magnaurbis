@@ -4,11 +4,9 @@ priority: 5
 banner_button: ENVIAR
 layout: pages/_contacta.njk
 permalink: /contacta/
-metaTitle: Contacta con  Magna Urbis
-metaDescription: Magna Urbis, expertos en administración de fincas y gestión de
-  patrimonios en Barcelona con más de 100 años de experiencia.
-metaKeywords: administración de fincas, gestión de patrimonios, Barcelona,
-  inmobiliaria, alquiler de viviendas
+metaTitle: Contacta con Magna Urbis | Administradores de Fincas Barcelona
+metaDescription: Contacta con Magna Urbis, administradores de fincas en Barcelona. Solicita presupuesto sin compromiso. Avda. Diagonal 416, Barcelona. Tel. 93 619 12 16.
+metaKeywords: contacto administradores de fincas barcelona, presupuesto administración fincas, contactar gestor patrimonios barcelona
 metaRobots: index, follow
 seccion: contacta
 

@@ -12,5 +12,26 @@ Disallow: /site.html
 Disallow: /home/
 Disallow: /ejemplohtml/
 Disallow: /blog/ejemplo/
+Disallow: /pages/
+Disallow: /templates/
+
+# AI Search Bots - Permitidos para aparecer en respuestas AI
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
 
 Sitemap: {{global_index.url}}/sitemap.xml

@@ -1,0 +1,112 @@
+<section id="keyword-dashboard" class="bg-light ptr-120 pbr-120" data-scroll-section data-alert-threshold="{{ dashboard_keywords.alert_drop_threshold }}">
+  <div class="container-global mx-auto">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3 class="h2 mb-16">Dashboard SEO de keywords</h3>
+        <p class="p2 mb-32">Seguimiento de clics por keyword y alertas de caidas relevantes.</p>
+      </div>
+    </div>
+
+    <div id="keyword-alerts" class="mb-24"></div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="keyword-chart-wrap mb-24">
+          <canvas id="keyword-chart" height="220"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="keyword-table-wrap">
+          <table class="keyword-table">
+            <thead>
+              <tr>
+                <th>Keyword</th>
+                <th>URL</th>
+                <th>Clics actuales</th>
+                <th>Clics anteriores</th>
+                <th>Variacion</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for item in dashboard_keywords.items %}
+              {% set prev = item.clicks_previous or 0 %}
+              {% set curr = item.clicks_current or 0 %}
+              {% set change = ((curr - prev) / (prev if prev > 0 else 1)) * 100 %}
+              <tr
+                data-keyword="{{ item.keyword }}"
+                data-url="{{ item.url }}"
+                data-current="{{ curr }}"
+                data-previous="{{ prev }}"
+              >
+                <td>{{ item.keyword }}</td>
+                <td><a href="{{ item.url }}">{{ item.url }}</a></td>
+                <td>{{ curr }}</td>
+                <td>{{ prev }}</td>
+                <td class="{% if change >= 0 %}kw-up{% else %}kw-down{% endif %}">
+                  {% if change >= 0 %}+{% endif %}{{ change | round(1) }}%
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .keyword-chart-wrap {
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .keyword-table-wrap {
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    overflow-x: auto;
+  }
+  .keyword-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .keyword-table th,
+  .keyword-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #efefef;
+    text-align: left;
+  }
+  .keyword-table th {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+  }
+  .kw-up {
+    color: #0d7d3d;
+    font-weight: 600;
+  }
+  .kw-down {
+    color: #b42318;
+    font-weight: 600;
+  }
+  .alert-box {
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    border: 1px solid #f0d4a7;
+    background: #fff8e8;
+    color: #7a4a00;
+  }
+  .alert-empty {
+    border-radius: 8px;
+    padding: 12px 14px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    color: #444;
+  }
+</style>

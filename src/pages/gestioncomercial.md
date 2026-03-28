@@ -28,7 +28,7 @@ introbenefits2_subtitle: Gestión comercial inmobiliaria
 introbenefits2_content: Actualmente, existen numerosas aplicaciones para hacerlo por tu cuenta, así como agencias inmobiliarias dispuestas a vender tu propiedad a cualquier precio. Sin embargo, la gestión comercial inmobiliaria es compleja y fundamental,  un trabajo bien realizado desde el inicio asegura tranquilidad y confianza.
 
 introbenefits_title: Servicios
-introbenefits_subtitle: Nuestros servicios ^ como administrador de fincas
+introbenefits_subtitle: Nuestros servicios ^ de gestión comercial inmobiliaria
 
 
 
@@ -49,7 +49,7 @@ introbenefits_5description: Ofrecemos asesoramiento jurídico en administración
 
 
 
-whytitle1_subtitle: La gestión de fincas es fundamental y debe estar en manos de una empresa capacitada y confiable; por eso, ajustamos nuestros servicios a las necesidades específicas de tu Comunidad de Propietarios.
+whytitle1_subtitle: La gestión comercial inmobiliaria requiere experiencia y dedicación; por eso, nos encargamos de todo el proceso para que tus propiedades alcancen su máximo potencial.
 whytitle1_description: Cuéntanos tu problema y encontraremos la solución. 
 
 content_foto_img: /assets/static/images/gestion-1.jpg

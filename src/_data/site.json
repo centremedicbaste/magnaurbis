@@ -10,9 +10,9 @@
   "social": {
     "facebook": "",
     "twitter": "",
-    "linkedin": "",
-    "instagram": "",
-    "youtube": ""
+    "linkedin": "https://www.linkedin.com/",
+    "instagram": "https://www.instagram.com/",
+    "youtube": "https://www.youtube.com/"
   },
   "seo": {
     "googleAnalytics": "",

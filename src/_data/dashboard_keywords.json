@@ -1,0 +1,35 @@
+{
+  "alert_drop_threshold": 20,
+  "items": [
+    {
+      "keyword": "administradores de fincas en barcelona",
+      "url": "/",
+      "clicks_current": 106,
+      "clicks_previous": 58
+    },
+    {
+      "keyword": "contacta con magna urbis",
+      "url": "/contacta/",
+      "clicks_current": 26,
+      "clicks_previous": 21
+    },
+    {
+      "keyword": "asesoria juridica inmobiliaria barcelona",
+      "url": "/asesoria-juridica/",
+      "clicks_current": 1,
+      "clicks_previous": 1
+    },
+    {
+      "keyword": "gestion de patrimonios inmobiliarios barcelona",
+      "url": "/patrimonios-inmobiliarios/",
+      "clicks_current": 1,
+      "clicks_previous": 1
+    },
+    {
+      "keyword": "administracion de comunidades barcelona",
+      "url": "/administracion-de-fincas/",
+      "clicks_current": 11,
+      "clicks_previous": 15
+    }
+  ]
+}
