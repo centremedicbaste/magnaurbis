@@ -1,0 +1,85 @@
+<!-- Banner de Cookies - RGPD / Consent Mode v2 -->
+{% if global_index.tag_manager %}
+<div id="cookieBanner" style="display:none; position:fixed; bottom:0; left:0; right:0; z-index:99999; background:#1D1E23; color:#f7f6f5; padding:20px 24px; box-shadow:0 -2px 16px rgba(0,0,0,0.2); font-family:inherit; font-size:14px; line-height:1.5;">
+  <div style="max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:center; gap:16px; justify-content:space-between;">
+    <div style="flex:1; min-width:280px;">
+      <p style="margin:0 0 4px 0; font-weight:600; font-size:15px;">Este sitio utiliza cookies</p>
+      <p style="margin:0; opacity:0.85;">Usamos cookies propias y de terceros para analizar el uso del sitio y mejorar nuestros servicios. Puedes aceptar todas, rechazarlas o configurar tus preferencias. <a href="/legal/cookies/" style="color:var(--c-accent, #179CAA); text-decoration:underline;">Pol&iacute;tica de cookies</a></p>
+    </div>
+    <div style="display:flex; gap:10px; flex-shrink:0; flex-wrap:wrap;">
+      <button id="cookieReject" style="padding:10px 20px; border:1px solid rgba(255,255,255,0.3); background:transparent; color:#f7f6f5; border-radius:var(--btn-radius, 8px); cursor:pointer; font-size:14px; font-family:inherit; transition:background 0.2s;">Rechazar</button>
+      <button id="cookieAccept" style="padding:10px 20px; border:none; background:var(--c-accent, #179CAA); color:#fff; border-radius:var(--btn-radius, 8px); cursor:pointer; font-size:14px; font-weight:600; font-family:inherit; transition:opacity 0.2s;">Aceptar cookies</button>
+    </div>
+  </div>
+</div>
+<script>
+(function() {
+  var CONSENT_KEY = 'mu_cookie_consent';
+  var banner = document.getElementById('cookieBanner');
+
+  function getConsent() {
+    try { return localStorage.getItem(CONSENT_KEY); } catch(e) { return null; }
+  }
+
+  function setConsent(value) {
+    try { localStorage.setItem(CONSENT_KEY, value); } catch(e) {}
+  }
+
+  function updateConsent(granted) {
+    if (typeof gtag === 'function') {
+      gtag('consent', 'update', {
+        'analytics_storage': granted ? 'granted' : 'denied',
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
+      });
+    }
+    // Dispara evento para GTM
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'event': 'consent_update',
+      'consent_analytics': granted ? 'granted' : 'denied'
+    });
+  }
+
+  function hideBanner() {
+    if (banner) banner.style.display = 'none';
+  }
+
+  function showBanner() {
+    if (banner) banner.style.display = 'block';
+  }
+
+  // Comprobar si ya hay consentimiento guardado
+  var savedConsent = getConsent();
+  if (savedConsent === 'granted') {
+    updateConsent(true);
+  } else if (savedConsent === 'denied') {
+    updateConsent(false);
+  } else {
+    // No hay consentimiento previo: mostrar banner
+    showBanner();
+  }
+
+  // Botones
+  var acceptBtn = document.getElementById('cookieAccept');
+  var rejectBtn = document.getElementById('cookieReject');
+
+  if (acceptBtn) {
+    acceptBtn.addEventListener('click', function() {
+      setConsent('granted');
+      updateConsent(true);
+      hideBanner();
+    });
+  }
+
+  if (rejectBtn) {
+    rejectBtn.addEventListener('click', function() {
+      setConsent('denied');
+      updateConsent(false);
+      hideBanner();
+    });
+  }
+})();
+</script>
+{% endif %}

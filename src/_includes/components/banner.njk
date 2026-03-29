@@ -3,7 +3,7 @@
     <section class="container-5">
         <div class="row  ptr-120 pbr-120 md:reverse">
             <div class="col-xs-12 col-md-6 pt-16">
-                <form name="contactformulario" method="POST" action="/confirmacion.html" data-netlify="true">
+                <form name="contactformulario" method="POST" action="/confirmacion.html" data-netlify="true" id="bannerContactForm">
                     <div class="row">
                         <div class="col-xs-12 mb-16 ">
                             <div class="form-input-label-2">
@@ -57,3 +57,18 @@
         </div>
     </section>
 </div>
+<script>
+(function() {
+    var bannerForm = document.getElementById('bannerContactForm');
+    if (bannerForm) {
+        bannerForm.addEventListener('submit', function() {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'form_submission',
+                'form_name': 'contacto_banner',
+                'form_location': window.location.pathname
+            });
+        });
+    }
+})();
+</script>

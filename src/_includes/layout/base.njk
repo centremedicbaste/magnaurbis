@@ -27,6 +27,8 @@
     content="{{ metaDescription or eleventyComputed.metaDescription or metadata.description }}" />
   <meta name="twitter:image" content="{{ global_index.url }}{{ global_index.home_image }}" />
   <link rel="icon" type="image/png" href="{{ global_index.url }}/assets/static/favicons/favicon-32x32.png" />
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link rel="preconnect" href="https://code.jquery.com" crossorigin>
@@ -51,6 +53,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.css">
   <!-- SEO y Open Graph -->
   <link rel="canonical" href="{{ global_index.url }}{{ page.url | url }}" />
+  <!-- Google Consent Mode v2 (RGPD) - DEBE ir ANTES de GTM -->
+  {% if global_index.tag_manager %}
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied',
+      'wait_for_update': 500
+    });
+  </script>
+  {% endif %}
   <!-- Google Tag Manager -->
   {% if global_index.tag_manager %}
   <script>
@@ -185,5 +201,36 @@
     })();
   </script>
   {% endif %}
+  <!-- Tracking global: clics en teléfono, email y CTAs -->
+  {% if global_index.tag_manager %}
+  <script>
+  (function() {
+    document.addEventListener('click', function(e) {
+      var link = e.target.closest('a');
+      if (!link) return;
+      var href = link.getAttribute('href') || '';
+      window.dataLayer = window.dataLayer || [];
+
+      if (href.indexOf('tel:') === 0) {
+        window.dataLayer.push({
+          'event': 'contact_click',
+          'contact_type': 'phone',
+          'contact_value': href.replace('tel:', ''),
+          'click_location': window.location.pathname
+        });
+      } else if (href.indexOf('mailto:') === 0) {
+        window.dataLayer.push({
+          'event': 'contact_click',
+          'contact_type': 'email',
+          'contact_value': href.replace('mailto:', ''),
+          'click_location': window.location.pathname
+        });
+      }
+    });
+  })();
+  </script>
+  {% endif %}
+  <!-- Banner de Cookies -->
+  {% include 'components/cookie-banner.njk' %}
 </body>
 </html>

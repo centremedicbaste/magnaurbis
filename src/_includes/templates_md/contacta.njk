@@ -139,8 +139,15 @@ function validateForm() {
             body: data
         }).then(response => {
             if (response.ok) {
-                document.getElementById('modalMensajeEnviado').style.display = 'flex'; // Mostrar el modal
-                form.reset(); // Opcional: resetear el formulario
+                document.getElementById('modalMensajeEnviado').style.display = 'flex';
+                // Tracking: evento de conversión de formulario
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    'event': 'form_submission',
+                    'form_name': 'contacto',
+                    'form_location': window.location.pathname
+                });
+                form.reset();
             } else {
                 alert('Hubo un error al enviar el mensaje.');
             }
