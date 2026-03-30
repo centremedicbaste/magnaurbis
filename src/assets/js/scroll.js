@@ -1,47 +1,61 @@
 // Lenis — smooth scroll
-// Lenis se carga como script global desde CDN en base.njk antes de este módulo
+// Importado como ESM desde jsDelivr (garantiza que Lenis esté disponible
+// independientemente de la estructura interna del paquete npm)
+import Lenis from 'https://cdn.jsdelivr.net/npm/lenis@1.1.5/+esm';
+
+const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
 
 const lenis = new Lenis({
-  duration: 1.2,
-  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  touchMultiplier: 2,
+  lerp: 0.08,
+  smoothWheel: true,
+  wheelMultiplier: 0.9,
+  touchMultiplier: 1.5,
   infinite: false,
 });
 
 // ── Header: clase "scrolled" al pasar 250px ──────────────────────────────────
 lenis.on('scroll', ({ scroll }) => {
-  if (scroll >= 250) {
-    document.body.classList.add('scrolled');
-  } else {
-    document.body.classList.remove('scrolled');
+  document.body.classList.toggle('scrolled', scroll >= 250);
+});
+
+// ── Parallax ─────────────────────────────────────────────────────────────────
+// Se pre-calculan las posiciones al inicio para evitar getBoundingClientRect()
+// dentro del loop de scroll (que forzaría un reflow en cada frame).
+
+const buildParallaxCache = () =>
+  [...document.querySelectorAll('[data-scroll-speed]')].map(el => ({
+    el,
+    speed: parseFloat(el.dataset.scrollSpeed) || 0,
+    // posición Y del centro del elemento relativa al documento (sin transforms)
+    naturalY: el.getBoundingClientRect().top + window.scrollY + el.offsetHeight / 2,
+  }));
+
+let parallaxCache = buildParallaxCache();
+
+// Recalcular si cambia el tamaño de ventana
+window.addEventListener('resize', () => {
+  parallaxCache = buildParallaxCache();
+}, { passive: true });
+
+lenis.on('scroll', ({ scroll }) => {
+  const vh = window.innerHeight;
+  for (const { el, speed, naturalY } of parallaxCache) {
+    const offset = (naturalY - scroll - vh / 2) * speed * -0.1;
+    el.style.transform = `translateY(${offset}px)`;
   }
 });
 
-// ── Parallax: elementos con data-scroll-speed ────────────────────────────────
-const parallaxEls = document.querySelectorAll('[data-scroll-speed]');
-
-if (parallaxEls.length > 0) {
-  lenis.on('scroll', () => {
-    parallaxEls.forEach((el) => {
-      const speed = parseFloat(el.dataset.scrollSpeed) || 0;
-      const rect = el.getBoundingClientRect();
-      // Desplazamiento relativo al centro del viewport
-      const centerOffset = rect.top + rect.height / 2 - window.innerHeight / 2;
-      el.style.transform = `translateY(${centerOffset * speed * -0.12}px)`;
-    });
-  });
-}
-
-// ── Integración con GSAP ticker (GSAP ya cargado globalmente) ────────────────
+// ── RAF loop con GSAP ticker ──────────────────────────────────────────────────
+// GSAP ya está cargado como global desde el CDN en base.njk
 gsap.ticker.add((time) => {
   lenis.raf(time * 1000);
 });
 gsap.ticker.lagSmoothing(0);
 
 // ── ScrollTo: enlaces que llevan al formulario de contacto ───────────────────
-document.querySelectorAll('.link_a_contacta, .link_a_contacta_2').forEach((element) => {
-  element.addEventListener('click', (event) => {
-    event.preventDefault();
-    lenis.scrollTo('#contacta_4', { offset: 0, duration: 1.2 });
+document.querySelectorAll('.link_a_contacta, .link_a_contacta_2').forEach((el) => {
+  el.addEventListener('click', (e) => {
+    e.preventDefault();
+    lenis.scrollTo('#contacta_4', { offset: 0, duration: 1.45, easing: easeOutCubic });
   });
 });
