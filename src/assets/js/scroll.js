@@ -3,47 +3,55 @@
 // independientemente de la estructura interna del paquete npm)
 import Lenis from 'https://cdn.jsdelivr.net/npm/lenis@1.1.5/+esm';
 
+// ─── Modo captura: detectar antes de inicializar scroll ──────────────────────
+const _scrollCaptureMode = document.body.classList.contains('capture-mode');
+
 const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
 
 const lenis = new Lenis({
   lerp: 0.08,
-  smoothWheel: true,
+  smoothWheel: !_scrollCaptureMode,  // Desactivar smooth scroll en modo captura
   wheelMultiplier: 0.9,
   touchMultiplier: 1.5,
   infinite: false,
 });
 
 // ── Header: clase "scrolled" al pasar 250px ──────────────────────────────────
-lenis.on('scroll', ({ scroll }) => {
-  document.body.classList.toggle('scrolled', scroll >= 250);
-});
+if (_scrollCaptureMode) {
+  document.body.classList.add('scrolled');
+} else {
+  lenis.on('scroll', ({ scroll }) => {
+    document.body.classList.toggle('scrolled', scroll >= 250);
+  });
+}
 
 // ── Parallax ─────────────────────────────────────────────────────────────────
 // Se pre-calculan las posiciones al inicio para evitar getBoundingClientRect()
 // dentro del loop de scroll (que forzaría un reflow en cada frame).
+// En modo captura se desactiva el parallax para que todo quede en su posición natural.
 
-const buildParallaxCache = () =>
-  [...document.querySelectorAll('[data-scroll-speed]')].map(el => ({
-    el,
-    speed: parseFloat(el.dataset.scrollSpeed) || 0,
-    // posición Y del centro del elemento relativa al documento (sin transforms)
-    naturalY: el.getBoundingClientRect().top + window.scrollY + el.offsetHeight / 2,
-  }));
+if (!_scrollCaptureMode) {
+  const buildParallaxCache = () =>
+    [...document.querySelectorAll('[data-scroll-speed]')].map(el => ({
+      el,
+      speed: parseFloat(el.dataset.scrollSpeed) || 0,
+      naturalY: el.getBoundingClientRect().top + window.scrollY + el.offsetHeight / 2,
+    }));
 
-let parallaxCache = buildParallaxCache();
+  let parallaxCache = buildParallaxCache();
 
-// Recalcular si cambia el tamaño de ventana
-window.addEventListener('resize', () => {
-  parallaxCache = buildParallaxCache();
-}, { passive: true });
+  window.addEventListener('resize', () => {
+    parallaxCache = buildParallaxCache();
+  }, { passive: true });
 
-lenis.on('scroll', ({ scroll }) => {
-  const vh = window.innerHeight;
-  for (const { el, speed, naturalY } of parallaxCache) {
-    const offset = (naturalY - scroll - vh / 2) * speed * -0.1;
-    el.style.transform = `translateY(${offset}px)`;
-  }
-});
+  lenis.on('scroll', ({ scroll }) => {
+    const vh = window.innerHeight;
+    for (const { el, speed, naturalY } of parallaxCache) {
+      const offset = (naturalY - scroll - vh / 2) * speed * -0.1;
+      el.style.transform = `translateY(${offset}px)`;
+    }
+  });
+}
 
 // ── RAF loop con GSAP ticker ──────────────────────────────────────────────────
 // GSAP ya está cargado como global desde el CDN en base.njk
