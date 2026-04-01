@@ -32,11 +32,16 @@ if (_scrollCaptureMode) {
 
 if (!_scrollCaptureMode) {
   const buildParallaxCache = () =>
-    [...document.querySelectorAll('[data-scroll-speed]')].map(el => ({
-      el,
-      speed: parseFloat(el.dataset.scrollSpeed) || 0,
-      naturalY: el.getBoundingClientRect().top + window.scrollY + el.offsetHeight / 2,
-    }));
+    [...document.querySelectorAll('[data-scroll-speed]')].map(el => {
+      // Usar el centro de la sección contenedora como referencia,
+      // no el centro de la imagen/vídeo. Así offset=0 al cargar la página.
+      const section = el.closest('[data-scroll-section]') || el.closest('section') || el.parentElement;
+      return {
+        el,
+        speed: parseFloat(el.dataset.scrollSpeed) || 0,
+        naturalY: section.getBoundingClientRect().top + window.scrollY + section.offsetHeight / 2,
+      };
+    });
 
   let parallaxCache = buildParallaxCache();
 
