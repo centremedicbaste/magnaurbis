@@ -167,6 +167,16 @@
         ]
       }
   </script>
+
+  <!-- Capture Mode: activa con ?capture=1 para herramientas de screenshot (VisualSitemap) -->
+  <script>
+    (function() {
+      var p = new URLSearchParams(window.location.search);
+      if (p.get('screenshot') != null || p.get('capture') === '1') {
+        document.documentElement.classList.add('capture-mode');
+      }
+    })();
+  </script>
 </head>
 <body class="contain {{ colorHeader }} {% if page.url == '/' %}home{% endif %}">
   <!-- Google Tag Manager (noscript) -->
