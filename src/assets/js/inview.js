@@ -119,6 +119,9 @@ const animateBox2Observer   = createObserver(entries => handleIntersect(entries,
 const animateListObserver   = createObserver(entries => handleIntersect(entries, animateListObserver,   target => gsapAnimate(target.querySelectorAll('li'), 0, 1, 1, parseFloat(target.dataset.delay || 0), 0.1)), animateOptions);
 const animateLettersObserver = createObserver(entries => handleIntersect(entries, animateLettersObserver, target => gsapAnimate(target.querySelectorAll('.letter'), 0, 1, 1, parseFloat(target.dataset.delay || 0), 0.05)), animateOptions);
 
+// ── Observers y animaciones (solo en modo normal, no captura) ────────────────
+if (!_isCaptureMode) {
+
 // ── .inview → is-inview ──────────────────────────────────────────────────────
 prepareElement('.inview', el => {
   const rect = el.getBoundingClientRect();
@@ -201,3 +204,5 @@ prepareElement('.animate-letters', el => {
   });
   animateLettersObserver.observe(el);
 });
+
+} // end if (!_isCaptureMode)
