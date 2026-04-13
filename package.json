@@ -7,23 +7,19 @@
     "watch:eleventy": "eleventy --serve --incremental",
     "watch:sass": "sass  --no-source-map --watch src/assets/sass:src/assets/css",
     "build:eleventy": "eleventy",
-    "build:sass": "sass  --no-source-map --style=compressed src//assets/sass:src//assets/css",
+    "build:sass": "sass  --no-source-map --style=compressed src/assets/sass:src/assets/css",
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:*",
     "debug": "DEBUG=* npx eleventy",
     "img-exporter": "node ./img-exporter.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Allchorne3/11ty-nunjucks.git"
-  },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "magna-urbis",
+    "administracion-fincas",
+    "barcelona"
+  ],
+  "author": "Manuel Ruiz",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Allchorne3/11ty-nunjucks/issues"
-  },
-  "homepage": "https://github.com/Allchorne3/11ty-nunjucks#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-img": "^4.0.2",
@@ -53,7 +49,7 @@
     "nunjucks": "^3.2.4",
     "rellax": "^1.12.1",
     "sass": "^1.77.2",
-    "sharp": "^0.33.4",
+    "sharp": "^0.33.5",
     "simple-parallax-js": "^6.0.1",
     "xml2js": "^0.6.2"
   }

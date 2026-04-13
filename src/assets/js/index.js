@@ -14,16 +14,7 @@ function isCaptureMode() {
   return document.body.classList.contains('capture-mode');
 }
 
-document.body.onscroll = function () {
-  if (
-    document.body.scrollTop >= 50 ||
-    document.documentElement.scrollTop >= 50
-  ) {
-    document.body.classList.add("scrolled");
-  } else {
-    document.body.classList.remove("scrolled");
-  }
-};
+// Nota: el handler de clase "scrolled" se gestiona en scroll.js vía Lenis (250px)
 
 var swiper = new Swiper(".swiper-container", {
   spaceBetween: 15,
@@ -71,12 +62,7 @@ var swiper = new Swiper(".swiper-container", {
 
 
 
-$(document).ready(function () {
-  initvideo();
-  $("#menu-toggle, .menu-mobile-overlay, .link_cierre").click(function () {
-    $("body").toggleClass("menu-open");
-  });
-});
+// Nota: initvideo() y menú se inicializan en el bloque $(document).ready unificado más abajo
 
 function initvideo() {
   $(".action--play").click(function () {
@@ -418,8 +404,11 @@ initPhotoSwipeFromDOM(".my-gallery");
 $(document).ready(function () {
   $("body").toggleClass("face-open");
 
+  // Menú mobile
+  $("#menu-toggle, .menu-mobile-overlay, .link_cierre").click(function () {
+    $("body").toggleClass("menu-open");
+  });
 
-  
   initvideo();
 
     $(".accordion-header").click(function(){

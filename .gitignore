@@ -5,6 +5,10 @@ dist/
 .cache/
 public/
 
+# macOS
+.DS_Store
+**/.DS_Store
+
 # Documento interno para cliente (no subir)
 resumen-cambios-cliente.html
 **/resumen-cambios-cliente.html

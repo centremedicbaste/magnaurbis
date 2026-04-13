@@ -30,7 +30,6 @@ module.exports = function (eleventyConfig) {
   
   eleventyConfig.addDataExtension("json", (contents) => JSON.parse(contents));
   eleventyConfig.addTemplateFormats("njk");
-  eleventyConfig.addPassthroughCopy("./src/css/style.css");
   eleventyConfig.addPassthroughCopy("./src/assets");
   eleventyConfig.addPassthroughCopy("src/pages", "pages");
   eleventyConfig.addPassthroughCopy("src/site.webmanifest");
@@ -43,33 +42,18 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPairedShortcode("myShortcode", function (content) {
     return `<div class="is-flex full-container-blog content-center">${content}</div>`;
   });
+  // Helper genérico para navegación entre colecciones
+  function getCollectionItem(collection, currentSlug, offset) {
+    const currentIndex = getIndex(collection, currentSlug);
+    const targetIndex = currentIndex + offset;
+    return (targetIndex >= 0 && targetIndex < collection.length) ? collection[targetIndex] : false;
+  }
+
   eleventyConfig.addFilter("nextInCollection", (collection, currentSlug) => {
-    const currentIndex = getIndex(collection, currentSlug);
-    const pages = collection.filter((page, index) => {
-      return index == currentIndex + 1 ? page : false;
-    });
-    return pages.length ? pages[0] : false;
-  });
-  eleventyConfig.addFilter("nextInCollectionnext", (collection, currentSlug) => {
-    const currentIndex = getIndex(collection, currentSlug);
-    const pages = collection.filter((page, index) => {
-      return index == currentIndex + 2 ? page : false;
-    });
-    return pages.length ? pages[0] : false;
+    return getCollectionItem(collection, currentSlug, 1);
   });
   eleventyConfig.addFilter("prevInCollection", (collection, currentSlug) => {
-    const currentIndex = getIndex(collection, currentSlug);
-    const pages = collection.filter((page, index) => {
-      return index == currentIndex - 1 ? page : false;
-    });
-    return pages.length ? pages[0] : false;
-  });
-  eleventyConfig.addFilter("prevInCollectionnext", (collection, currentSlug) => {
-    const currentIndex = getIndex(collection, currentSlug);
-    const pages = collection.filter((page, index) => {
-      return index == currentIndex - 2 ? page : false;
-    });
-    return pages.length ? pages[0] : false;
+    return getCollectionItem(collection, currentSlug, -1);
   });
   eleventyConfig.addShortcode("image", function (src, alt, title, cla) {
     const dimensions = sizeOf(`./src/assets/static/images/${src}`);
@@ -121,27 +105,6 @@ module.exports = function (eleventyConfig) {
   function getIndex(collection, currentSlug) {
     return collection.findIndex((page) => page.fileSlug === currentSlug);
   }
-  eleventyConfig.addFilter("prevInCollection1", (collection, currentSlug) => {
-    const currentIndex = getIndex(collection, currentSlug);
-    const pages = collection.filter((page, index) => {
-      return index == currentIndex - 1 ? page : false;
-    });
-    return pages.length ? pages[0] : false;
-  });
-  eleventyConfig.addFilter("prevInCollection2", (collection, currentSlug) => {
-    const currentIndex = getIndex(collection, currentSlug);
-    const pages = collection.filter((page, index) => {
-      return index == currentIndex - 2 ? page : false;
-    });
-    return pages.length ? pages[0] : false;
-  });
-  eleventyConfig.addFilter("prevInCollection3", (collection, currentSlug) => {
-    const currentIndex = getIndex(collection, currentSlug);
-    const pages = collection.filter((page, index) => {
-      return index === currentIndex - 3 ? page : false;
-    });
-    return pages.length ? pages[0] : false;
-  });
   eleventyConfig.addFilter("reverseWords", function (value) {
     if (typeof value === "string") {
       return value.split("").reverse().join("");

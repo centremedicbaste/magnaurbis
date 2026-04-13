@@ -58,9 +58,9 @@ rect{
   display: none;
   @media (min-width: $break-lg) {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    gap: 20px;
     li {
-      width: 150px;
       text-align: left;
     }
   }

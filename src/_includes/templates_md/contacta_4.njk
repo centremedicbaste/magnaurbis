@@ -113,19 +113,32 @@
     function enviarFormulario() {
         var form = document.getElementById('contactForm');
         var data = new FormData(form);
+
+        // Capturar datos antes del reset
+        var userEmail = (form.querySelector('#email') || {}).value || '';
+        var userName = (form.querySelector('#nombre') || {}).value || '';
+        var userPhone = (form.querySelector('#telefono') || {}).value || '';
+        var userEmpresa = (form.querySelector('#empresa') || {}).value || '';
+
         fetch('/', {
             method: 'POST',
             body: data
         }).then(response => {
             if (response.ok) {
                 document.getElementById('modalMensajeEnviado').style.display = 'flex';
-                // Tracking: evento de conversión de formulario
+
+                // Tracking: evento de conversión de formulario con datos del lead
                 window.dataLayer = window.dataLayer || [];
                 window.dataLayer.push({
-                    'event': 'form_submission',
+                    'event': 'generate_lead',
                     'form_name': 'contacto',
-                    'form_location': window.location.pathname
+                    'form_location': window.location.pathname,
+                    'user_email': userEmail,
+                    'user_name': userName,
+                    'user_phone': userPhone,
+                    'user_empresa': userEmpresa
                 });
+
                 form.reset();
             } else {
                 alert('Hubo un error al enviar el mensaje.');

@@ -53,6 +53,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.css">
   <!-- SEO y Open Graph -->
   <link rel="canonical" href="{{ global_index.url }}{{ page.url | url }}" />
+  <link rel="alternate" hreflang="es" href="{{ global_index.url }}{{ page.url | url }}" />
+  <link rel="alternate" hreflang="x-default" href="{{ global_index.url }}{{ page.url | url }}" />
   <!-- Google Consent Mode v2 (RGPD) - DEBE ir ANTES de GTM -->
   {% if global_index.tag_manager %}
   <script>
@@ -86,7 +88,7 @@
         "@type": "RealEstateAgent",
         "name": "Magna Urbis",
         "url": "https://magnaurbis.com",
-        "logo": "https://magnaurbis.com/assets/static/favicons/favicon-96x96.png",
+        "logo": "https://magnaurbis.com/assets/static/favicons/android-chrome-192x192.png",
         "image": "https://magnaurbis.com{{ global_index.home_image }}",
         "description": "Magna Urbis, expertos en administración de fincas y gestión de patrimonios inmobiliarios en Barcelona con más de 100 años de experiencia.",
         "foundingDate": "1908",
@@ -191,7 +193,7 @@
     {% include 'templates_md/footer_2.njk' %}
   </div>
   <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js"></script>
@@ -234,8 +236,55 @@
           'contact_value': href.replace('mailto:', ''),
           'click_location': window.location.pathname
         });
+      } else if (href.indexOf('wa.me') !== -1 || href.indexOf('whatsapp') !== -1) {
+        window.dataLayer.push({
+          'event': 'contact_click',
+          'contact_type': 'whatsapp',
+          'contact_value': href,
+          'click_location': window.location.pathname
+        });
       }
     });
+  })();
+  </script>
+  <!-- Tracking: envío de formularios de contacto -->
+  <script>
+  (function() {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      if (!form || form.tagName !== 'FORM') return;
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        'event': 'form_submit',
+        'form_id': form.id || form.getAttribute('name') || 'unknown',
+        'form_location': window.location.pathname
+      });
+    });
+  })();
+  </script>
+  <!-- Tracking: scroll depth (25%, 50%, 75%, 100%) -->
+  <script>
+  (function() {
+    var thresholds = [25, 50, 75, 100];
+    var fired = {};
+    window.addEventListener('scroll', function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (docHeight <= 0) return;
+      var scrollPercent = Math.round((scrollTop / docHeight) * 100);
+      for (var i = 0; i < thresholds.length; i++) {
+        var t = thresholds[i];
+        if (scrollPercent >= t && !fired[t]) {
+          fired[t] = true;
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            'event': 'scroll_depth',
+            'scroll_percentage': t,
+            'page_path': window.location.pathname
+          });
+        }
+      }
+    }, { passive: true });
   })();
   </script>
   {% endif %}
